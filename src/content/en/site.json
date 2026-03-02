@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "siteName": "FamBIT",
+    "defaultTitle": "FamBIT | Safe Growth Community",
+    "description": "Calm, verified, and family-minded crypto community communication."
+  },
+  "a11y": {
+    "skipToMain": "Skip to main content"
+  },
+  "header": {
+    "brand": "FamBIT",
+    "languageLabel": "Language"
+  },
+  "language": {
+    "en": "EN",
+    "es": "ES"
+  },
+  "verifiedLinks": {
+    "title": "Verified Official Links",
+    "xLabel": "X / @FamBIT_Sol",
+    "telegramLabel": "Telegram / FamBIT_Official",
+    "pumpfunLabel": "Pump.fun listing"
+  },
+  "safetyNotice": {
+    "title": "Safety first",
+    "body": "This website is informational and focused on verification. It never requests private keys, seed phrases, or secrets."
+  },
+  "footer": {
+    "tagline": "Family helps family with calm and responsible learning.",
+    "reminder": "Admins never DM first",
+    "disclaimer": "Not financial advice"
+  }
+}

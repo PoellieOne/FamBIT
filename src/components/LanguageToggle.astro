@@ -1,0 +1,34 @@
+---
+import { localizedPath, type Locale } from "../lib/i18n";
+
+interface Props {
+  active: Locale;
+  basePath: string;
+  label: string;
+  language: {
+    en: string;
+    es: string;
+  };
+}
+
+const { active, basePath, label, language } = Astro.props;
+---
+
+<nav aria-label={label} class="inline-flex gap-2">
+  <a
+    href={localizedPath("en", basePath)}
+    hreflang="en"
+    aria-current={active === "en" ? "page" : undefined}
+    class="rounded-md border border-slate-400 bg-white/80 px-3 py-2 text-sm font-semibold text-slate-900"
+  >
+    {language.en}
+  </a>
+  <a
+    href={localizedPath("es", basePath)}
+    hreflang="es"
+    aria-current={active === "es" ? "page" : undefined}
+    class="rounded-md border border-slate-400 bg-white/80 px-3 py-2 text-sm font-semibold text-slate-900"
+  >
+    {language.es}
+  </a>
+</nav>

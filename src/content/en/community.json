@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "title": "Community culture",
+    "intro": "FamBIT grows through respect, consistency, and practical education for all experience levels."
+  },
+  "culture": {
+    "title": "How we show up",
+    "items": [
+      "Be kind and clear.",
+      "Teach with patience.",
+      "Keep communication factual and non-hype."
+    ]
+  },
+  "contribute": {
+    "title": "Ways to contribute",
+    "items": [
+      "Help newcomers verify links.",
+      "Share educational explainers.",
+      "Support healthy moderation and onboarding."
+    ]
+  },
+  "boundaries": {
+    "title": "Clear boundaries",
+    "body": "Manipulation language, pressure tactics, and guaranteed outcome claims are not part of this community."
+  }
+}

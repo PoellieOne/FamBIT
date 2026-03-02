@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "siteName": "FamBIT",
+    "defaultTitle": "FamBIT | Comunidad Segura de Crecimiento",
+    "description": "Comunicacion cripto tranquila, verificada y orientada a la familia."
+  },
+  "a11y": {
+    "skipToMain": "Saltar al contenido principal"
+  },
+  "header": {
+    "brand": "FamBIT",
+    "languageLabel": "Idioma"
+  },
+  "language": {
+    "en": "EN",
+    "es": "ES"
+  },
+  "verifiedLinks": {
+    "title": "Enlaces Oficiales Verificados",
+    "xLabel": "X / @FamBIT_Sol",
+    "telegramLabel": "Telegram / FamBIT_Official",
+    "pumpfunLabel": "Listado en Pump.fun"
+  },
+  "safetyNotice": {
+    "title": "Seguridad primero",
+    "body": "Este sitio es informativo y esta enfocado en la verificacion. Nunca solicita claves privadas, frases semilla ni secretos."
+  },
+  "footer": {
+    "tagline": "La familia ayuda a la familia con aprendizaje tranquilo y responsable.",
+    "reminder": "Los admins nunca envian DM primero",
+    "disclaimer": "No es asesoramiento financiero"
+  }
+}

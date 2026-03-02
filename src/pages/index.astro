@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getHomeContent } from "../lib/content";
+import { getLocaleFromPath, localizedPath } from "../lib/i18n";
+
+const locale = getLocaleFromPath(Astro.url.pathname);
+const home = getHomeContent(locale);
+---
+
+<BaseLayout title={`FamBIT | ${home.hero.title}`} lang={locale}>
+  <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
+    <h1 class="m-0 text-2xl font-extrabold tracking-tight text-slate-950">{home.hero.title}</h1>
+    <p class="mb-0 mt-3 text-base text-slate-800">{home.hero.intro}</p>
+  </section>
+
+  <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
+    <h2 class="m-0 text-xl font-bold text-slate-950">{home.pillars.title}</h2>
+    <ul class="mb-0 mt-3 list-disc space-y-2 pl-5 text-base text-slate-800">
+      {home.pillars.items.map((item) => <li>{item}</li>)}
+    </ul>
+  </section>
+
+  <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
+    <h2 class="m-0 text-xl font-bold text-slate-950">{home.safetyNudge.title}</h2>
+    <p class="mb-0 mt-3 text-base text-slate-800">{home.safetyNudge.body}</p>
+    <p class="mb-0 mt-3">
+      <a class="font-semibold text-[var(--accent-strong)]" href={localizedPath(locale, "/safety")}>
+        {home.safetyNudge.linkLabel}
+      </a>
+    </p>
+  </section>
+</BaseLayout>

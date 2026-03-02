@@ -1,0 +1,19 @@
+{
+  "hero": {
+    "title": "Seguridad y verificacion",
+    "intro": "Usa estos recordatorios para protegerte a ti y a tu familia frente a estafas y suplantaciones."
+  },
+  "checks": {
+    "title": "Verifica siempre primero",
+    "items": [
+      "Verifica los enlaces aqui antes de actuar.",
+      "Los admins nunca envian DM primero.",
+      "Nunca compartas tu frase semilla ni claves privadas.",
+      "No es asesoramiento financiero"
+    ]
+  },
+  "reminder": {
+    "title": "Manten la calma",
+    "body": "Si un mensaje crea urgencia o presion, haz una pausa y verifica por canales publicos oficiales."
+  }
+}

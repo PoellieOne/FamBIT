@@ -1,0 +1,30 @@
+{
+  "hero": {
+    "title": "Roadmap direction",
+    "intro": "Public milestones focus on trust, education, and steady operational progress."
+  },
+  "phases": [
+    {
+      "name": "Phase 1",
+      "window": "Days 1-30",
+      "focus": "Safety communication baseline and verified link routines.",
+      "checkpoint": "Consistent source-of-truth messaging in public channels."
+    },
+    {
+      "name": "Phase 2",
+      "window": "Days 31-60",
+      "focus": "Community education rhythm and moderation support.",
+      "checkpoint": "Repeatable onboarding references for newcomers."
+    },
+    {
+      "name": "Phase 3",
+      "window": "Days 61-90",
+      "focus": "Refine governance habits and transparent reporting cadence.",
+      "checkpoint": "Documented progress updates with realistic language."
+    }
+  ],
+  "aspiration": {
+    "title": "Optional real-world aspiration",
+    "body": "As the community matures, it may explore responsible social impact initiatives when capacity allows."
+  }
+}

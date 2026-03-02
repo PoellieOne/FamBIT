@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "title": "Cultura de comunidad",
+    "intro": "FamBIT crece con respeto, constancia y educacion practica para todos los niveles de experiencia."
+  },
+  "culture": {
+    "title": "Como participamos",
+    "items": [
+      "Se amable y claro.",
+      "Ensena con paciencia.",
+      "Mantiene la comunicacion factual y sin hype."
+    ]
+  },
+  "contribute": {
+    "title": "Formas de contribuir",
+    "items": [
+      "Ayuda a personas nuevas a verificar enlaces.",
+      "Comparte explicaciones educativas.",
+      "Apoya una moderacion sana y el onboarding."
+    ]
+  },
+  "boundaries": {
+    "title": "Limites claros",
+    "body": "El lenguaje de manipulacion, las tacticas de presion y las promesas garantizadas no forman parte de esta comunidad."
+  }
+}

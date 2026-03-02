@@ -1,0 +1,30 @@
+{
+  "hero": {
+    "title": "Direccion del roadmap",
+    "intro": "Los hitos publicos se centran en confianza, educacion y progreso operativo constante."
+  },
+  "phases": [
+    {
+      "name": "Fase 1",
+      "window": "Dias 1-30",
+      "focus": "Base de comunicacion de seguridad y rutina de enlaces verificados.",
+      "checkpoint": "Mensajeria consistente de fuente oficial en canales publicos."
+    },
+    {
+      "name": "Fase 2",
+      "window": "Dias 31-60",
+      "focus": "Ritmo de educacion comunitaria y apoyo de moderacion.",
+      "checkpoint": "Referencias de onboarding repetibles para personas nuevas."
+    },
+    {
+      "name": "Fase 3",
+      "window": "Dias 61-90",
+      "focus": "Refinar habitos de gobernanza y una cadencia de reportes transparentes.",
+      "checkpoint": "Actualizaciones de progreso documentadas con lenguaje realista."
+    }
+  ],
+  "aspiration": {
+    "title": "Aspiracion opcional de impacto real",
+    "body": "A medida que la comunidad madure, puede explorar iniciativas de impacto social responsable cuando exista capacidad."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "hero": {
+    "title": "A safe crypto home for steady growth",
+    "intro": "FamBIT supports a calm, family-minded community where people learn, verify, and grow with discipline."
+  },
+  "pillars": {
+    "title": "Core approach",
+    "items": [
+      "Verification before action.",
+      "Respectful guidance for newcomers.",
+      "Long-term behavior over short-term noise."
+    ]
+  },
+  "safetyNudge": {
+    "title": "Start with the safety page",
+    "body": "Use the safety guide as the source of truth for official links and anti-scam reminders.",
+    "linkLabel": "Read safety guidance"
+  }
+}

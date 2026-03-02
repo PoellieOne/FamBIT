@@ -1,0 +1,19 @@
+{
+  "hero": {
+    "title": "Un hogar cripto seguro para crecer con constancia",
+    "intro": "FamBIT impulsa una comunidad tranquila y familiar donde las personas aprenden, verifican y crecen con disciplina."
+  },
+  "pillars": {
+    "title": "Enfoque central",
+    "items": [
+      "Verificacion antes de actuar.",
+      "Guia respetuosa para personas nuevas.",
+      "Comportamiento a largo plazo por encima del ruido de corto plazo."
+    ]
+  },
+  "safetyNudge": {
+    "title": "Empieza por la pagina de seguridad",
+    "body": "Usa la guia de seguridad como fuente oficial para enlaces verificados y recordatorios antiestafa.",
+    "linkLabel": "Leer guia de seguridad"
+  }
+}

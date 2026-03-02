@@ -1,0 +1,19 @@
+{
+  "hero": {
+    "title": "Safety and verification",
+    "intro": "Use these reminders to protect yourself and your family from scams and impersonation."
+  },
+  "checks": {
+    "title": "Always verify first",
+    "items": [
+      "Verify links here before acting.",
+      "Admins never DM first.",
+      "Never share your seed phrase or private keys.",
+      "Not financial advice"
+    ]
+  },
+  "reminder": {
+    "title": "Stay calm",
+    "body": "If a message creates urgency or pressure, pause and verify through official public channels."
+  }
+}
