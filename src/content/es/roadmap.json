@@ -23,6 +23,7 @@
     {
       "name": "Fase 1",
       "window": "Dias 1-30",
+      "summary": "Esta fase construye una base comun de seguridad que todas las personas pueden seguir.",
       "items": [
         "Publicar una base de mensajes con prioridad en seguridad.",
         "Estandarizar referencias de enlaces verificados en canales publicos.",
@@ -32,6 +33,7 @@
     {
       "name": "Fase 2",
       "window": "Dias 31-60",
+      "summary": "Esta fase convierte la cultura sana en una practica diaria repetible.",
       "items": [
         "Sostener guias recurrentes de integracion para personas nuevas.",
         "Fortalecer la consistencia de respuesta de moderacion.",
@@ -41,6 +43,7 @@
     {
       "name": "Fase 3",
       "window": "Dias 61-90",
+      "summary": "Esta fase mejora la visibilidad para que la comunidad siga el progreso real.",
       "items": [
         "Publicar resumenes transparentes de progreso en lenguaje sencillo.",
         "Ajustar senales de confianza segun comentarios de la comunidad.",
@@ -49,8 +52,8 @@
     }
   ],
   "cta": {
-    "label": "Seguir progreso publico",
-    "href": "/community"
+    "label": "Volver a la base segura",
+    "href": "/"
   },
   "trust": {
     "microcopy": "La visibilidad genera confianza cuando las palabras y las acciones coinciden."

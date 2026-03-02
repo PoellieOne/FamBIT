@@ -32,11 +32,17 @@ body {
 
 body {
   background:
-    radial-gradient(circle at 10% 0%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 30%),
+    radial-gradient(circle at 10% 0%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 34%),
+    radial-gradient(circle at 90% 20%, color-mix(in srgb, #66c2a5 8%, transparent), transparent 28%),
     linear-gradient(180deg, var(--bg-0), var(--bg-1));
   color: var(--text-strong);
   font-family: "Atkinson Hyperlegible", "Segoe UI", sans-serif;
   line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 a,
@@ -57,6 +63,63 @@ textarea {
   max-width: 70rem;
   min-height: 100vh;
   padding: var(--space-4);
+}
+
+.atmo-panel {
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius-lg);
+  background: color-mix(in srgb, white 88%, var(--bg-0));
+  box-shadow: 0 16px 34px -28px rgba(15, 23, 32, 0.45);
+}
+
+.hero-banner {
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, rgba(15, 23, 32, 0.82), rgba(15, 23, 32, 0.3) 60%, transparent);
+}
+
+.hero-banner-content {
+  position: absolute;
+  inset: auto auto 0 0;
+  z-index: 1;
+  max-width: 40rem;
+  padding: clamp(1rem, 3vw, 2.5rem);
+}
+
+.soft-strip {
+  border: 1px solid #d2dbe5;
+  border-radius: var(--radius-md);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(240, 246, 252, 0.86));
+}
+
+.story-card {
+  border: 1px solid #d2dbe5;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1rem;
+}
+
+.story-media {
+  border: 1px solid #d2dbe5;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: #fff;
+}
+
+.story-media img {
+  width: 100%;
+  height: 13rem;
+  object-fit: cover;
+}
+
+.story-media-body {
+  padding: 0.85rem 1rem 1rem;
 }
 
 @media (min-width: 48rem) {

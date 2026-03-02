@@ -20,10 +20,12 @@
   },
   "verification": {
     "title": "Official link verification instruction",
+    "intro": "Before you trust any message, confirm you are looking at the right public source.",
     "instruction": "Only trust links listed in the verified section on this page and in the footer."
   },
   "adminRules": {
     "title": "Admin behavior rules",
+    "intro": "Legitimate support behavior follows clear patterns you can verify in public.",
     "items": [
       "Admins never start private support in direct messages.",
       "Moderation guidance is posted in public channels.",
@@ -32,6 +34,7 @@
   },
   "reporting": {
     "title": "If you see scam or impersonation",
+    "intro": "If something feels suspicious, use this simple reporting routine.",
     "steps": [
       "Take a screenshot of the suspicious message or profile.",
       "Report it in the official Telegram channel with context.",
@@ -40,7 +43,7 @@
   },
   "cta": {
     "label": "Check verified links now",
-    "href": "/safety"
+    "href": "/community"
   },
   "trust": {
     "microcopy": "Pause, verify, then decide."

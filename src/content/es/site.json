@@ -35,8 +35,10 @@
       "No es asesoramiento de inversion.",
       "No hay garantias."
     ],
+    "disclaimersIntro": "Aclaramos expectativas antes de cualquier decision.",
     "whatWeAre": {
       "title": "Lo que somos",
+      "intro": "FamBIT existe como una capa comunitaria publica con prioridad en seguridad.",
       "items": [
         "Una comunidad cripto de aprendizaje con prioridad en la seguridad.",
         "Una referencia publica de enlaces oficiales verificados.",
@@ -45,6 +47,7 @@
     },
     "whatWeAreNot": {
       "title": "Lo que no somos",
+      "intro": "Para evitar confusiones, estos limites se mantienen claros.",
       "items": [
         "No somos asesoramiento de inversion.",
         "No somos un servicio de conexion de billeteras.",

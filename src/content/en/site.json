@@ -35,8 +35,10 @@
       "No investment advice.",
       "No guarantees."
     ],
+    "disclaimersIntro": "Set expectations clearly before you make any decision.",
     "whatWeAre": {
       "title": "What we are",
+      "intro": "FamBIT exists as a public safety-first community layer.",
       "items": [
         "A safety-first crypto learning community.",
         "A public source of verified official links.",
@@ -45,6 +47,7 @@
     },
     "whatWeAreNot": {
       "title": "What we are not",
+      "intro": "To avoid confusion, these boundaries stay explicit.",
       "items": [
         "Not investment advice.",
         "Not a wallet-connect service.",

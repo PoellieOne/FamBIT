@@ -20,10 +20,12 @@
   },
   "verification": {
     "title": "Como verificar enlaces oficiales",
+    "intro": "Antes de confiar en cualquier mensaje, confirma que estas en la fuente publica correcta.",
     "instruction": "Confia solo en los enlaces publicados en la seccion verificada de esta pagina y en el footer."
   },
   "adminRules": {
     "title": "Reglas de comportamiento de admins",
+    "intro": "El soporte legitimo sigue patrones claros que puedes verificar en publico.",
     "items": [
       "Los admins nunca inician soporte privado por DM.",
       "La orientacion de moderacion se comparte en canales publicos.",
@@ -32,6 +34,7 @@
   },
   "reporting": {
     "title": "Si detectas estafa o suplantacion",
+    "intro": "Si algo parece sospechoso, sigue esta rutina breve de reporte.",
     "steps": [
       "Haz una captura del mensaje o perfil sospechoso.",
       "Reportalo en el canal oficial de Telegram con contexto claro.",
@@ -40,7 +43,7 @@
   },
   "cta": {
     "label": "Verificar enlaces oficiales",
-    "href": "/safety"
+    "href": "/community"
   },
   "trust": {
     "microcopy": "Pausa, verifica y luego decide."

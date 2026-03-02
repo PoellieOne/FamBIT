@@ -23,6 +23,7 @@
     {
       "name": "Phase 1",
       "window": "Days 1-30",
+      "summary": "This phase builds a shared safety baseline everyone can follow.",
       "items": [
         "Publish safety-first messaging baseline.",
         "Standardize verified-link references in public channels.",
@@ -32,6 +33,7 @@
     {
       "name": "Phase 2",
       "window": "Days 31-60",
+      "summary": "This phase turns healthy culture into repeatable daily practice.",
       "items": [
         "Run recurring onboarding guidance for newcomers.",
         "Strengthen moderation response consistency.",
@@ -41,6 +43,7 @@
     {
       "name": "Phase 3",
       "window": "Days 61-90",
+      "summary": "This phase improves visibility so the community can track real progress.",
       "items": [
         "Publish transparent progress recaps with plain language.",
         "Refine trust signals based on community feedback.",
@@ -49,8 +52,8 @@
     }
   ],
   "cta": {
-    "label": "Follow public progress",
-    "href": "/community"
+    "label": "Return to the safe home base",
+    "href": "/"
   },
   "trust": {
     "microcopy": "Visibility builds trust when words and actions stay aligned."

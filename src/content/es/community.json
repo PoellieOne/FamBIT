@@ -20,6 +20,7 @@
   },
   "rituals": {
     "title": "Rituales de comunidad",
+    "intro": "Estos habitos repetidos mantienen a la comunidad estable y predecible.",
     "items": [
       "Publicacion semanal de recordatorio de seguridad.",
       "Espacio de preguntas para personas nuevas con respuestas pacientes.",
@@ -29,6 +30,7 @@
   },
   "values": {
     "title": "Valores de comunidad",
+    "intro": "Los valores compartidos ayudan a decidir mejor cuando las conversaciones se aceleran.",
     "items": [
       "Calma sobre ruido",
       "Aprendizaje sobre ego",
@@ -38,10 +40,12 @@
   },
   "moderation": {
     "title": "Postura de moderacion",
+    "intro": "La moderacion existe para proteger la calidad del aprendizaje y la seguridad comunitaria.",
     "body": "La moderacion prioriza claridad, equidad y seguridad. El lenguaje de manipulacion, la suplantacion y la presion repetida se corrigen o se retiran con rapidez."
   },
   "contribute": {
     "title": "Como contribuir",
+    "intro": "No necesitas un rol formal para hacer este espacio mas seguro para todas las personas.",
     "items": [
       "Da la bienvenida a personas nuevas y orientalas hacia la guia de verificacion.",
       "Comparte recursos practicos de aprendizaje en lenguaje sencillo.",
@@ -49,8 +53,8 @@
     ]
   },
   "cta": {
-    "label": "Apoyar integracion segura",
-    "href": "/safety"
+    "label": "Ver progreso en la hoja de ruta",
+    "href": "/roadmap"
   },
   "trust": {
     "microcopy": "Una cultura sana se sostiene con practicas diarias de seguridad."

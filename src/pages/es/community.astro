@@ -8,45 +8,73 @@ const community = getCommunityContent(locale);
 ---
 
 <BaseLayout title={`FamBIT | ${community.hero.title}`} lang={locale}>
-  <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
+  <section class="atmo-panel p-6">
     <h1 class="m-0 text-2xl font-extrabold tracking-tight text-slate-950">{community.hero.title}</h1>
     <p class="mb-0 mt-3 text-base text-slate-800">{community.hero.subhead}</p>
   </section>
 
-  <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
+  <section class="atmo-panel p-6">
     {community.narrative.paragraphs.map((paragraph) => (
       <p class="mt-0 text-base text-slate-800 last:mb-0">{paragraph}</p>
     ))}
   </section>
 
-  <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
+  <section class="soft-strip p-6">
     <h2 class="m-0 text-xl font-bold text-slate-950">{community.whatThisMeans.title}</h2>
     <ul class="mb-0 mt-3 list-disc space-y-2 pl-5 text-base text-slate-800">
       {community.whatThisMeans.items.map((item) => <li>{item}</li>)}
     </ul>
   </section>
 
-  <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
+  <section class="atmo-panel p-6">
+    <h2 class="m-0 text-xl font-bold text-slate-950">La comunidad en practica</h2>
+    <p class="mb-0 mt-3 text-base text-slate-800">
+      Estos momentos reflejan el tono que buscamos: participacion, cuidado y apoyo constante.
+    </p>
+    <div class="mt-4 grid gap-4 md:grid-cols-2">
+      <figure class="story-media m-0">
+        <img src="/images/community-garden-circle.jpg" alt="Miembros de la comunidad reunidos en un circulo de apoyo al aire libre" loading="lazy" />
+        <figcaption class="story-media-body text-sm text-slate-700">
+          La presencia compartida ayuda a que las personas nuevas pregunten con confianza.
+        </figcaption>
+      </figure>
+      <figure class="story-media m-0">
+        <img src="/images/community-kids-garden.jpg" alt="Personas adultas y ninas y ninos trabajando juntos en un jardin comunitario" loading="lazy" />
+        <figcaption class="story-media-body text-sm text-slate-700">
+          Aprender juntas personas de distintos niveles mantiene una cultura paciente y practica.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="atmo-panel p-6">
+    <p class="mt-0 text-base text-slate-800">
+      El flujo comunitario empieza con una comprension compartida y luego se convierte en habitos repetibles.
+    </p>
     <h2 class="m-0 text-xl font-bold text-slate-950">{community.rituals.title}</h2>
-    <ul class="mb-0 mt-3 list-disc space-y-2 pl-5 text-base text-slate-800">
-      {community.rituals.items.map((item) => <li>{item}</li>)}
-    </ul>
+    <p class="mb-0 mt-3 text-base text-slate-800">{community.rituals.intro}</p>
+    <div class="mt-3 grid gap-3 md:grid-cols-2">
+      {community.rituals.items.map((item) => <p class="story-card m-0 text-base text-slate-800">{item}</p>)}
+    </div>
   </section>
 
-  <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
+  <section class="atmo-panel p-6">
     <h2 class="m-0 text-xl font-bold text-slate-950">{community.values.title}</h2>
-    <ul class="mb-0 mt-3 list-disc space-y-2 pl-5 text-base text-slate-800">
-      {community.values.items.map((item) => <li>{item}</li>)}
-    </ul>
+    <p class="mb-0 mt-3 text-base text-slate-800">{community.values.intro}</p>
+    <div class="mt-3 grid gap-3 md:grid-cols-2">
+      {community.values.items.map((item) => <p class="story-card m-0 text-base text-slate-800">{item}</p>)}
+    </div>
   </section>
 
-  <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
+  <section class="atmo-panel p-6">
     <h2 class="m-0 text-xl font-bold text-slate-950">{community.moderation.title}</h2>
+    <p class="mb-0 mt-3 text-base text-slate-800">{community.moderation.intro}</p>
     <p class="mb-0 mt-3 text-base text-slate-800">{community.moderation.body}</p>
   </section>
 
-  <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
+  <section class="atmo-panel p-6">
     <h2 class="m-0 text-xl font-bold text-slate-950">{community.contribute.title}</h2>
+    <p class="mb-0 mt-3 text-base text-slate-800">{community.contribute.intro}</p>
     <ul class="mb-0 mt-3 list-disc space-y-2 pl-5 text-base text-slate-800">
       {community.contribute.items.map((item) => <li>{item}</li>)}
     </ul>

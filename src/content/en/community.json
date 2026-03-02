@@ -20,6 +20,7 @@
   },
   "rituals": {
     "title": "Community rituals",
+    "intro": "These recurring habits keep the community grounded and predictable.",
     "items": [
       "Weekly safety reminder post.",
       "Beginner question window with patient replies.",
@@ -29,6 +30,7 @@
   },
   "values": {
     "title": "Community values",
+    "intro": "Shared values help people make better decisions when conversations move fast.",
     "items": [
       "Calm over noise",
       "Learning over ego",
@@ -38,10 +40,12 @@
   },
   "moderation": {
     "title": "Moderation stance",
+    "intro": "Moderation exists to protect learning quality and community safety.",
     "body": "Moderation favors clarity, fairness, and safety. Manipulation language, impersonation, and repeated pressure behavior are removed quickly."
   },
   "contribute": {
     "title": "How to contribute",
+    "intro": "You do not need a formal role to make the space safer for everyone.",
     "items": [
       "Welcome newcomers and point them to verification guidance.",
       "Share practical learning resources in plain language.",
@@ -49,8 +53,8 @@
     ]
   },
   "cta": {
-    "label": "Support safe onboarding",
-    "href": "/safety"
+    "label": "See roadmap progress",
+    "href": "/roadmap"
   },
   "trust": {
     "microcopy": "Healthy culture is a daily safety practice."
