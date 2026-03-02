@@ -1,19 +1,28 @@
 {
   "hero": {
-    "title": "A safe crypto home for steady growth",
-    "intro": "FamBIT supports a calm, family-minded community where people learn, verify, and grow with discipline."
+    "title": "A safe crypto home where growth stays human",
+    "subhead": "FamBIT welcomes people who want to learn carefully, verify first, and grow together without hype."
   },
-  "pillars": {
-    "title": "Core approach",
-    "items": [
-      "Verification before action.",
-      "Respectful guidance for newcomers.",
-      "Long-term behavior over short-term noise."
+  "narrative": {
+    "paragraphs": [
+      "FamBIT starts with a simple idea: family helps family. Newcomers and experienced members meet in one calm space where questions are welcome and pressure is not.",
+      "Before any next step, we return to verification and clear public guidance. That rhythm protects people from noise, scams, and rushed decisions."
     ]
   },
-  "safetyNudge": {
-    "title": "Start with the safety page",
-    "body": "Use the safety guide as the source of truth for official links and anti-scam reminders.",
-    "linkLabel": "Read safety guidance"
+  "whatThisMeans": {
+    "title": "What this means",
+    "items": [
+      "You verify official channels before you trust messages.",
+      "You ask for clarity when something feels urgent.",
+      "You choose steady learning over emotional reactions.",
+      "You help others use the same safe routine."
+    ]
+  },
+  "cta": {
+    "label": "Read safety guidance",
+    "href": "/safety"
+  },
+  "trust": {
+    "microcopy": "Trust is built by verification, not urgency."
   }
 }

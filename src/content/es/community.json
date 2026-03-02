@@ -1,26 +1,58 @@
 {
   "hero": {
-    "title": "Cultura de comunidad",
-    "intro": "FamBIT crece con respeto, constancia y educacion practica para todos los niveles de experiencia."
+    "title": "Una cultura comunitaria que protege a las personas y construye confianza",
+    "subhead": "Nuestra cultura valora la paciencia, la comunicacion clara y la ayuda practica por encima del ruido."
   },
-  "culture": {
-    "title": "Como participamos",
-    "items": [
-      "Se amable y claro.",
-      "Ensena con paciencia.",
-      "Mantiene la comunicacion factual y sin hype."
+  "narrative": {
+    "paragraphs": [
+      "FamBIT es mas fuerte cuando las personas se sienten seguras para preguntar, aprender y corregir errores sin verguenza. Una guia respetuosa mantiene activas a las personas nuevas y reduce riesgos evitables.",
+      "La cultura no es un eslogan; es conducta diaria. Cuidamos la calidad reforzando habitos sanos y frenando el lenguaje de manipulacion."
     ]
+  },
+  "whatThisMeans": {
+    "title": "Que significa esto",
+    "items": [
+      "Usa un lenguaje claro y evita tacticas de presion.",
+      "Comparte contexto educativo, no impulsos emocionales.",
+      "Corrige la desinformacion en publico y con respeto.",
+      "Mantiene presentes los recordatorios de seguridad en conversaciones activas."
+    ]
+  },
+  "rituals": {
+    "title": "Rituales de comunidad",
+    "items": [
+      "Publicacion semanal de recordatorio de seguridad.",
+      "Espacio de preguntas para personas nuevas con respuestas pacientes.",
+      "Revision de verificacion antes de anuncios importantes.",
+      "Revision mensual de avances en calidad comunitaria."
+    ]
+  },
+  "values": {
+    "title": "Valores de comunidad",
+    "items": [
+      "Calma sobre ruido",
+      "Aprendizaje sobre ego",
+      "Verificacion sobre suposicion",
+      "Consistencia sobre hype"
+    ]
+  },
+  "moderation": {
+    "title": "Postura de moderacion",
+    "body": "La moderacion prioriza claridad, equidad y seguridad. El lenguaje de manipulacion, la suplantacion y la presion repetida se corrigen o se retiran con rapidez."
   },
   "contribute": {
-    "title": "Formas de contribuir",
+    "title": "Como contribuir",
     "items": [
-      "Ayuda a personas nuevas a verificar enlaces.",
-      "Comparte explicaciones educativas.",
-      "Apoya una moderacion sana y el onboarding."
+      "Da la bienvenida a personas nuevas y orientalas hacia la guia de verificacion.",
+      "Comparte recursos practicos de aprendizaje en lenguaje sencillo.",
+      "Reporta comportamientos sospechosos de forma temprana y con evidencia clara."
     ]
   },
-  "boundaries": {
-    "title": "Limites claros",
-    "body": "El lenguaje de manipulacion, las tacticas de presion y las promesas garantizadas no forman parte de esta comunidad."
+  "cta": {
+    "label": "Apoyar integracion segura",
+    "href": "/safety"
+  },
+  "trust": {
+    "microcopy": "Una cultura sana se sostiene con practicas diarias de seguridad."
   }
 }

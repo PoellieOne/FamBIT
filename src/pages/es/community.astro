@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCommunityContent } from "../../lib/content";
-import { getLocaleFromPath } from "../../lib/i18n";
+import { getLocaleFromPath, localizedPath } from "../../lib/i18n";
 
 const locale = getLocaleFromPath(Astro.url.pathname);
 const community = getCommunityContent(locale);
@@ -10,14 +10,39 @@ const community = getCommunityContent(locale);
 <BaseLayout title={`FamBIT | ${community.hero.title}`} lang={locale}>
   <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
     <h1 class="m-0 text-2xl font-extrabold tracking-tight text-slate-950">{community.hero.title}</h1>
-    <p class="mb-0 mt-3 text-base text-slate-800">{community.hero.intro}</p>
+    <p class="mb-0 mt-3 text-base text-slate-800">{community.hero.subhead}</p>
   </section>
 
   <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
-    <h2 class="m-0 text-xl font-bold text-slate-950">{community.culture.title}</h2>
+    {community.narrative.paragraphs.map((paragraph) => (
+      <p class="mt-0 text-base text-slate-800 last:mb-0">{paragraph}</p>
+    ))}
+  </section>
+
+  <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
+    <h2 class="m-0 text-xl font-bold text-slate-950">{community.whatThisMeans.title}</h2>
     <ul class="mb-0 mt-3 list-disc space-y-2 pl-5 text-base text-slate-800">
-      {community.culture.items.map((item) => <li>{item}</li>)}
+      {community.whatThisMeans.items.map((item) => <li>{item}</li>)}
     </ul>
+  </section>
+
+  <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
+    <h2 class="m-0 text-xl font-bold text-slate-950">{community.rituals.title}</h2>
+    <ul class="mb-0 mt-3 list-disc space-y-2 pl-5 text-base text-slate-800">
+      {community.rituals.items.map((item) => <li>{item}</li>)}
+    </ul>
+  </section>
+
+  <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
+    <h2 class="m-0 text-xl font-bold text-slate-950">{community.values.title}</h2>
+    <ul class="mb-0 mt-3 list-disc space-y-2 pl-5 text-base text-slate-800">
+      {community.values.items.map((item) => <li>{item}</li>)}
+    </ul>
+  </section>
+
+  <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
+    <h2 class="m-0 text-xl font-bold text-slate-950">{community.moderation.title}</h2>
+    <p class="mb-0 mt-3 text-base text-slate-800">{community.moderation.body}</p>
   </section>
 
   <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
@@ -25,10 +50,9 @@ const community = getCommunityContent(locale);
     <ul class="mb-0 mt-3 list-disc space-y-2 pl-5 text-base text-slate-800">
       {community.contribute.items.map((item) => <li>{item}</li>)}
     </ul>
-  </section>
-
-  <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
-    <h2 class="m-0 text-xl font-bold text-slate-950">{community.boundaries.title}</h2>
-    <p class="mb-0 mt-3 text-base text-slate-800">{community.boundaries.body}</p>
+    <p class="mb-0 mt-4">
+      <a class="font-semibold text-[var(--accent-strong)]" href={localizedPath(locale, community.cta.href)}>{community.cta.label}</a>
+    </p>
+    <p class="mb-0 mt-3 text-sm font-medium text-slate-900">{community.trust.microcopy}</p>
   </section>
 </BaseLayout>

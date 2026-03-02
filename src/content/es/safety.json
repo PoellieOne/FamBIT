@@ -1,10 +1,16 @@
 {
   "hero": {
-    "title": "Seguridad y verificacion",
-    "intro": "Usa estos recordatorios para protegerte a ti y a tu familia frente a estafas y suplantaciones."
+    "title": "La seguridad y la verificacion van primero",
+    "subhead": "Usa esta pagina como punto publico de control antes de actuar, hacer clic o responder."
   },
-  "checks": {
-    "title": "Verifica siempre primero",
+  "narrative": {
+    "paragraphs": [
+      "La mayoria de las estafas funciona creando urgencia, confusion o una falsa autoridad. Un habito de verificacion en calma rompe ese patron y te devuelve el control.",
+      "Si tienes dudas, detente y confirma en canales oficiales publicos. La meta no es responder rapido; la meta es decidir de forma segura y repetible."
+    ]
+  },
+  "whatThisMeans": {
+    "title": "Que significa esto",
     "items": [
       "Verifica los enlaces aqui antes de actuar.",
       "Los admins nunca envian DM primero.",
@@ -12,8 +18,31 @@
       "No es asesoramiento financiero"
     ]
   },
-  "reminder": {
-    "title": "Manten la calma",
-    "body": "Si un mensaje crea urgencia o presion, haz una pausa y verifica por canales publicos oficiales."
+  "verification": {
+    "title": "Como verificar enlaces oficiales",
+    "instruction": "Confia solo en los enlaces publicados en la seccion verificada de esta pagina y en el footer."
+  },
+  "adminRules": {
+    "title": "Reglas de comportamiento de admins",
+    "items": [
+      "Los admins nunca inician soporte privado por DM.",
+      "La orientacion de moderacion se comparte en canales publicos.",
+      "Cualquier cuenta que pida secretos se considera insegura."
+    ]
+  },
+  "reporting": {
+    "title": "Si detectas estafa o suplantacion",
+    "steps": [
+      "Haz una captura del mensaje o perfil sospechoso.",
+      "Reportalo en el canal oficial de Telegram con contexto claro.",
+      "Despues de reportar, bloquea e ignora esa cuenta."
+    ]
+  },
+  "cta": {
+    "label": "Verificar enlaces oficiales",
+    "href": "/safety"
+  },
+  "trust": {
+    "microcopy": "Pausa, verifica y luego decide."
   }
 }

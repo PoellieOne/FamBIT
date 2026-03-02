@@ -29,5 +29,27 @@
     "tagline": "Family helps family with calm and responsible learning.",
     "reminder": "Admins never DM first",
     "disclaimer": "Not financial advice"
+  },
+  "legal": {
+    "disclaimers": [
+      "No investment advice.",
+      "No guarantees."
+    ],
+    "whatWeAre": {
+      "title": "What we are",
+      "items": [
+        "A safety-first crypto learning community.",
+        "A public source of verified official links.",
+        "A family-minded culture focused on long-term behavior."
+      ]
+    },
+    "whatWeAreNot": {
+      "title": "What we are not",
+      "items": [
+        "Not investment advice.",
+        "Not a wallet-connect service.",
+        "Not a guarantee of financial outcomes."
+      ]
+    }
   }
 }

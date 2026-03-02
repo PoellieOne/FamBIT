@@ -1,30 +1,58 @@
 {
   "hero": {
-    "title": "Direccion del roadmap",
-    "intro": "Los hitos publicos se centran en confianza, educacion y progreso operativo constante."
+    "title": "Una hoja de ruta basada en confianza, cultura y consistencia",
+    "subhead": "Publicamos fases practicas para que la comunidad vea avances sin promesas infladas."
   },
+  "narrative": {
+    "paragraphs": [
+      "Nuestra hoja de ruta es una herramienta de visibilidad, no de prediccion. Cada fase muestra el foco y como observar avances de forma publica.",
+      "Cuando mantenemos compromisos realistas, protegemos la confianza y reducimos confusion. La medida es la consistencia del comportamiento, no los grandes titulares."
+    ]
+  },
+  "whatThisMeans": {
+    "title": "Que significa esto",
+    "items": [
+      "El progreso se comparte con checkpoints claros.",
+      "La calidad de la comunicacion importa tanto como la actividad.",
+      "La confianza comunitaria crece con ejecucion constante.",
+      "No se hacen promesas de precio, listados ni alianzas."
+    ]
+  },
+  "phasesTitle": "Fases de 30-90 dias",
   "phases": [
     {
       "name": "Fase 1",
       "window": "Dias 1-30",
-      "focus": "Base de comunicacion de seguridad y rutina de enlaces verificados.",
-      "checkpoint": "Mensajeria consistente de fuente oficial en canales publicos."
+      "items": [
+        "Publicar una base de mensajes con prioridad en seguridad.",
+        "Estandarizar referencias de enlaces verificados en canales publicos.",
+        "Mantener una cadencia visible de recordatorios antiestafa."
+      ]
     },
     {
       "name": "Fase 2",
       "window": "Dias 31-60",
-      "focus": "Ritmo de educacion comunitaria y apoyo de moderacion.",
-      "checkpoint": "Referencias de onboarding repetibles para personas nuevas."
+      "items": [
+        "Sostener guias recurrentes de integracion para personas nuevas.",
+        "Fortalecer la consistencia de respuesta de moderacion.",
+        "Documentar rituales culturales y patrones de participacion."
+      ]
     },
     {
       "name": "Fase 3",
       "window": "Dias 61-90",
-      "focus": "Refinar habitos de gobernanza y una cadencia de reportes transparentes.",
-      "checkpoint": "Actualizaciones de progreso documentadas con lenguaje realista."
+      "items": [
+        "Publicar resumenes transparentes de progreso en lenguaje sencillo.",
+        "Ajustar senales de confianza segun comentarios de la comunidad.",
+        "Explorar iniciativas opcionales lideradas por la comunidad con alcance realista."
+      ]
     }
   ],
-  "aspiration": {
-    "title": "Aspiracion opcional de impacto real",
-    "body": "A medida que la comunidad madure, puede explorar iniciativas de impacto social responsable cuando exista capacidad."
+  "cta": {
+    "label": "Seguir progreso publico",
+    "href": "/community"
+  },
+  "trust": {
+    "microcopy": "La visibilidad genera confianza cuando las palabras y las acciones coinciden."
   }
 }

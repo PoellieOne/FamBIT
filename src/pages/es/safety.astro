@@ -2,7 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import VerifiedLinks from "../../components/VerifiedLinks.astro";
 import { getSafetyContent, getSiteContent } from "../../lib/content";
-import { getLocaleFromPath } from "../../lib/i18n";
+import { getLocaleFromPath, localizedPath } from "../../lib/i18n";
 
 const locale = getLocaleFromPath(Astro.url.pathname);
 const safety = getSafetyContent(locale);
@@ -12,7 +12,13 @@ const site = getSiteContent(locale);
 <BaseLayout title={`FamBIT | ${safety.hero.title}`} lang={locale} includeGlobalTrustPanels={false}>
   <section class="rounded-lg border-2 border-slate-400 bg-white p-6">
     <h1 class="m-0 text-2xl font-extrabold tracking-tight text-slate-950">{safety.hero.title}</h1>
-    <p class="mb-0 mt-3 text-base text-slate-800">{safety.hero.intro}</p>
+    <p class="mb-0 mt-3 text-base text-slate-800">{safety.hero.subhead}</p>
+  </section>
+
+  <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
+    {safety.narrative.paragraphs.map((paragraph) => (
+      <p class="mt-0 text-base text-slate-800 last:mb-0">{paragraph}</p>
+    ))}
   </section>
 
   <VerifiedLinks
@@ -23,14 +29,32 @@ const site = getSiteContent(locale);
   />
 
   <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
-    <h2 class="m-0 text-xl font-bold text-slate-950">{safety.checks.title}</h2>
+    <h2 class="m-0 text-xl font-bold text-slate-950">{safety.whatThisMeans.title}</h2>
     <ul class="mb-0 mt-3 list-disc space-y-2 pl-5 text-base text-slate-800">
-      {safety.checks.items.map((item) => <li>{item}</li>)}
+      {safety.whatThisMeans.items.map((item) => <li>{item}</li>)}
     </ul>
   </section>
 
   <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
-    <h2 class="m-0 text-xl font-bold text-slate-950">{safety.reminder.title}</h2>
-    <p class="mb-0 mt-3 text-base text-slate-800">{safety.reminder.body}</p>
+    <h2 class="m-0 text-xl font-bold text-slate-950">{safety.verification.title}</h2>
+    <p class="mb-0 mt-3 text-base text-slate-800">{safety.verification.instruction}</p>
+  </section>
+
+  <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
+    <h2 class="m-0 text-xl font-bold text-slate-950">{safety.adminRules.title}</h2>
+    <ul class="mb-0 mt-3 list-disc space-y-2 pl-5 text-base text-slate-800">
+      {safety.adminRules.items.map((item) => <li>{item}</li>)}
+    </ul>
+  </section>
+
+  <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
+    <h2 class="m-0 text-xl font-bold text-slate-950">{safety.reporting.title}</h2>
+    <ol class="mb-0 mt-3 list-decimal space-y-2 pl-5 text-base text-slate-800">
+      {safety.reporting.steps.map((item) => <li>{item}</li>)}
+    </ol>
+    <p class="mb-0 mt-4">
+      <a class="font-semibold text-[var(--accent-strong)]" href={localizedPath(locale, safety.cta.href)}>{safety.cta.label}</a>
+    </p>
+    <p class="mb-0 mt-3 text-sm font-medium text-slate-900">{safety.trust.microcopy}</p>
   </section>
 </BaseLayout>

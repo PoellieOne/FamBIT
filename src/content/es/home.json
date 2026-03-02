@@ -1,19 +1,28 @@
 {
   "hero": {
-    "title": "Un hogar cripto seguro para crecer con constancia",
-    "intro": "FamBIT impulsa una comunidad tranquila y familiar donde las personas aprenden, verifican y crecen con disciplina."
+    "title": "Un espacio cripto seguro donde crecer sigue siendo humano",
+    "subhead": "FamBIT da la bienvenida a quienes quieren aprender con calma, verificar primero y avanzar en comunidad sin ruido."
   },
-  "pillars": {
-    "title": "Enfoque central",
-    "items": [
-      "Verificacion antes de actuar.",
-      "Guia respetuosa para personas nuevas.",
-      "Comportamiento a largo plazo por encima del ruido de corto plazo."
+  "narrative": {
+    "paragraphs": [
+      "FamBIT nace de una idea simple: la familia ayuda a la familia. Personas nuevas y con experiencia comparten un espacio sereno donde preguntar suma y la presion no tiene lugar.",
+      "Antes de dar cualquier paso, volvemos a la verificacion y a la orientacion publica clara. Ese habito protege frente al ruido, las estafas y las decisiones impulsivas."
     ]
   },
-  "safetyNudge": {
-    "title": "Empieza por la pagina de seguridad",
-    "body": "Usa la guia de seguridad como fuente oficial para enlaces verificados y recordatorios antiestafa.",
-    "linkLabel": "Leer guia de seguridad"
+  "whatThisMeans": {
+    "title": "Que significa esto",
+    "items": [
+      "Verificas canales oficiales antes de confiar en cualquier mensaje.",
+      "Pides claridad cuando algo se presenta con urgencia.",
+      "Priorizas el aprendizaje constante sobre las reacciones emocionales.",
+      "Ayudas a otras personas a seguir la misma rutina de seguridad."
+    ]
+  },
+  "cta": {
+    "label": "Leer guia de seguridad",
+    "href": "/safety"
+  },
+  "trust": {
+    "microcopy": "La confianza se construye verificando, no corriendo."
   }
 }

@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { getLocaleFromPath } from "../lib/i18n";
+import { getLocaleFromPath, localizedPath } from "../lib/i18n";
 import { getRoadmapContent } from "../lib/content";
 
 const locale = getLocaleFromPath(Astro.url.pathname);
@@ -10,25 +10,41 @@ const roadmap = getRoadmapContent(locale);
 <BaseLayout title={`FamBIT | ${roadmap.hero.title}`} lang={locale}>
   <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
     <h1 class="m-0 text-2xl font-extrabold tracking-tight text-slate-950">{roadmap.hero.title}</h1>
-    <p class="mb-0 mt-3 text-base text-slate-800">{roadmap.hero.intro}</p>
+    <p class="mb-0 mt-3 text-base text-slate-800">{roadmap.hero.subhead}</p>
   </section>
 
   <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
-    <h2 class="m-0 text-xl font-bold text-slate-950">30-90 day phases</h2>
+    {roadmap.narrative.paragraphs.map((paragraph) => (
+      <p class="mt-0 text-base text-slate-800 last:mb-0">{paragraph}</p>
+    ))}
+  </section>
+
+  <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
+    <h2 class="m-0 text-xl font-bold text-slate-950">{roadmap.whatThisMeans.title}</h2>
+    <ul class="mb-0 mt-3 list-disc space-y-2 pl-5 text-base text-slate-800">
+      {roadmap.whatThisMeans.items.map((item) => <li>{item}</li>)}
+    </ul>
+  </section>
+
+  <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
+    <h2 class="m-0 text-xl font-bold text-slate-950">{roadmap.phasesTitle}</h2>
     <div class="mt-3 space-y-4">
       {roadmap.phases.map((phase) => (
         <article class="rounded-md border border-slate-200 bg-white p-4">
           <h3 class="m-0 text-lg font-bold text-slate-950">{phase.name}</h3>
           <p class="mb-0 mt-2 text-sm font-semibold uppercase tracking-wide text-slate-700">{phase.window}</p>
-          <p class="mb-0 mt-2 text-base text-slate-800">{phase.focus}</p>
-          <p class="mb-0 mt-2 text-base text-slate-700">{phase.checkpoint}</p>
+          <ul class="mb-0 mt-2 list-disc space-y-1 pl-5 text-base text-slate-800">
+            {phase.items.map((item) => <li>{item}</li>)}
+          </ul>
         </article>
       ))}
     </div>
   </section>
 
   <section class="rounded-lg border border-slate-300 bg-white/90 p-6">
-    <h2 class="m-0 text-xl font-bold text-slate-950">{roadmap.aspiration.title}</h2>
-    <p class="mb-0 mt-3 text-base text-slate-800">{roadmap.aspiration.body}</p>
+    <p class="mb-0 mt-3">
+      <a class="font-semibold text-[var(--accent-strong)]" href={localizedPath(locale, roadmap.cta.href)}>{roadmap.cta.label}</a>
+    </p>
+    <p class="mb-0 mt-3 text-sm font-medium text-slate-900">{roadmap.trust.microcopy}</p>
   </section>
 </BaseLayout>

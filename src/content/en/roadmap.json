@@ -1,30 +1,58 @@
 {
   "hero": {
-    "title": "Roadmap direction",
-    "intro": "Public milestones focus on trust, education, and steady operational progress."
+    "title": "A roadmap built on trust, culture, and consistency",
+    "subhead": "We publish practical phases so the community can see progress without inflated promises."
   },
+  "narrative": {
+    "paragraphs": [
+      "Our roadmap is a visibility tool, not a prediction tool. Each phase shows where focus goes and how progress can be observed in public.",
+      "By keeping commitments realistic, we protect trust and reduce confusion. The measure is consistency of behavior, not dramatic claims."
+    ]
+  },
+  "whatThisMeans": {
+    "title": "What this means",
+    "items": [
+      "Progress is shared through clear checkpoints.",
+      "Communication quality matters as much as activity.",
+      "Community trust grows through steady execution.",
+      "No price, listing, or partnership promises are used."
+    ]
+  },
+  "phasesTitle": "30-90 day phases",
   "phases": [
     {
       "name": "Phase 1",
       "window": "Days 1-30",
-      "focus": "Safety communication baseline and verified link routines.",
-      "checkpoint": "Consistent source-of-truth messaging in public channels."
+      "items": [
+        "Publish safety-first messaging baseline.",
+        "Standardize verified-link references in public channels.",
+        "Set a visible cadence for anti-scam reminders."
+      ]
     },
     {
       "name": "Phase 2",
       "window": "Days 31-60",
-      "focus": "Community education rhythm and moderation support.",
-      "checkpoint": "Repeatable onboarding references for newcomers."
+      "items": [
+        "Run recurring onboarding guidance for newcomers.",
+        "Strengthen moderation response consistency.",
+        "Document culture rituals and community participation patterns."
+      ]
     },
     {
       "name": "Phase 3",
       "window": "Days 61-90",
-      "focus": "Refine governance habits and transparent reporting cadence.",
-      "checkpoint": "Documented progress updates with realistic language."
+      "items": [
+        "Publish transparent progress recaps with plain language.",
+        "Refine trust signals based on community feedback.",
+        "Explore optional community-led initiatives with realistic scope."
+      ]
     }
   ],
-  "aspiration": {
-    "title": "Optional real-world aspiration",
-    "body": "As the community matures, it may explore responsible social impact initiatives when capacity allows."
+  "cta": {
+    "label": "Follow public progress",
+    "href": "/community"
+  },
+  "trust": {
+    "microcopy": "Visibility builds trust when words and actions stay aligned."
   }
 }

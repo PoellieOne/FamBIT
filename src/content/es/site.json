@@ -2,7 +2,7 @@
   "meta": {
     "siteName": "FamBIT",
     "defaultTitle": "FamBIT | Comunidad Segura de Crecimiento",
-    "description": "Comunicacion cripto tranquila, verificada y orientada a la familia."
+    "description": "Comunicacion cripto clara, verificada y orientada a la comunidad."
   },
   "a11y": {
     "skipToMain": "Saltar al contenido principal"
@@ -23,11 +23,33 @@
   },
   "safetyNotice": {
     "title": "Seguridad primero",
-    "body": "Este sitio es informativo y esta enfocado en la verificacion. Nunca solicita claves privadas, frases semilla ni secretos."
+    "body": "Este sitio es informativo y se centra en la verificacion. Nunca solicita claves privadas, frases semilla ni secretos."
   },
   "footer": {
-    "tagline": "La familia ayuda a la familia con aprendizaje tranquilo y responsable.",
+    "tagline": "Comunidad que cuida a comunidad con aprendizaje sereno y responsable.",
     "reminder": "Los admins nunca envian DM primero",
     "disclaimer": "No es asesoramiento financiero"
+  },
+  "legal": {
+    "disclaimers": [
+      "No es asesoramiento de inversion.",
+      "No hay garantias."
+    ],
+    "whatWeAre": {
+      "title": "Lo que somos",
+      "items": [
+        "Una comunidad cripto de aprendizaje con prioridad en la seguridad.",
+        "Una referencia publica de enlaces oficiales verificados.",
+        "Una cultura cercana enfocada en habitos de largo plazo."
+      ]
+    },
+    "whatWeAreNot": {
+      "title": "Lo que no somos",
+      "items": [
+        "No somos asesoramiento de inversion.",
+        "No somos un servicio de conexion de billeteras.",
+        "No somos una garantia de resultados financieros."
+      ]
+    }
   }
 }

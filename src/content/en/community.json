@@ -1,26 +1,58 @@
 {
   "hero": {
-    "title": "Community culture",
-    "intro": "FamBIT grows through respect, consistency, and practical education for all experience levels."
+    "title": "Community culture that protects people and builds trust",
+    "subhead": "Our culture rewards patience, clear communication, and practical help over hype."
   },
-  "culture": {
-    "title": "How we show up",
-    "items": [
-      "Be kind and clear.",
-      "Teach with patience.",
-      "Keep communication factual and non-hype."
+  "narrative": {
+    "paragraphs": [
+      "FamBIT is strongest when members feel safe to ask, learn, and correct mistakes without shame. Respectful guidance keeps new people engaged and lowers avoidable risk.",
+      "Culture is not a slogan; it is daily behavior. We protect quality by reinforcing healthy habits and refusing manipulation language."
     ]
+  },
+  "whatThisMeans": {
+    "title": "What this means",
+    "items": [
+      "Use clear language and avoid pressure tactics.",
+      "Share educational context, not emotional pushes.",
+      "Correct misinformation in public and respectfully.",
+      "Prioritize safety reminders during active discussions."
+    ]
+  },
+  "rituals": {
+    "title": "Community rituals",
+    "items": [
+      "Weekly safety reminder post.",
+      "Beginner question window with patient replies.",
+      "Verification check-in before major announcements.",
+      "Monthly reflection on what improved community quality."
+    ]
+  },
+  "values": {
+    "title": "Community values",
+    "items": [
+      "Calm over noise",
+      "Learning over ego",
+      "Verification over assumption",
+      "Consistency over hype"
+    ]
+  },
+  "moderation": {
+    "title": "Moderation stance",
+    "body": "Moderation favors clarity, fairness, and safety. Manipulation language, impersonation, and repeated pressure behavior are removed quickly."
   },
   "contribute": {
-    "title": "Ways to contribute",
+    "title": "How to contribute",
     "items": [
-      "Help newcomers verify links.",
-      "Share educational explainers.",
-      "Support healthy moderation and onboarding."
+      "Welcome newcomers and point them to verification guidance.",
+      "Share practical learning resources in plain language.",
+      "Report suspicious behavior early with clear evidence."
     ]
   },
-  "boundaries": {
-    "title": "Clear boundaries",
-    "body": "Manipulation language, pressure tactics, and guaranteed outcome claims are not part of this community."
+  "cta": {
+    "label": "Support safe onboarding",
+    "href": "/safety"
+  },
+  "trust": {
+    "microcopy": "Healthy culture is a daily safety practice."
   }
 }

@@ -1,10 +1,16 @@
 {
   "hero": {
-    "title": "Safety and verification",
-    "intro": "Use these reminders to protect yourself and your family from scams and impersonation."
+    "title": "Safety and verification come before everything else",
+    "subhead": "Use this page as your public check point before you act, click, or reply."
   },
-  "checks": {
-    "title": "Always verify first",
+  "narrative": {
+    "paragraphs": [
+      "Most scams succeed by creating urgency, confusion, or fake authority. A calm verification habit breaks that pattern and gives you control.",
+      "When in doubt, stop and check official channels in public. The goal is not speed; the goal is safe, repeatable decisions."
+    ]
+  },
+  "whatThisMeans": {
+    "title": "What this means",
     "items": [
       "Verify links here before acting.",
       "Admins never DM first.",
@@ -12,8 +18,31 @@
       "Not financial advice"
     ]
   },
-  "reminder": {
-    "title": "Stay calm",
-    "body": "If a message creates urgency or pressure, pause and verify through official public channels."
+  "verification": {
+    "title": "Official link verification instruction",
+    "instruction": "Only trust links listed in the verified section on this page and in the footer."
+  },
+  "adminRules": {
+    "title": "Admin behavior rules",
+    "items": [
+      "Admins never start private support in direct messages.",
+      "Moderation guidance is posted in public channels.",
+      "Any account asking for secrets is treated as unsafe."
+    ]
+  },
+  "reporting": {
+    "title": "If you see scam or impersonation",
+    "steps": [
+      "Take a screenshot of the suspicious message or profile.",
+      "Report it in the official Telegram channel with context.",
+      "Block and ignore the account after reporting."
+    ]
+  },
+  "cta": {
+    "label": "Check verified links now",
+    "href": "/safety"
+  },
+  "trust": {
+    "microcopy": "Pause, verify, then decide."
   }
 }
