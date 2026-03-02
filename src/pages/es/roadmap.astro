@@ -7,11 +7,18 @@ const locale = getLocaleFromPath(Astro.url.pathname);
 const roadmap = getRoadmapContent(locale);
 ---
 
-<BaseLayout title={`FamBIT | ${roadmap.hero.title}`} lang={locale}>
-  <section class="atmo-panel p-6">
-    <h1 class="m-0 text-2xl font-extrabold tracking-tight text-slate-950">{roadmap.hero.title}</h1>
-    <p class="mb-0 mt-3 text-base text-slate-800">{roadmap.hero.subhead}</p>
-  </section>
+<BaseLayout
+  title={`FamBIT | ${roadmap.hero.title}`}
+  lang={locale}
+  heroTitle={roadmap.hero.title}
+  heroSubhead={roadmap.hero.subhead}
+  heroImage="/images/roadmap-community-sunset.jpg"
+  heroImageAlt="Grupo comunitario mirando un horizonte compartido al atardecer"
+  heroPrimaryHref={localizedPath(locale, roadmap.cta.href)}
+  heroPrimaryLabel={roadmap.cta.label}
+  heroSecondaryHref={localizedPath(locale, "/community")}
+  heroSecondaryLabel="Contexto comunitario"
+>
 
   <section class="atmo-panel p-6">
     {roadmap.narrative.paragraphs.map((paragraph) => (

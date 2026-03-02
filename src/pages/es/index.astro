@@ -8,20 +8,18 @@ const home = getHomeContent(locale);
 const site = getSiteContent(locale);
 ---
 
-<BaseLayout title={`FamBIT | ${home.hero.title}`} lang={locale}>
-  <section class="hero-banner atmo-panel min-h-[20rem]">
-    <img
-      src="/images/home-main-banner.jpg"
-      alt="Miembros de la comunidad reunidos al aire libre"
-      class="h-[20rem] w-full object-cover md:h-[28rem]"
-      loading="eager"
-      fetchpriority="high"
-    />
-    <div class="hero-banner-content text-white">
-      <h1 class="m-0 text-3xl font-extrabold leading-tight tracking-tight md:text-5xl">{home.hero.title}</h1>
-      <p class="mb-0 mt-4 max-w-[35rem] text-base text-slate-100 md:text-lg">{home.hero.subhead}</p>
-    </div>
-  </section>
+<BaseLayout
+  title={`FamBIT | ${home.hero.title}`}
+  lang={locale}
+  heroTitle={home.hero.title}
+  heroSubhead={home.hero.subhead}
+  heroImage="/images/home-main-banner.jpg"
+  heroImageAlt="Miembros de la comunidad reunidos al aire libre"
+  heroPrimaryHref={localizedPath(locale, home.cta.href)}
+  heroPrimaryLabel={home.cta.label}
+  heroSecondaryHref={localizedPath(locale, "/community")}
+  heroSecondaryLabel="Cultura comunitaria"
+>
 
   <section class="atmo-panel p-6">
     {home.narrative.paragraphs.map((paragraph) => (

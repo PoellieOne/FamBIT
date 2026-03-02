@@ -11,6 +11,14 @@ interface Props {
   title?: string;
   lang?: Locale;
   includeGlobalTrustPanels?: boolean;
+  heroTitle: string;
+  heroSubhead: string;
+  heroImage?: string;
+  heroImageAlt?: string;
+  heroPrimaryHref: string;
+  heroPrimaryLabel: string;
+  heroSecondaryHref: string;
+  heroSecondaryLabel: string;
 }
 
 const pathLocale = getLocaleFromPath(Astro.url.pathname);
@@ -18,6 +26,16 @@ const { lang = pathLocale, includeGlobalTrustPanels = true } = Astro.props;
 const site = getSiteContent(lang);
 const pageTitle = Astro.props.title || site.meta.defaultTitle;
 const basePath = getPathWithoutLocale(Astro.url.pathname);
+const {
+  heroTitle,
+  heroSubhead,
+  heroImage,
+  heroImageAlt,
+  heroPrimaryHref,
+  heroPrimaryLabel,
+  heroSecondaryHref,
+  heroSecondaryLabel
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -31,13 +49,44 @@ const basePath = getPathWithoutLocale(Astro.url.pathname);
   <body>
     <div class="shell">
       <a href="#main" class="sr-only focus:not-sr-only">{site.a11y.skipToMain}</a>
-      <Header
-        lang={lang}
-        basePath={basePath}
-        brand={site.header.brand}
-        languageLabel={site.header.languageLabel}
-        language={site.language}
-      />
+      <section class="hero-system relative overflow-hidden rounded-[1.25rem] border border-slate-300 bg-slate-900">
+        {
+          heroImage ? (
+            <img
+              src={heroImage}
+              alt={heroImageAlt || heroTitle}
+              class="h-[28rem] w-full object-cover md:h-[34rem]"
+              loading="eager"
+              fetchpriority="high"
+            />
+          ) : (
+            <div class="h-[26rem] bg-[radial-gradient(circle_at_20%_20%,rgba(111,61,244,0.28),transparent_42%),radial-gradient(circle_at_78%_0%,rgba(102,194,165,0.24),transparent_40%),linear-gradient(180deg,#1f2937,#111827)]"></div>
+          )
+        }
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-900/25 via-slate-900/45 to-slate-900/82"></div>
+        <div class="absolute inset-0 p-4 md:p-8">
+          <Header
+            lang={lang}
+            currentPath={basePath}
+            brand={site.header.brand}
+            languageLabel={site.header.languageLabel}
+            nav={site.header.nav}
+            primaryAction={site.header.primaryAction}
+            language={site.language}
+          />
+          <div class="mt-8 max-w-3xl md:mt-14">
+            <p class="m-0 text-sm font-semibold uppercase tracking-[0.16em] text-slate-200">Safety-first community</p>
+            <h1 class="mt-2 text-3xl font-extrabold leading-tight tracking-tight text-white md:text-5xl">{heroTitle}</h1>
+            <p class="mb-0 mt-4 max-w-2xl text-base text-slate-100 md:text-lg">{heroSubhead}</p>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a href={heroPrimaryHref} class="rounded-full bg-white px-5 py-2.5 text-sm font-bold text-slate-900">{heroPrimaryLabel}</a>
+              <a href={heroSecondaryHref} class="rounded-full border border-white/35 px-5 py-2.5 text-sm font-bold text-white">
+                {heroSecondaryLabel}
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
       <main id="main" class="mt-6 space-y-4" tabindex="-1">
         <slot />
         {
@@ -59,6 +108,8 @@ const basePath = getPathWithoutLocale(Astro.url.pathname);
           tagline={site.footer.tagline}
           reminder={site.footer.reminder}
           disclaimer={site.footer.disclaimer}
+          aboutLabel={site.footer.labels.about}
+          safetyLabel={site.footer.labels.safety}
           linksTitle={site.verifiedLinks.title}
           xLabel={site.verifiedLinks.xLabel}
           telegramLabel={site.verifiedLinks.telegramLabel}

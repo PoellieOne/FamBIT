@@ -9,7 +9,14 @@
   },
   "header": {
     "brand": "FamBIT",
-    "languageLabel": "Idioma"
+    "languageLabel": "Idioma",
+    "nav": {
+      "home": "Inicio",
+      "safety": "Seguridad",
+      "community": "Comunidad",
+      "roadmap": "Hoja de ruta"
+    },
+    "primaryAction": "Guia de seguridad"
   },
   "language": {
     "en": "EN",
@@ -28,7 +35,11 @@
   "footer": {
     "tagline": "Comunidad que cuida a comunidad con aprendizaje sereno y responsable.",
     "reminder": "Los admins nunca envian DM primero",
-    "disclaimer": "No es asesoramiento financiero"
+    "disclaimer": "No es asesoramiento financiero",
+    "labels": {
+      "about": "Sobre",
+      "safety": "Seguridad"
+    }
   },
   "legal": {
     "disclaimers": [

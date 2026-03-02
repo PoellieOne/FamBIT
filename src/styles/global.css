@@ -60,7 +60,7 @@ textarea {
 
 .shell {
   margin: 0 auto;
-  max-width: 70rem;
+  max-width: 74rem;
   min-height: 100vh;
   padding: var(--space-4);
 }
@@ -72,24 +72,8 @@ textarea {
   box-shadow: 0 16px 34px -28px rgba(15, 23, 32, 0.45);
 }
 
-.hero-banner {
-  overflow: hidden;
-  position: relative;
-}
-
-.hero-banner::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(115deg, rgba(15, 23, 32, 0.82), rgba(15, 23, 32, 0.3) 60%, transparent);
-}
-
-.hero-banner-content {
-  position: absolute;
-  inset: auto auto 0 0;
-  z-index: 1;
-  max-width: 40rem;
-  padding: clamp(1rem, 3vw, 2.5rem);
+.hero-system {
+  box-shadow: 0 24px 60px -38px rgba(15, 23, 32, 0.55);
 }
 
 .soft-strip {
@@ -120,6 +104,10 @@ textarea {
 
 .story-media-body {
   padding: 0.85rem 1rem 1rem;
+}
+
+main > section {
+  margin-top: 1.15rem;
 }
 
 @media (min-width: 48rem) {

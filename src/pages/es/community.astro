@@ -7,11 +7,18 @@ const locale = getLocaleFromPath(Astro.url.pathname);
 const community = getCommunityContent(locale);
 ---
 
-<BaseLayout title={`FamBIT | ${community.hero.title}`} lang={locale}>
-  <section class="atmo-panel p-6">
-    <h1 class="m-0 text-2xl font-extrabold tracking-tight text-slate-950">{community.hero.title}</h1>
-    <p class="mb-0 mt-3 text-base text-slate-800">{community.hero.subhead}</p>
-  </section>
+<BaseLayout
+  title={`FamBIT | ${community.hero.title}`}
+  lang={locale}
+  heroTitle={community.hero.title}
+  heroSubhead={community.hero.subhead}
+  heroImage="/images/community-garden-circle.jpg"
+  heroImageAlt="Personas de la comunidad reunidas en circulo al aire libre"
+  heroPrimaryHref={localizedPath(locale, community.cta.href)}
+  heroPrimaryLabel={community.cta.label}
+  heroSecondaryHref={localizedPath(locale, "/safety")}
+  heroSecondaryLabel="Revisar seguridad"
+>
 
   <section class="atmo-panel p-6">
     {community.narrative.paragraphs.map((paragraph) => (

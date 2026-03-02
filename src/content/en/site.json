@@ -9,7 +9,14 @@
   },
   "header": {
     "brand": "FamBIT",
-    "languageLabel": "Language"
+    "languageLabel": "Language",
+    "nav": {
+      "home": "Home",
+      "safety": "Safety",
+      "community": "Community",
+      "roadmap": "Roadmap"
+    },
+    "primaryAction": "Safety Guide"
   },
   "language": {
     "en": "EN",
@@ -28,7 +35,11 @@
   "footer": {
     "tagline": "Family helps family with calm and responsible learning.",
     "reminder": "Admins never DM first",
-    "disclaimer": "Not financial advice"
+    "disclaimer": "Not financial advice",
+    "labels": {
+      "about": "About",
+      "safety": "Safety"
+    }
   },
   "legal": {
     "disclaimers": [

@@ -19,7 +19,7 @@ const { active, basePath, label, language } = Astro.props;
     href={localizedPath("en", basePath)}
     hreflang="en"
     aria-current={active === "en" ? "page" : undefined}
-    class="rounded-md border border-slate-400 bg-white/80 px-3 py-2 text-sm font-semibold text-slate-900"
+    class="rounded-full border border-white/25 bg-white/10 px-3 py-2 text-sm font-semibold text-white"
   >
     {language.en}
   </a>
@@ -27,7 +27,7 @@ const { active, basePath, label, language } = Astro.props;
     href={localizedPath("es", basePath)}
     hreflang="es"
     aria-current={active === "es" ? "page" : undefined}
-    class="rounded-md border border-slate-400 bg-white/80 px-3 py-2 text-sm font-semibold text-slate-900"
+    class="rounded-full border border-white/25 bg-white/10 px-3 py-2 text-sm font-semibold text-white"
   >
     {language.es}
   </a>
