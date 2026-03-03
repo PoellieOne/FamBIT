@@ -12,23 +12,31 @@ interface Props {
 }
 
 const { active, basePath, label, language } = Astro.props;
+const activeLabel = active === "en" ? language.en : language.es;
 ---
 
-<nav aria-label={label} class="c-lang-toggle">
-  <a
-    href={localizedPath("en", basePath)}
-    hreflang="en"
-    aria-current={active === "en" ? "page" : undefined}
-    class="c-lang-link"
-  >
-    {language.en}
-  </a>
-  <a
-    href={localizedPath("es", basePath)}
-    hreflang="es"
-    aria-current={active === "es" ? "page" : undefined}
-    class="c-lang-link"
-  >
-    {language.es}
-  </a>
-</nav>
+<details class="c-lang-menu" role="group" aria-label={label}>
+  <summary class="c-lang-summary">{activeLabel}</summary>
+  <ul class="c-lang-list">
+    <li>
+      <a
+        href={localizedPath("en", basePath)}
+        hreflang="en"
+        aria-current={active === "en" ? "page" : undefined}
+        class="c-lang-link"
+      >
+        {language.en}
+      </a>
+    </li>
+    <li>
+      <a
+        href={localizedPath("es", basePath)}
+        hreflang="es"
+        aria-current={active === "es" ? "page" : undefined}
+        class="c-lang-link"
+      >
+        {language.es}
+      </a>
+    </li>
+  </ul>
+</details>

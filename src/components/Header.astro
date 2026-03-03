@@ -5,31 +5,31 @@ import { localizedPath } from "../lib/i18n";
 interface Props {
   lang: "en" | "es";
   currentPath: string;
+  floatingViewport?: boolean;
   brand: string;
   languageLabel: string;
   nav: {
-    home: string;
-    safety: string;
     community: string;
     roadmap: string;
+    safety: string;
+    about: string;
   };
-  primaryAction: string;
   language: {
     en: string;
     es: string;
   };
 }
 
-const { lang, currentPath, brand, languageLabel, nav, primaryAction, language } = Astro.props;
+const { lang, currentPath, floatingViewport = false, brand, languageLabel, nav, language } = Astro.props;
 const navItems = [
-  { href: localizedPath(lang, "/"), label: nav.home, key: "/" },
-  { href: localizedPath(lang, "/safety"), label: nav.safety, key: "/safety" },
   { href: localizedPath(lang, "/community"), label: nav.community, key: "/community" },
-  { href: localizedPath(lang, "/roadmap"), label: nav.roadmap, key: "/roadmap" }
+  { href: localizedPath(lang, "/roadmap"), label: nav.roadmap, key: "/roadmap" },
+  { href: localizedPath(lang, "/safety"), label: nav.safety, key: "/safety" },
+  { href: localizedPath(lang, "/about"), label: nav.about, key: "/about" }
 ];
 ---
 
-<header class="c-header">
+<header class:list={["c-header", "c-nav-sticky", "c-nav-floating", "c-nav-glass", floatingViewport && "c-home-nav-fixed"]}>
   <div class="c-header-row">
     <a href={lang === "es" ? "/es" : "/"} class="c-brand">{brand}</a>
     <nav aria-label="Primary" class="c-primary-nav">
@@ -45,9 +45,6 @@ const navItems = [
         ))
       }
     </nav>
-    <a href={localizedPath(lang, "/safety")} class="c-header-action">
-      {primaryAction}
-    </a>
     <LanguageToggle active={lang} basePath={currentPath} label={languageLabel} language={language} />
   </div>
 </header>

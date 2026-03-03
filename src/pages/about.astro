@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getLocaleFromPath, localizedPath } from "../lib/i18n";
+
+const locale = getLocaleFromPath(Astro.url.pathname);
+---
+
+<BaseLayout
+  title="FamBIT | About"
+  lang={locale}
+  heroTitle="About FamBIT"
+  heroSubhead="This placeholder page preserves a stable navigation destination while full About content is staged."
+  heroPrimaryHref={localizedPath(locale, "/safety")}
+  heroPrimaryLabel="Review safety"
+  heroSecondaryHref={localizedPath(locale, "/community")}
+  heroSecondaryLabel="Community"
+>
+  <section class="atmo-panel p-6">
+    <h2 class="m-0 text-xl font-bold text-slate-950">About page placeholder</h2>
+    <p class="m-0 mt-3 text-base text-slate-800">
+      The About destination is intentionally active so header navigation remains complete and never points to a broken route.
+    </p>
+  </section>
+</BaseLayout>

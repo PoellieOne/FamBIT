@@ -22,13 +22,13 @@ const site = getSiteContent(locale);
   heroSecondaryLabel="Cultura comunitaria"
 >
 
-  <section class="c-home-panel">
+  <section class="c-home-panel" data-home-block="home-body-1">
     {home.narrative.paragraphs.map((paragraph) => (
       <p class="m-0 mt-4 text-base text-slate-800 first:mt-0">{paragraph}</p>
     ))}
   </section>
 
-  <section class="c-home-strip">
+  <section class="c-home-strip" data-home-block="home-body-2">
     <h2 class="m-0 text-2xl font-bold text-slate-950">Ritmo de mision</h2>
     <p class="m-0 mt-3 text-base text-slate-800">La rutina central traduce valores en acciones concretas.</p>
     <h3 class="m-0 mt-5 text-lg font-semibold text-slate-950">{home.whatThisMeans.title}</h3>
@@ -37,7 +37,7 @@ const site = getSiteContent(locale);
     </ul>
   </section>
 
-  <section class="c-home-panel">
+  <section class="c-home-panel" data-home-block="home-body-3">
     <h2 class="m-0 text-2xl font-bold text-slate-950">Enfasis en confianza y seguridad</h2>
     <p class="m-0 mt-3 text-base text-slate-800">El siguiente paso natural de este flujo es revisar la guia de seguridad.</p>
     <p class="m-0 mt-4">
@@ -48,7 +48,7 @@ const site = getSiteContent(locale);
     <p class="m-0 mt-4 text-sm font-medium text-slate-900">{home.trust.microcopy}</p>
   </section>
 
-  <section class="c-home-panel">
+  <section class="c-home-panel" data-home-block="home-body-4">
     <h2 class="m-0 text-2xl font-bold text-slate-950">{site.legal.whatWeAre.title}</h2>
     <p class="m-0 mt-3 text-base text-slate-800">{site.legal.whatWeAre.intro}</p>
     <div class="mt-4 grid gap-4 md:grid-cols-3">

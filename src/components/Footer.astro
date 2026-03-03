@@ -2,6 +2,7 @@
 import { OFFICIAL_LINKS } from "../lib/i18n";
 
 interface Props {
+  darkBleed?: boolean;
   tagline: string;
   reminder: string;
   disclaimer: string;
@@ -13,11 +14,11 @@ interface Props {
   pumpfunLabel: string;
 }
 
-const { tagline, reminder, disclaimer, aboutLabel, safetyLabel, linksTitle, xLabel, telegramLabel, pumpfunLabel } = Astro.props;
+const { darkBleed = false, tagline, reminder, disclaimer, aboutLabel, safetyLabel, linksTitle, xLabel, telegramLabel, pumpfunLabel } = Astro.props;
 ---
 
-<footer class="c-footer">
-  <div class="c-footer-grid">
+<footer class:list={["c-footer", darkBleed && "c-footer-bleed"]}>
+  <div class:list={["c-footer-grid", darkBleed && "c-footer-grid-dark"]}>
     <section>
       <h2 class="c-footer-title">{aboutLabel}</h2>
       <p class="c-footer-copy">{tagline}</p>

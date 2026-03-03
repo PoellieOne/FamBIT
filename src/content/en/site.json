@@ -11,10 +11,10 @@
     "brand": "FamBIT",
     "languageLabel": "Language",
     "nav": {
-      "home": "Home",
-      "safety": "Safety",
       "community": "Community",
-      "roadmap": "Roadmap"
+      "roadmap": "Roadmap",
+      "safety": "Safety",
+      "about": "About"
     },
     "primaryAction": "Safety Guide"
   },

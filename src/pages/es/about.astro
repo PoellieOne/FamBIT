@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getLocaleFromPath, localizedPath } from "../../lib/i18n";
+
+const locale = getLocaleFromPath(Astro.url.pathname);
+---
+
+<BaseLayout
+  title="FamBIT | About"
+  lang={locale}
+  heroTitle="About FamBIT"
+  heroSubhead="Esta pagina temporal mantiene un destino de navegacion estable mientras se prepara el contenido completo de About."
+  heroPrimaryHref={localizedPath(locale, "/safety")}
+  heroPrimaryLabel="Review safety"
+  heroSecondaryHref={localizedPath(locale, "/community")}
+  heroSecondaryLabel="Community"
+>
+  <section class="atmo-panel p-6">
+    <h2 class="m-0 text-xl font-bold text-slate-950">About page placeholder</h2>
+    <p class="m-0 mt-3 text-base text-slate-800">
+      El destino About permanece activo para que la navegacion del encabezado siga completa y sin rutas rotas.
+    </p>
+  </section>
+</BaseLayout>
