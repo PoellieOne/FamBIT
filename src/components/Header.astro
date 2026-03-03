@@ -29,23 +29,23 @@ const navItems = [
 ];
 ---
 
-<header class="rounded-xl border border-white/30 bg-slate-950/45 p-4 text-white backdrop-blur md:p-5">
-  <div class="flex flex-wrap items-center gap-3">
-    <a href={lang === "es" ? "/es" : "/"} class="mr-2 text-xl font-extrabold tracking-tight">{brand}</a>
-    <nav aria-label="Primary" class="flex flex-wrap gap-2 text-sm">
+<header class="c-header">
+  <div class="c-header-row">
+    <a href={lang === "es" ? "/es" : "/"} class="c-brand">{brand}</a>
+    <nav aria-label="Primary" class="c-primary-nav">
       {
         navItems.map((item) => (
           <a
             href={item.href}
             aria-current={currentPath === item.key ? "page" : undefined}
-            class="rounded-full border border-white/20 px-3 py-1.5 font-semibold text-white/90 transition hover:bg-white/10"
+            class="c-nav-link"
           >
             {item.label}
           </a>
         ))
       }
     </nav>
-    <a href={localizedPath(lang, "/safety")} class="ml-auto rounded-full bg-white px-4 py-2 text-sm font-bold text-slate-900">
+    <a href={localizedPath(lang, "/safety")} class="c-header-action">
       {primaryAction}
     </a>
     <LanguageToggle active={lang} basePath={currentPath} label={languageLabel} language={language} />

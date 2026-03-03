@@ -16,23 +16,23 @@ interface Props {
 const { tagline, reminder, disclaimer, aboutLabel, safetyLabel, linksTitle, xLabel, telegramLabel, pumpfunLabel } = Astro.props;
 ---
 
-<footer class="rounded-lg border border-slate-300 bg-white/70 p-4 text-sm text-slate-800">
-  <div class="grid gap-4 md:grid-cols-3">
+<footer class="c-footer">
+  <div class="c-footer-grid">
     <section>
-      <h2 class="m-0 text-sm font-semibold uppercase tracking-wide text-slate-700">{aboutLabel}</h2>
-      <p class="mb-0 mt-2">{tagline}</p>
+      <h2 class="c-footer-title">{aboutLabel}</h2>
+      <p class="c-footer-copy">{tagline}</p>
     </section>
     <section>
-      <h2 class="m-0 text-sm font-semibold uppercase tracking-wide text-slate-700">{safetyLabel}</h2>
-      <p class="mb-0 mt-2 font-medium text-slate-900">{reminder}</p>
-      <p class="mb-0 mt-2 font-semibold text-slate-950">{disclaimer}</p>
+      <h2 class="c-footer-title">{safetyLabel}</h2>
+      <p class="c-footer-emphasis">{reminder}</p>
+      <p class="c-footer-emphasis">{disclaimer}</p>
     </section>
     <section aria-label={linksTitle}>
-      <h2 class="m-0 text-sm font-semibold uppercase tracking-wide text-slate-700">{linksTitle}</h2>
-      <ul class="mb-0 mt-2 list-disc pl-5">
-        <li><a class="font-medium text-[var(--accent-strong)]" href={OFFICIAL_LINKS.x}>{xLabel}</a></li>
-        <li><a class="font-medium text-[var(--accent-strong)]" href={OFFICIAL_LINKS.telegram}>{telegramLabel}</a></li>
-        <li><a class="font-medium text-[var(--accent-strong)]" href={OFFICIAL_LINKS.pumpfun}>{pumpfunLabel}</a></li>
+      <h2 class="c-footer-title">{linksTitle}</h2>
+      <ul class="c-footer-list">
+        <li><a class="c-footer-link" href={OFFICIAL_LINKS.x}>{xLabel}</a></li>
+        <li><a class="c-footer-link" href={OFFICIAL_LINKS.telegram}>{telegramLabel}</a></li>
+        <li><a class="c-footer-link" href={OFFICIAL_LINKS.pumpfun}>{pumpfunLabel}</a></li>
       </ul>
     </section>
   </div>

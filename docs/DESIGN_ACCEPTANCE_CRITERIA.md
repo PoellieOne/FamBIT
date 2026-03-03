@@ -1,108 +1,96 @@
 # DESIGN_ACCEPTANCE_CRITERIA
 
 Mode: FAIL-CLOSED  
-Scope: Layout architecture parity vs reference template
+Scope: Homepage only (EN + ES)
 
-## PASS/FAIL Framework
+All mandatory checks must pass. Any single fail = overall FAIL.
 
-All mandatory items must pass. Any single mandatory fail = overall FAIL.
+## A) Hero atmosphere match (mandatory)
 
-## A) Hero + Navigation Structural Alignment (Mandatory)
+PASS when:
+- Hero feels calm, premium, airy, and confident on first screen.
+- Hero controls page mood and visual authority.
 
-- [ ] Header/nav is structurally integrated with hero composition.
-- [ ] Hero is dominant first-screen visual authority.
-- [ ] Primary/secondary CTA hierarchy exists inside hero logic.
-- [ ] Language toggle is integrated within header/nav without structural distortion.
+FAIL when:
+- Hero feels generic, heavy, noisy, or decorative-only.
+- Framer-inspired atmosphere is not perceptible.
 
-FAIL if:
-- navigation is separated from hero
-- hero appears decorative-only
-- banner does not set page mood
+## B) Typography hierarchy clarity (mandatory)
 
-## B) Hero Proportion and Positioning (Mandatory)
+PASS when:
+- Headline > subcopy > CTA > support content are clearly ranked.
+- No ambiguity between title and body scales.
 
-- [ ] Hero occupies proportionally dominant space comparable to reference behavior.
-- [ ] Headline/support copy placement mirrors template hierarchy intent.
-- [ ] Banner image treatment preserves readability and authority.
+FAIL when:
+- Hierarchy appears flat or confusing.
 
-FAIL if:
-- hero proportion is compressed to standard panel height
-- copy hierarchy is flattened or moved out of hero context
+## C) Spacing rhythm quality (mandatory)
 
-## C) Typography Hierarchy (Mandatory)
+PASS when:
+- Section spacing is breathable and consistent.
+- No cramped clusters in hero or first two sections.
 
-- [ ] Visual hierarchy consistently reads: section label -> title -> support text -> list/cards.
-- [ ] Heading scale progression is coherent across all routes.
-- [ ] CTA prominence is consistent with template logic.
+FAIL when:
+- Rhythm feels tight, uneven, or visually rushed.
 
-FAIL if:
-- typography rank order differs materially from template model
-- headings and body text carry near-equal weight
+## D) Header/Nav integration (mandatory)
 
-## D) Spacing Rhythm and Visual Density (Mandatory)
+PASS when:
+- Header/nav feels structurally integrated with hero composition.
+- Language toggle is naturally embedded in header behavior.
 
-- [ ] Section spacing follows an intentional alternating rhythm (dense / breathable / dense).
-- [ ] Card-grid and media/text alternation resembles template cadence.
-- [ ] Footer has lower visual weight than hero but clear hierarchy.
+FAIL when:
+- Header/nav appears bolted on or detached from hero.
 
-FAIL if:
-- pages are mostly identical stacked panels
-- visual density is flat and monotone
+## E) Structural integrity vs legacy layout (mandatory)
 
-## E) Template Atmosphere Preservation (Mandatory)
+PASS when:
+- Homepage reads as design-first system using tokens/components.
 
-- [ ] First impression feels banner-led and editorially composed.
-- [ ] Mid-page transitions preserve template-like pacing.
-- [ ] Overall atmosphere is preserved after FamBIT mapping.
+FAIL when:
+- Page still feels like old layout with new styling sprinkled.
 
-FAIL if:
-- implementation reads as old layout with template fragments
-- atmosphere mismatch is obvious in first two scroll depths
+## F) Token-first implementation quality (mandatory)
 
-## F) Mandatory Banner Constraint (Mandatory)
+PASS when:
+- Token usage is semantic and centralized (Tailwind + global CSS).
+- Component styles are reusable and consistent.
 
-- [ ] Source file exists:
-  - `/home/ralph/PoellieOne/FamBIT/images/StockCake-Unity_Through_Diversity-3355074-standard.jpg`
-- [ ] Deployed file exists:
-  - `public/images/home-main-banner.jpg`
-- [ ] Banner rendered on:
-  - `/` and `/es/`
+FAIL when:
+- Styling remains ad-hoc with hardcoded one-off values.
 
-FAIL if:
-- required banner absent on EN or ES home
-- required banner not visually primary in hero
+## G) Bilingual behavior integrity (mandatory)
 
-## G) Bilingual Structural Parity (Mandatory)
+PASS when:
+- EN default and ES homepage remain functional.
+- EN/ES homepage structure remains aligned.
 
-- [ ] EN and ES use the same structural skeleton.
-- [ ] No locale-specific divergence in hero/nav/footer architecture.
-- [ ] `npm run check:i18n` passes.
+FAIL when:
+- Bilingual routing or parity is broken.
 
-FAIL if:
-- EN and ES diverge in component hierarchy
-- i18n key parity fails
+## H) Compliance guardrails (mandatory)
 
-## H) Compliance Guardrails (Mandatory)
+PASS when:
+- No wallet connect, no buy/swap embeds.
+- No price targets/predictions.
+- No founder identities.
+- No hard funding promises.
+- No risky external scripts.
 
-- [ ] Official links remain exact and present on safety + footer.
-- [ ] Disclaimers remain present on safety + footer.
-- [ ] No forbidden language introduced (price promises, trading guidance, manipulation cues, internal infra).
+FAIL when:
+- Any of the above appears.
 
-FAIL if:
-- official links drift
-- any forbidden language appears
+## I) Build integrity and evidence completeness (mandatory)
 
-## I) Build and Evidence Completeness (Mandatory)
+PASS when:
+- `npm run check:i18n` passes.
+- `npm run build` passes.
+- QA evidence clearly demonstrates homepage criteria A-H.
 
-- [ ] `npm run build` succeeds.
-- [ ] Screenshot set includes EN/ES desktop+mobile for home/safety/community/roadmap.
-- [ ] Parity report + layout map + QA checks documents are present and complete.
+FAIL when:
+- build/parity fails or evidence is incomplete.
 
-FAIL if:
-- evidence bundle is incomplete
-- build output does not match required routes
+## Final decision
 
-## Final Decision Rule
-
-- PASS only if sections A through I all pass.
-- Otherwise FAIL with explicit defect list and rework scope.
+- PASS only if A-I all pass.
+- Otherwise FAIL with explicit defect list and targeted rework scope.

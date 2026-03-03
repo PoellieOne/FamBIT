@@ -14,12 +14,12 @@ interface Props {
 const { active, basePath, label, language } = Astro.props;
 ---
 
-<nav aria-label={label} class="inline-flex gap-2">
+<nav aria-label={label} class="c-lang-toggle">
   <a
     href={localizedPath("en", basePath)}
     hreflang="en"
     aria-current={active === "en" ? "page" : undefined}
-    class="rounded-full border border-white/25 bg-white/10 px-3 py-2 text-sm font-semibold text-white"
+    class="c-lang-link"
   >
     {language.en}
   </a>
@@ -27,7 +27,7 @@ const { active, basePath, label, language } = Astro.props;
     href={localizedPath("es", basePath)}
     hreflang="es"
     aria-current={active === "es" ? "page" : undefined}
-    class="rounded-full border border-white/25 bg-white/10 px-3 py-2 text-sm font-semibold text-white"
+    class="c-lang-link"
   >
     {language.es}
   </a>

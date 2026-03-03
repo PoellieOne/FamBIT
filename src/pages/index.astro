@@ -11,6 +11,7 @@ const site = getSiteContent(locale);
 <BaseLayout
   title={`FamBIT | ${home.hero.title}`}
   lang={locale}
+  homeHero={true}
   heroTitle={home.hero.title}
   heroSubhead={home.hero.subhead}
   heroImage="/images/home-main-banner.jpg"
@@ -21,46 +22,46 @@ const site = getSiteContent(locale);
   heroSecondaryLabel="Community culture"
 >
 
-  <section class="atmo-panel p-6">
+  <section class="c-home-panel">
     {home.narrative.paragraphs.map((paragraph) => (
-      <p class="mt-0 text-base text-slate-800 last:mb-0">{paragraph}</p>
+      <p class="m-0 mt-4 text-base text-slate-800 first:mt-0">{paragraph}</p>
     ))}
   </section>
 
-  <section class="soft-strip p-6">
-    <h2 class="m-0 text-xl font-bold text-slate-950">Mission rhythm</h2>
-    <p class="mb-0 mt-3 text-base text-slate-800">The core routine below translates values into everyday behavior.</p>
-    <h3 class="mb-0 mt-4 text-lg font-semibold text-slate-950">{home.whatThisMeans.title}</h3>
-    <ul class="mb-0 mt-3 list-disc space-y-2 pl-5 text-base text-slate-800">
+  <section class="c-home-strip">
+    <h2 class="m-0 text-2xl font-bold text-slate-950">Mission rhythm</h2>
+    <p class="m-0 mt-3 text-base text-slate-800">The core routine below translates values into everyday behavior.</p>
+    <h3 class="m-0 mt-5 text-lg font-semibold text-slate-950">{home.whatThisMeans.title}</h3>
+    <ul class="mb-0 mt-3 list-disc space-y-3 pl-5 text-base text-slate-800">
       {home.whatThisMeans.items.map((item) => <li>{item}</li>)}
     </ul>
   </section>
 
-  <section class="atmo-panel p-6">
-    <h2 class="m-0 text-xl font-bold text-slate-950">Trust and safety emphasis</h2>
-    <p class="mt-0 text-base text-slate-800">The next step in this flow is practical safety guidance.</p>
-    <p class="mb-0 mt-3">
+  <section class="c-home-panel">
+    <h2 class="m-0 text-2xl font-bold text-slate-950">Trust and safety emphasis</h2>
+    <p class="m-0 mt-3 text-base text-slate-800">The next step in this flow is practical safety guidance.</p>
+    <p class="m-0 mt-4">
       <a class="font-semibold text-[var(--accent-strong)]" href={localizedPath(locale, home.cta.href)}>
         {home.cta.label}
       </a>
     </p>
-    <p class="mb-0 mt-3 text-sm font-medium text-slate-900">{home.trust.microcopy}</p>
+    <p class="m-0 mt-4 text-sm font-medium text-slate-900">{home.trust.microcopy}</p>
   </section>
 
-  <section class="atmo-panel p-6">
-    <h2 class="m-0 text-xl font-bold text-slate-950">{site.legal.whatWeAre.title}</h2>
-    <p class="mb-0 mt-3 text-base text-slate-800">{site.legal.whatWeAre.intro}</p>
-    <div class="mt-3 grid gap-3 md:grid-cols-3">
+  <section class="c-home-panel">
+    <h2 class="m-0 text-2xl font-bold text-slate-950">{site.legal.whatWeAre.title}</h2>
+    <p class="m-0 mt-3 text-base text-slate-800">{site.legal.whatWeAre.intro}</p>
+    <div class="mt-4 grid gap-4 md:grid-cols-3">
       {site.legal.whatWeAre.items.map((item) => <p class="story-card m-0 text-base text-slate-800">{item}</p>)}
     </div>
-    <h3 class="mb-0 mt-4 text-lg font-bold text-slate-950">{site.legal.whatWeAreNot.title}</h3>
-    <p class="mb-0 mt-3 text-base text-slate-800">{site.legal.whatWeAreNot.intro}</p>
-    <div class="mt-3 grid gap-3 md:grid-cols-3">
+    <h3 class="m-0 mt-6 text-lg font-bold text-slate-950">{site.legal.whatWeAreNot.title}</h3>
+    <p class="m-0 mt-3 text-base text-slate-800">{site.legal.whatWeAreNot.intro}</p>
+    <div class="mt-4 grid gap-4 md:grid-cols-3">
       {site.legal.whatWeAreNot.items.map((item) => <p class="story-card m-0 text-base text-slate-800">{item}</p>)}
     </div>
-    <p class="mb-0 mt-4 text-base text-slate-800">{site.legal.disclaimersIntro}</p>
-    <div class="mt-3 flex flex-wrap gap-2 text-sm text-slate-700">
-      {site.legal.disclaimers.map((item) => <span class="rounded-full border border-slate-300 bg-white px-3 py-1">{item}</span>)}
-    </div>
+    <p class="m-0 mt-6 text-base text-slate-800">{site.legal.disclaimersIntro}</p>
+    <ul class="c-chip-list">
+      {site.legal.disclaimers.map((item) => <li class="c-chip">{item}</li>)}
+    </ul>
   </section>
 </BaseLayout>
