@@ -189,8 +189,8 @@ main > section {
 
   .c-home-hero-mask {
     background:
-      radial-gradient(120% 90% at 50% -10%, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.45) 58%, rgba(2, 6, 23, 0.75) 100%),
-      linear-gradient(180deg, rgba(2, 6, 23, 0.25) 0%, rgba(2, 6, 23, 0.56) 54%, rgba(2, 6, 23, 0.9) 100%);
+      radial-gradient(120% 90% at 50% -10%, rgba(15, 23, 42, 0.05) 0%, rgba(15, 23, 42, 0.22) 66%, rgba(2, 6, 23, 0.42) 100%),
+      linear-gradient(180deg, rgba(2, 6, 23, 0.06) 0%, rgba(2, 6, 23, 0.14) 68%, rgba(2, 6, 23, 0.46) 100%);
   }
 
   .c-home-bleed {
