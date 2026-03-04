@@ -1,0 +1,174 @@
+:root {
+  --stam-bg: #090f1d;
+  --stam-panel: #111a2f;
+  --stam-border: rgba(148, 163, 184, 0.35);
+  --stam-text: #e2e8f0;
+  --stam-muted: #9fb0c8;
+  --stam-accent: #8b5cf6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at 0% 0%, rgba(139, 92, 246, 0.2), transparent 30%), var(--stam-bg);
+  color: var(--stam-text);
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+.stam-shell {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.stam-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.stam-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.stam-toggle {
+  display: inline-flex;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.stam-locale-btn {
+  border: 1px solid var(--stam-border);
+  background: rgba(15, 23, 42, 0.85);
+  color: var(--stam-text);
+  border-radius: 9999px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.stam-locale-btn[aria-pressed="true"] {
+  background: color-mix(in srgb, var(--stam-accent) 40%, #0f172a);
+}
+
+.stam-grid {
+  display: grid;
+  grid-template-columns: minmax(18rem, 24rem) minmax(0, 1fr);
+  gap: 1rem;
+}
+
+.stam-panel {
+  border: 1px solid var(--stam-border);
+  border-radius: 0.85rem;
+  background: rgba(17, 26, 47, 0.94);
+  padding: 0.75rem;
+  max-height: calc(100vh - 7rem);
+  overflow: auto;
+}
+
+.stam-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.stam-item {
+  border: 1px solid var(--stam-border);
+  border-radius: 0.75rem;
+  background: rgba(15, 23, 42, 0.82);
+  padding: 0.55rem 0.65rem;
+}
+
+.stam-item button {
+  border: 0;
+  background: transparent;
+  color: var(--stam-text);
+  font: inherit;
+  padding: 0;
+  text-align: left;
+  cursor: copy;
+}
+
+.stam-item small {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--stam-muted);
+}
+
+.stam-item ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--stam-muted);
+  font-size: 0.8rem;
+}
+
+.stam-preview {
+  position: relative;
+  border: 1px solid var(--stam-border);
+  border-radius: 0.85rem;
+  overflow: hidden;
+  background: #020617;
+  min-height: 42rem;
+}
+
+.stam-frame {
+  width: 100%;
+  height: min(80vh, 58rem);
+  border: 0;
+  background: #fff;
+}
+
+.stam-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.stam-outline {
+  position: absolute;
+  border: 2px dashed rgba(56, 189, 248, 0.95);
+  background: rgba(56, 189, 248, 0.12);
+  border-radius: 0.4rem;
+  box-shadow: inset 0 0 0 1px rgba(8, 47, 73, 0.45);
+}
+
+.stam-outline button {
+  pointer-events: auto;
+  border: 0;
+  border-radius: 9999px;
+  background: rgba(15, 23, 42, 0.95);
+  color: #e2e8f0;
+  font-size: 0.74rem;
+  font-weight: 600;
+  margin: 0.25rem;
+  padding: 0.2rem 0.45rem;
+  cursor: copy;
+}
+
+.stam-outline.is-active {
+  border-color: #f59e0b;
+  background: rgba(245, 158, 11, 0.16);
+}
+
+@media (max-width: 64rem) {
+  .stam-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stam-panel {
+    max-height: none;
+  }
+
+  .stam-frame {
+    height: 75vh;
+  }
+}

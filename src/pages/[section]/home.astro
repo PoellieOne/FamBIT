@@ -1,0 +1,14 @@
+---
+import HomeOverlay from "../../components/stam/HomeOverlay.astro";
+import StamLayout from "../../layouts/StamLayout.astro";
+import blockIndex from "../../stam/homepage-block-index.v2.json";
+import "../../styles/stam-overlay.css";
+
+export function getStaticPaths() {
+  return [{ params: { section: "_stam" } }];
+}
+---
+
+<StamLayout title="FamBIT STAM Home Overlay">
+  <HomeOverlay data={blockIndex} />
+</StamLayout>

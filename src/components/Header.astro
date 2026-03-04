@@ -29,10 +29,13 @@ const navItems = [
 ];
 ---
 
-<header class:list={["c-header", "c-nav-sticky", "c-nav-floating", "c-nav-glass", floatingViewport && "c-home-nav-fixed"]}>
+<header
+  class:list={["c-header", "c-nav-sticky", "c-nav-floating", "c-nav-glass", floatingViewport && "c-home-nav-fixed"]}
+  data-stam-block="N-01"
+>
   <div class="c-header-row">
     <a href={lang === "es" ? "/es" : "/"} class="c-brand">{brand}</a>
-    <nav aria-label="Primary" class="c-primary-nav">
+    <nav aria-label="Primary" class="c-primary-nav" data-stam-block="N-02">
       {
         navItems.map((item) => (
           <a
@@ -45,6 +48,8 @@ const navItems = [
         ))
       }
     </nav>
-    <LanguageToggle active={lang} basePath={currentPath} label={languageLabel} language={language} />
+    <div data-stam-block="N-03">
+      <LanguageToggle active={lang} basePath={currentPath} label={languageLabel} language={language} />
+    </div>
   </div>
 </header>

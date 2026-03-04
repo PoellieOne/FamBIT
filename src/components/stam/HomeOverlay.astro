@@ -1,0 +1,165 @@
+---
+interface BlockSpec {
+  id: string;
+  name: string;
+  selector: string;
+  params: string[];
+}
+
+interface OverlayData {
+  routes: {
+    en: string;
+    es: string;
+  };
+  blocks: BlockSpec[];
+}
+
+interface Props {
+  data: OverlayData;
+}
+
+const { data } = Astro.props;
+---
+
+<div class="stam-shell">
+  <div class="stam-header">
+    <h1 class="stam-title">STAM Home Overlay</h1>
+    <span id="stam-copy-status" class="stam-status">Click any label to copy block ID.</span>
+    <div class="stam-toggle" role="group" aria-label="Overlay locale preview">
+      <button class="stam-locale-btn" type="button" data-locale="en" aria-pressed="true">EN</button>
+      <button class="stam-locale-btn" type="button" data-locale="es" aria-pressed="false">ES</button>
+    </div>
+  </div>
+
+  <div class="stam-grid">
+    <aside class="stam-panel" aria-label="Homepage STAM block list">
+      <ul class="stam-list">
+        {
+          data.blocks.map((block) => (
+            <li class="stam-item" data-block-id={block.id} data-selector={block.selector}>
+              <button type="button" data-copy-id={block.id}>
+                <strong>{block.id}</strong> - {block.name}
+              </button>
+              <small>{block.selector}</small>
+              <ul>
+                {block.params.map((param) => <li>{param}</li>)}
+              </ul>
+            </li>
+          ))
+        }
+      </ul>
+    </aside>
+
+    <section class="stam-preview" aria-label="Homepage preview with overlays">
+      <iframe id="stam-frame" class="stam-frame" src={data.routes.en} title="STAM Homepage Preview"></iframe>
+      <div id="stam-overlay" class="stam-overlay" aria-hidden="true"></div>
+    </section>
+  </div>
+</div>
+
+<script id="stam-overlay-data" type="application/json" set:html={JSON.stringify(data)}></script>
+
+<script>
+  const dataNode = document.getElementById("stam-overlay-data");
+  const stamData = dataNode ? JSON.parse(dataNode.textContent || "{}") : { blocks: [], routes: {} };
+  const frame = document.getElementById("stam-frame");
+  const overlay = document.getElementById("stam-overlay");
+  const status = document.getElementById("stam-copy-status");
+  const localeButtons = Array.from(document.querySelectorAll(".stam-locale-btn"));
+  const listItems = Array.from(document.querySelectorAll(".stam-item"));
+  let activeId = "";
+
+  function writeStatus(message) {
+    if (status) status.textContent = message;
+  }
+
+  async function copyId(id) {
+    try {
+      await navigator.clipboard.writeText(id);
+      writeStatus(`Copied ${id}`);
+    } catch {
+      writeStatus(`Copy failed for ${id}`);
+    }
+  }
+
+  function setActiveBlock(id) {
+    activeId = id;
+    drawOverlay();
+  }
+
+  function clearActiveBlock() {
+    activeId = "";
+    drawOverlay();
+  }
+
+  function drawOverlay() {
+    if (!frame || !overlay || !frame.contentWindow || !frame.contentDocument) return;
+
+    overlay.replaceChildren();
+
+    const blockMap = stamData.blocks || [];
+    for (const block of blockMap) {
+      const target = frame.contentDocument.querySelector(block.selector);
+      if (!target) continue;
+
+      const rect = target.getBoundingClientRect();
+      if (rect.width < 1 || rect.height < 1) continue;
+
+      const outline = document.createElement("div");
+      outline.className = "stam-outline";
+      if (activeId === block.id) outline.classList.add("is-active");
+      outline.style.left = `${rect.left}px`;
+      outline.style.top = `${rect.top}px`;
+      outline.style.width = `${rect.width}px`;
+      outline.style.height = `${rect.height}px`;
+
+      const labelButton = document.createElement("button");
+      labelButton.type = "button";
+      labelButton.textContent = `${block.id} - ${block.name}`;
+      labelButton.addEventListener("click", () => copyId(block.id));
+      labelButton.addEventListener("mouseenter", () => setActiveBlock(block.id));
+      labelButton.addEventListener("mouseleave", clearActiveBlock);
+
+      outline.append(labelButton);
+      overlay.append(outline);
+    }
+  }
+
+  function bindFrameObservers() {
+    if (!frame || !frame.contentWindow) return;
+    frame.contentWindow.addEventListener("scroll", drawOverlay, { passive: true });
+    frame.contentWindow.addEventListener("resize", drawOverlay);
+  }
+
+  localeButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const locale = button.getAttribute("data-locale");
+      if (!locale || !frame) return;
+      const nextSrc = stamData.routes[locale];
+      if (!nextSrc) return;
+
+      localeButtons.forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
+      frame.src = nextSrc;
+      writeStatus(`Loaded ${locale.toUpperCase()} preview`);
+    });
+  });
+
+  listItems.forEach((item) => {
+    const id = item.getAttribute("data-block-id") || "";
+    const copyButton = item.querySelector("button[data-copy-id]");
+    if (copyButton) {
+      copyButton.addEventListener("click", () => copyId(id));
+    }
+    item.addEventListener("mouseenter", () => setActiveBlock(id));
+    item.addEventListener("mouseleave", clearActiveBlock);
+  });
+
+  if (frame) {
+    frame.addEventListener("load", () => {
+      bindFrameObservers();
+      drawOverlay();
+    });
+  }
+
+  window.addEventListener("resize", drawOverlay);
+</script>

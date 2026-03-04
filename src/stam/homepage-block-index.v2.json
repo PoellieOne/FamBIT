@@ -1,0 +1,157 @@
+{
+  "version": "2.0.0",
+  "page": "home",
+  "routes": {
+    "en": "/",
+    "es": "/es/"
+  },
+  "blocks": [
+    {
+      "id": "N-01",
+      "name": "Floating Nav Frame",
+      "selector": "[data-stam-block='N-01']",
+      "params": [
+        "position: fixed",
+        "centered frame",
+        "glass blur readability"
+      ]
+    },
+    {
+      "id": "N-02",
+      "name": "Primary Menu Row",
+      "selector": "[data-stam-block='N-02']",
+      "params": [
+        "labels: Community, Roadmap, Safety, About",
+        "maintain item order",
+        "clear active state"
+      ]
+    },
+    {
+      "id": "N-03",
+      "name": "Language Dropdown",
+      "selector": "[data-stam-block='N-03']",
+      "params": [
+        "EN/ES toggle",
+        "dropdown summary visible",
+        "route parity preserved"
+      ]
+    },
+    {
+      "id": "H-02a",
+      "name": "Hero Eyebrow",
+      "selector": "[data-stam-block='H-02a']",
+      "params": [
+        "small uppercase kicker",
+        "supports hero hierarchy"
+      ]
+    },
+    {
+      "id": "H-02b",
+      "name": "Hero Headline",
+      "selector": "[data-stam-block='H-02b']",
+      "params": [
+        "primary authority text",
+        "largest type on page"
+      ]
+    },
+    {
+      "id": "H-02c",
+      "name": "Hero Subcopy",
+      "selector": "[data-stam-block='H-02c']",
+      "params": [
+        "supporting narrative",
+        "max line length control"
+      ]
+    },
+    {
+      "id": "H-02d",
+      "name": "Hero CTA Group",
+      "selector": "[data-stam-block='H-02d']",
+      "params": [
+        "primary + secondary action",
+        "horizontal grouping",
+        "button contrast"
+      ]
+    },
+    {
+      "id": "H-02e",
+      "name": "Hero Microcopy",
+      "selector": "[data-stam-block='H-02e']",
+      "params": [
+        "support trust statement",
+        "optional emphasis block"
+      ]
+    },
+    {
+      "id": "H-03a",
+      "name": "Home Narrative Panel",
+      "selector": "[data-home-block='home-body-1']",
+      "params": [
+        "intro narrative",
+        "card container"
+      ]
+    },
+    {
+      "id": "H-03b",
+      "name": "Home Mission Panel",
+      "selector": "[data-home-block='home-body-2']",
+      "params": [
+        "mission heading",
+        "list rhythm"
+      ]
+    },
+    {
+      "id": "H-03c",
+      "name": "Home Safety Emphasis",
+      "selector": "[data-home-block='home-body-3']",
+      "params": [
+        "safety transition",
+        "cta reinforcement"
+      ]
+    },
+    {
+      "id": "H-03d",
+      "name": "Home Legal Context",
+      "selector": "[data-home-block='home-body-4']",
+      "params": [
+        "what we are",
+        "what we are not",
+        "disclaimer chips"
+      ]
+    },
+    {
+      "id": "H-05a",
+      "name": "Verified Links Panel",
+      "selector": "[data-stam-block='H-05a']",
+      "params": [
+        "official links list",
+        "public trust panel"
+      ]
+    },
+    {
+      "id": "H-05b",
+      "name": "Safety Notice Panel",
+      "selector": "[data-stam-block='H-05b']",
+      "params": [
+        "security reminder",
+        "no private key requests"
+      ]
+    },
+    {
+      "id": "H-06a",
+      "name": "Dark Footer Anchor",
+      "selector": "[data-stam-block='H-06a']",
+      "params": [
+        "full bleed dark close",
+        "legal + official links"
+      ]
+    }
+  ],
+  "parity": {
+    "expectedBlockCount": 15,
+    "locales": [
+      "en",
+      "es"
+    ]
+  }
+}

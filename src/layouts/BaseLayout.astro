@@ -110,18 +110,22 @@ const {
         {
           includeGlobalTrustPanels && (
             <>
-              <VerifiedLinks
-                title={site.verifiedLinks.title}
-                xLabel={site.verifiedLinks.xLabel}
-                telegramLabel={site.verifiedLinks.telegramLabel}
-                pumpfunLabel={site.verifiedLinks.pumpfunLabel}
-              />
-              <SafetyNotice title={site.safetyNotice.title} body={site.safetyNotice.body} />
+              <div data-stam-block="H-05a">
+                <VerifiedLinks
+                  title={site.verifiedLinks.title}
+                  xLabel={site.verifiedLinks.xLabel}
+                  telegramLabel={site.verifiedLinks.telegramLabel}
+                  pumpfunLabel={site.verifiedLinks.pumpfunLabel}
+                />
+              </div>
+              <div data-stam-block="H-05b">
+                <SafetyNotice title={site.safetyNotice.title} body={site.safetyNotice.body} />
+              </div>
             </>
           )
         }
       </main>
-      <div class="mt-6">
+      <div class="mt-6" data-stam-block="H-06a">
         <Footer
           darkBleed={homeHero}
           tagline={site.footer.tagline}
