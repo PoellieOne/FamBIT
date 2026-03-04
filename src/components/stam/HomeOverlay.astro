@@ -84,12 +84,29 @@ const { data } = Astro.props;
 
   function setActiveBlock(id) {
     activeId = id;
+    listItems.forEach((item) => item.classList.toggle("is-active", item.getAttribute("data-block-id") === id));
     drawOverlay();
   }
 
   function clearActiveBlock() {
     activeId = "";
+    listItems.forEach((item) => item.classList.remove("is-active"));
     drawOverlay();
+  }
+
+  function getHoveredBlockIdFromFramePoint(x, y) {
+    if (!frame || !frame.contentDocument) return "";
+    const hit = frame.contentDocument.elementFromPoint(x, y);
+    if (!hit) return "";
+
+    const blocks = stamData.blocks || [];
+    for (const block of blocks) {
+      if (hit.closest(block.selector)) {
+        return block.id;
+      }
+    }
+
+    return "";
   }
 
   function drawOverlay() {
@@ -126,9 +143,18 @@ const { data } = Astro.props;
   }
 
   function bindFrameObservers() {
-    if (!frame || !frame.contentWindow) return;
+    if (!frame || !frame.contentWindow || !frame.contentDocument) return;
     frame.contentWindow.addEventListener("scroll", drawOverlay, { passive: true });
     frame.contentWindow.addEventListener("resize", drawOverlay);
+    frame.contentDocument.addEventListener("mousemove", (event) => {
+      const id = getHoveredBlockIdFromFramePoint(event.clientX, event.clientY);
+      if (id) {
+        setActiveBlock(id);
+      } else if (activeId) {
+        clearActiveBlock();
+      }
+    });
+    frame.contentDocument.addEventListener("mouseleave", clearActiveBlock);
   }
 
   localeButtons.forEach((button) => {

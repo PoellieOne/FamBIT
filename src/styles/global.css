@@ -105,6 +105,11 @@ textarea {
   padding: var(--space-4);
 }
 
+.c-home-shell {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .atmo-panel {
   border: 1px solid var(--color-border-soft);
   border-radius: var(--radius-lg);
@@ -178,6 +183,16 @@ main > section {
     border-radius: 0;
   }
 
+  .c-home-hero-stage {
+    min-height: 100svh;
+  }
+
+  .c-home-hero-mask {
+    background:
+      radial-gradient(120% 90% at 50% -10%, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.45) 58%, rgba(2, 6, 23, 0.75) 100%),
+      linear-gradient(180deg, rgba(2, 6, 23, 0.25) 0%, rgba(2, 6, 23, 0.56) 54%, rgba(2, 6, 23, 0.9) 100%);
+  }
+
   .c-home-bleed {
     width: 100vw;
     margin-left: calc(50% - 50vw);
@@ -193,7 +208,7 @@ main > section {
   }
 
   .c-home-main {
-    margin-top: clamp(1.25rem, 3.2vw, 2.5rem);
+    margin-top: clamp(1.5rem, 3.4vw, 2.75rem);
     display: grid;
     gap: clamp(1rem, 2vw, 1.75rem);
   }
@@ -478,6 +493,11 @@ main > section {
 @media (min-width: 48rem) {
   .shell {
     padding: var(--space-8);
+  }
+
+  .c-home-shell {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
