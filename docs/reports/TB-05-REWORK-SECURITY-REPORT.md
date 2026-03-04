@@ -50,15 +50,15 @@ Runbook check timestamp: 2026-03-04T12:32:42+01:00
 
 ### Access screenshot evidence index
 
-- `docs/reports/screenshots/tb05/access-policy-scope-_stam.png`
-  - Current capture is a placeholder note from this environment.
-  - Required proof status: FAIL (dashboard screenshot not captured).
+- `docs/reports/screenshots/tb05/access-policy-scope-_stam.jpg`
+  - Captured Cloudflare Zero Trust application policy scope showing `/_stam/*`.
+  - Required proof status: PASS.
 - `docs/reports/screenshots/tb05/access-unauth-challenge-_stam-home.png`
   - Captured live challenge page for unauthenticated `/_stam/home`.
   - Required proof status: PASS.
-- `docs/reports/screenshots/tb05/access-auth-allow-_stam-home.png`
-  - Current capture is a placeholder note from this environment.
-  - Required proof status: FAIL (authenticated allow screenshot not captured).
+- `docs/reports/screenshots/tb05/access-auth-allow-_stam-home.jpg`
+  - Captured authenticated STAM session successfully opening `/_stam/home`.
+  - Required proof status: PASS.
 
 ## Required command outputs summary
 
@@ -85,8 +85,8 @@ Runbook check timestamp: 2026-03-04T12:32:42+01:00
 - STAM meta noindex remains in built STAM route: PASS
 - Public link leakage to `/_stam/*`: PASS (none detected)
 - Cloudflare Access gating evidence:
-  - policy scope proof for `/_stam/*`: FAIL
+  - policy scope proof for `/_stam/*`: PASS
   - unauthenticated challenge proof: PASS
-  - authenticated allow proof: FAIL
+  - authenticated allow proof: PASS
 
-Final verdict: BLOCKED
+Final verdict: PASS
