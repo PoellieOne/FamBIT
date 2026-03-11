@@ -656,24 +656,23 @@ main > section {
     width: fit-content;
     max-width: 100%;
     border-radius: 1rem;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-
-  .c-header::-webkit-scrollbar {
-    display: none;
+    overflow: visible;
   }
 
   .c-header-row {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "brand nav"
+      ". lang";
+    align-items: center;
     min-height: 42px;
-    gap: 0.25rem;
+    row-gap: 0.3rem;
+    column-gap: 0.25rem;
   }
 
   .c-brand {
+    grid-area: brand;
     margin-right: var(--space-2);
   }
 
@@ -683,8 +682,10 @@ main > section {
   }
 
   .c-primary-nav {
+    grid-area: nav;
     justify-content: flex-start;
     gap: 0.2rem;
+    min-width: 0;
   }
 
   .c-nav-link {
@@ -696,10 +697,15 @@ main > section {
     margin-left: 0;
   }
 
+  .c-header-lang-slot {
+    grid-area: lang;
+    justify-self: end;
+  }
+
   .c-home-nav-fixed {
     left: 50%;
     transform: translateX(-50%);
     width: fit-content;
-    max-width: calc(100vw - 7rem);
+    max-width: calc(100vw - 1rem);
   }
 }
