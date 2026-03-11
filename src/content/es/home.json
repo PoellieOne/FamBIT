@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "Un espacio cripto seguro donde crecer sigue siendo humano",
-    "subhead": "FamBIT da la bienvenida a quienes quieren aprender con calma, verificar primero y avanzar en comunidad sin ruido."
+    "title": "La familia ayuda a la familia.\nMisiones reales financiadas en comunidad.",
+    "subhead": "FamBIT es una comunidad donde las personas apoyan misiones reales con reglas transparentes y participacion compartida."
   },
   "narrative": {
     "paragraphs": [
@@ -19,10 +19,10 @@
     ]
   },
   "cta": {
-    "label": "Leer guia de seguridad",
-    "href": "/safety"
+    "label": "Explorar misiones",
+    "href": "/roadmap"
   },
   "trust": {
-    "microcopy": "La confianza se construye verificando, no corriendo."
+    "microcopy": "Reglas transparentes • Comunidad activa • Sin hype"
   }
 }

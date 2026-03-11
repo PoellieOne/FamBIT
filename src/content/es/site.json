@@ -11,8 +11,9 @@
     "brand": "FamBIT",
     "languageLabel": "Idioma",
     "nav": {
-      "community": "Community",
-      "roadmap": "Roadmap",
+      "missions": "Missions",
+      "start": "Start",
+      "stories": "Stories",
       "safety": "Safety",
       "about": "About"
     },

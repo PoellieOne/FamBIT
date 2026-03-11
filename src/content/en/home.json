@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "A safe crypto home where growth stays human",
-    "subhead": "FamBIT welcomes people who want to learn carefully, verify first, and grow together without hype."
+    "title": "Family helps family.\nReal-world missions funded together.",
+    "subhead": "FamBIT is a community where people support real-world missions together through transparent rules and shared participation."
   },
   "narrative": {
     "paragraphs": [
@@ -19,10 +19,10 @@
     ]
   },
   "cta": {
-    "label": "Read safety guidance",
-    "href": "/safety"
+    "label": "Explore missions",
+    "href": "/roadmap"
   },
   "trust": {
-    "microcopy": "Trust is built by verification, not urgency."
+    "microcopy": "Transparent rules • Community driven • No hype"
   }
 }
