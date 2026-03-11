@@ -4,7 +4,7 @@ import LanguageToggle from "../components/LanguageToggle.astro";
 import Footer from "../components/Footer.astro";
 import VerifiedLinks from "../components/VerifiedLinks.astro";
 import SafetyNotice from "../components/SafetyNotice.astro";
-import { getSiteContent } from "../lib/content";
+import { getHomeContent, getSiteContent } from "../lib/content";
 import { getLocaleFromPath, getPathWithoutLocale, type Locale } from "../lib/i18n";
 import "../styles/global.css";
 
@@ -26,6 +26,7 @@ interface Props {
 const pathLocale = getLocaleFromPath(Astro.url.pathname);
 const { lang = pathLocale, includeGlobalTrustPanels = true, homeHero = false } = Astro.props;
 const site = getSiteContent(lang);
+const home = getHomeContent(lang);
 const pageTitle = Astro.props.title || site.meta.defaultTitle;
 const basePath = getPathWithoutLocale(Astro.url.pathname);
 const {
@@ -82,9 +83,9 @@ const [heroHeadlineMain, heroHeadlineSecondary] = String(heroTitle).split("\n");
         {
           heroImage ? (
             <img
-              src={heroImage}
-              alt={heroImageAlt || heroTitle}
-                class:list={["w-full", "object-cover", homeHero ? "h-[100svh] min-h-[100vh]" : "h-[28rem] md:h-[34rem]"]}
+                src={heroImage}
+                alt={heroImageAlt || heroTitle}
+                class:list={["w-full", "object-cover", homeHero ? "h-[100svh] min-h-[100vh] c-home-hero-image" : "h-[28rem] md:h-[34rem]"]}
                 loading="eager"
                 fetchpriority="high"
               />
@@ -131,10 +132,10 @@ const [heroHeadlineMain, heroHeadlineSecondary] = String(heroTitle).split("\n");
             <div id="H-02d" data-stam-block="H-02d" class:list={["flex", "flex-wrap", homeHero ? "c-hero-cta-wrap gap-4" : "mt-6 gap-3"]}>
               <a href={heroPrimaryHref} class:list={["rounded-full", "px-5", "py-2.5", "text-sm", "font-bold", homeHero ? "c-hero-cta c-hero-cta-primary" : "bg-white text-slate-900"]}>{heroPrimaryLabel}</a>
               <a href={heroSecondaryHref} class:list={["rounded-full", "px-5", "py-2.5", "text-sm", "font-bold", homeHero ? "c-hero-cta c-hero-cta-secondary" : "border border-white/35 text-white"]}>
-                {homeHero ? "Start a mission" : heroSecondaryLabel}
+                {homeHero ? (lang === "es" ? "Inicia una mision" : "Start a mission") : heroSecondaryLabel}
               </a>
             </div>
-            {homeHero && <p id="H-02e" data-stam-block="H-02e" class="c-hero-microcopy">Transparent rules • Community driven • No hype</p>}
+            {homeHero && <p id="H-02e" data-stam-block="H-02e" class="c-hero-microcopy">{home.trust.microcopy}</p>}
           </div>
         </div>
       </section>
@@ -173,5 +174,42 @@ const [heroHeadlineMain, heroHeadlineSecondary] = String(heroTitle).split("\n");
         />
       </div>
     </div>
+    {
+      homeHero && (
+        <script>
+          const hero = document.getElementById("HOME-HERO");
+          const img = hero?.querySelector(".c-home-hero-image");
+          const desktopQuery = window.matchMedia("(min-width: 64rem)");
+          const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+          let rafId = 0;
+
+          const applyParallax = () => {
+            if (!hero || !img) return;
+            if (!desktopQuery.matches || motionQuery.matches) {
+              img.style.setProperty("--hero-parallax-y", "0px");
+              return;
+            }
+
+            const rect = hero.getBoundingClientRect();
+            const offset = Math.max(0, -rect.top);
+            const translate = Math.min(56, offset * 0.08);
+            img.style.setProperty("--hero-parallax-y", `${translate}px`);
+          };
+
+          const onScroll = () => {
+            if (rafId) return;
+            rafId = window.requestAnimationFrame(() => {
+              applyParallax();
+              rafId = 0;
+            });
+          };
+
+          applyParallax();
+          window.addEventListener("scroll", onScroll, { passive: true });
+          window.addEventListener("resize", onScroll);
+        </script>
+      )
+    }
   </body>
 </html>
