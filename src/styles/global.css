@@ -706,13 +706,13 @@ main > section {
   .c-hero-lang {
     position: fixed;
     top: calc(3.95rem + 1.1rem);
-    left: 0.5rem;
-    right: auto;
+    left: auto;
+    right: 0.5rem;
     transform: none;
     z-index: 71;
     width: fit-content;
     max-width: calc(100vw - 1rem);
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
   }
 }
