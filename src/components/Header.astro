@@ -35,7 +35,9 @@ const navItems = [
   data-stam-block="N-01"
 >
   <div class="c-header-row">
-    <a href={lang === "es" ? "/es" : "/"} class="c-brand">{brand}</a>
+    <a href={lang === "es" ? "/es" : "/"} class="c-brand" aria-label={brand}>
+      <img src="/images/fambit-logo-nav.png" alt={brand} class="c-brand-logo" loading="eager" decoding="async" />
+    </a>
     <nav aria-label="Primary" class="c-primary-nav" data-stam-block="N-02">
       {
         navItems.map((item) => (

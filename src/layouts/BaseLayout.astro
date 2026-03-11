@@ -38,6 +38,7 @@ const {
   heroSecondaryHref,
   heroSecondaryLabel
 } = Astro.props;
+const [heroHeadlineMain, heroHeadlineSecondary] = String(heroTitle).split("\n");
 ---
 
 <!doctype html>
@@ -114,9 +115,20 @@ const {
           }
           <div class:list={[homeHero ? "c-hero-copy-block" : "max-w-3xl mt-8 md:mt-14"]}>
             <p id="H-02a" data-stam-block="H-02a" class:list={["m-0", "font-semibold", "uppercase", homeHero ? "c-hero-eyebrow" : "text-slate-200 text-sm tracking-[0.16em]"]}>COMMUNITY WITH A COIN</p>
-            <h1 id="H-02b" data-stam-block="H-02b" class:list={["mt-2", "font-extrabold", "tracking-tight", "text-white", homeHero ? "c-hero-headline" : "text-3xl leading-tight md:text-5xl"]}>{heroTitle}</h1>
+            <h1 id="H-02b" data-stam-block="H-02b" class:list={["mt-2", "font-extrabold", "tracking-tight", "text-white", homeHero ? "c-hero-headline" : "text-3xl leading-tight md:text-5xl"]}>
+              {
+                homeHero ? (
+                  <>
+                    <span class="c-hero-headline-main">{heroHeadlineMain}</span>
+                    {heroHeadlineSecondary && <span class="c-hero-headline-sub">{heroHeadlineSecondary}</span>}
+                  </>
+                ) : (
+                  heroTitle
+                )
+              }
+            </h1>
             <p id="H-02c" data-stam-block="H-02c" class:list={["mb-0", "text-slate-100", homeHero ? "c-hero-subtext" : "mt-4 max-w-2xl text-base md:text-lg"]}>{heroSubhead}</p>
-            <div id="H-02d" data-stam-block="H-02d" class:list={["flex", "flex-wrap", homeHero ? "mt-8 gap-4" : "mt-6 gap-3"]}>
+            <div id="H-02d" data-stam-block="H-02d" class:list={["flex", "flex-wrap", homeHero ? "c-hero-cta-wrap gap-4" : "mt-6 gap-3"]}>
               <a href={heroPrimaryHref} class:list={["rounded-full", "px-5", "py-2.5", "text-sm", "font-bold", homeHero ? "c-hero-cta c-hero-cta-primary" : "bg-white text-slate-900"]}>{heroPrimaryLabel}</a>
               <a href={heroSecondaryHref} class:list={["rounded-full", "px-5", "py-2.5", "text-sm", "font-bold", homeHero ? "c-hero-cta c-hero-cta-secondary" : "border border-white/35 text-white"]}>
                 {homeHero ? "Start a mission" : heroSecondaryLabel}
