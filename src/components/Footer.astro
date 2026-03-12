@@ -23,8 +23,11 @@ const startLabel = lang === "es" ? "Empezar" : "Start";
 const missionsLabel = lang === "es" ? "Misiones" : "Missions";
 const storiesLabel = lang === "es" ? "Historias" : "Stories";
 const safetyNavLabel = lang === "es" ? "Seguridad" : "Safety";
+const fambitMicrocopyPrimary = lang === "es" ? "Comunidad con una moneda." : "Community with a coin.";
+const fambitMicrocopySecondary = lang === "es" ? "La familia ayuda a la familia." : "Family helps family.";
+const fambitMicrocopyTertiary = lang === "es" ? "Misiones financiadas en comunidad." : "Missions funded together.";
 const officialMicrocopy = lang === "es" ? "Si no aparece aqui, no es oficial." : "If it's not listed here, it's not official.";
-const joinHeadline = lang === "es" ? "Build with us. Grow with us." : "Build with us. Grow with us.";
+const joinHeadline = lang === "es" ? "Construye con nosotros. Crece con nosotros." : "Build with us. Grow with us.";
 const joinCtaLabel = lang === "es" ? "Explorar misiones" : "Explore missions";
 const joinMicrocopy = lang === "es" ? "Reglas transparentes • Comunidad activa • Sin hype" : "Transparent rules • Community driven • No hype";
 ---
@@ -32,10 +35,10 @@ const joinMicrocopy = lang === "es" ? "Reglas transparentes • Comunidad activa
 <footer class:list={["c-footer", darkBleed && "c-footer-bleed"]}>
   <div class:list={["c-footer-grid", darkBleed && "c-footer-grid-dark"]}>
     <section class="c-footer-section">
-      <h2 class="c-footer-title">FamBIT</h2>
-      <p class="c-footer-wordmark">FamBIT</p>
-      <p class="c-footer-copy">Family helps family.</p>
-      <p class="c-footer-copy">Community with a coin.</p>
+      <h2 class="c-footer-title">FAMBIT</h2>
+      <p class="c-footer-copy">{fambitMicrocopyPrimary}</p>
+      <p class="c-footer-copy">{fambitMicrocopySecondary}</p>
+      <p class="c-footer-copy">{fambitMicrocopyTertiary}</p>
     </section>
 
     <section class="c-footer-section">
