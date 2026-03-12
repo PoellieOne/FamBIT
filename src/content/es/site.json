@@ -11,10 +11,10 @@
     "brand": "FamBIT",
     "languageLabel": "Idioma",
     "nav": {
-      "missions": "Missions",
-      "start": "Start",
-      "stories": "Stories",
-      "safety": "Safety",
+      "missions": "Misiones",
+      "start": "Empezar",
+      "stories": "Historias",
+      "safety": "Seguridad",
       "about": "About"
     },
     "primaryAction": "Guia de seguridad"

@@ -1,7 +1,9 @@
 ---
 import { OFFICIAL_LINKS } from "../lib/i18n";
+import { localizedPath, type Locale } from "../lib/i18n";
 
 interface Props {
+  lang: Locale;
   darkBleed?: boolean;
   tagline: string;
   reminder: string;
@@ -14,27 +16,55 @@ interface Props {
   pumpfunLabel: string;
 }
 
-const { darkBleed = false, tagline, reminder, disclaimer, aboutLabel, safetyLabel, linksTitle, xLabel, telegramLabel, pumpfunLabel } = Astro.props;
+const { lang, darkBleed = false, tagline, reminder, disclaimer, aboutLabel, safetyLabel, linksTitle, xLabel, telegramLabel, pumpfunLabel } = Astro.props;
+const exploreTitle = lang === "es" ? "Explorar" : "Explore";
+const joinTitle = lang === "es" ? "Unete" : "Join";
+const startLabel = lang === "es" ? "Empezar" : "Start";
+const missionsLabel = lang === "es" ? "Misiones" : "Missions";
+const storiesLabel = lang === "es" ? "Historias" : "Stories";
+const safetyNavLabel = lang === "es" ? "Seguridad" : "Safety";
+const officialMicrocopy = lang === "es" ? "Si no aparece aqui, no es oficial." : "If it's not listed here, it's not official.";
+const joinHeadline = lang === "es" ? "Build with us. Grow with us." : "Build with us. Grow with us.";
+const joinCtaLabel = lang === "es" ? "Explorar misiones" : "Explore missions";
+const joinMicrocopy = lang === "es" ? "Reglas transparentes • Comunidad activa • Sin hype" : "Transparent rules • Community driven • No hype";
 ---
 
 <footer class:list={["c-footer", darkBleed && "c-footer-bleed"]}>
   <div class:list={["c-footer-grid", darkBleed && "c-footer-grid-dark"]}>
-    <section>
-      <h2 class="c-footer-title">{aboutLabel}</h2>
-      <p class="c-footer-copy">{tagline}</p>
+    <section class="c-footer-section">
+      <h2 class="c-footer-title">FamBIT</h2>
+      <p class="c-footer-wordmark">FamBIT</p>
+      <p class="c-footer-copy">Family helps family.</p>
+      <p class="c-footer-copy">Community with a coin.</p>
     </section>
-    <section>
-      <h2 class="c-footer-title">{safetyLabel}</h2>
-      <p class="c-footer-emphasis">{reminder}</p>
-      <p class="c-footer-emphasis">{disclaimer}</p>
+
+    <section class="c-footer-section">
+      <h2 class="c-footer-title">{exploreTitle}</h2>
+      <ul class="c-footer-list c-footer-list-plain">
+        <li><a class="c-footer-link" href={localizedPath(lang, "/roadmap")}>{missionsLabel}</a></li>
+        <li><a class="c-footer-link" href={localizedPath(lang, "/community")}>{storiesLabel}</a></li>
+        <li><a class="c-footer-link" href={localizedPath(lang, "/safety")}>{safetyNavLabel}</a></li>
+        <li><a class="c-footer-link" href={localizedPath(lang, "/")}>{startLabel}</a></li>
+      </ul>
     </section>
-    <section aria-label={linksTitle}>
+
+    <section class="c-footer-section" aria-label={linksTitle}>
       <h2 class="c-footer-title">{linksTitle}</h2>
-      <ul class="c-footer-list">
+      <ul class="c-footer-list c-footer-list-plain">
         <li><a class="c-footer-link" href={OFFICIAL_LINKS.x}>{xLabel}</a></li>
         <li><a class="c-footer-link" href={OFFICIAL_LINKS.telegram}>{telegramLabel}</a></li>
         <li><a class="c-footer-link" href={OFFICIAL_LINKS.pumpfun}>{pumpfunLabel}</a></li>
       </ul>
+      <p class="c-footer-copy">{officialMicrocopy}</p>
+    </section>
+
+    <section class="c-footer-section">
+      <h2 class="c-footer-title">{joinTitle}</h2>
+      <p class="c-footer-emphasis">{joinHeadline}</p>
+      <p class="c-footer-join-cta-wrap">
+        <a class="c-footer-join-cta" href={localizedPath(lang, "/roadmap")}>{joinCtaLabel}</a>
+      </p>
+      <p class="c-footer-copy">{joinMicrocopy}</p>
     </section>
   </div>
 </footer>

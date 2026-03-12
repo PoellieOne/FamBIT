@@ -538,9 +538,10 @@ main > section {
     margin-right: calc(50% - 50vw);
     border-radius: 0;
     border: 0;
-    background: #050914;
-    color: rgba(241, 245, 249, 0.92);
-    padding: 2.5rem 1.25rem;
+    border-top: 1px solid rgba(93, 72, 126, 0.35);
+    background: #0B0B12;
+    color: rgba(248, 250, 252, 0.94);
+    padding: 2.75rem 1.25rem;
   }
 
   .c-footer-grid-dark {
@@ -549,22 +550,32 @@ main > section {
   }
 
   .c-footer-bleed .c-footer-title {
-    color: rgba(148, 163, 184, 0.95);
+    color: rgba(203, 213, 225, 0.95);
   }
 
   .c-footer-bleed .c-footer-copy,
   .c-footer-bleed .c-footer-emphasis,
   .c-footer-bleed .c-footer-list {
-    color: rgba(226, 232, 240, 0.95);
+    color: rgba(241, 245, 249, 0.92);
   }
 
   .c-footer-bleed .c-footer-link {
-    color: rgba(147, 197, 253, 0.98);
+    color: #02B649;
+  }
+
+  .c-footer-bleed .c-footer-link:hover {
+    color: #1dd760;
   }
 
   .c-footer-grid {
     display: grid;
     gap: var(--space-4);
+  }
+
+  .c-footer-section {
+    display: grid;
+    align-content: start;
+    gap: 0.55rem;
   }
 
   .c-footer-title {
@@ -578,21 +589,51 @@ main > section {
 
   .c-footer-copy {
     margin: 0;
-    margin-top: var(--space-2);
+    margin-top: 0.2rem;
   }
 
   .c-footer-emphasis {
     margin: 0;
-    margin-top: var(--space-2);
+    margin-top: 0.35rem;
     font-weight: 600;
     color: var(--color-ink-strong);
   }
 
   .c-footer-list {
     margin: 0;
-    margin-top: var(--space-2);
+    margin-top: 0.3rem;
     padding-left: 1.25rem;
     list-style: disc;
+  }
+
+  .c-footer-list-plain {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .c-footer-wordmark {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: rgba(241, 245, 249, 0.98);
+  }
+
+  .c-footer-join-cta-wrap {
+    margin: 0;
+    margin-top: 0.45rem;
+  }
+
+  .c-footer-join-cta {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid rgba(21, 200, 91, 0.5);
+    border-radius: 9999px;
+    background: rgba(21, 200, 91, 0.15);
+    padding: 0.45rem 0.85rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: rgba(226, 232, 240, 0.98);
   }
 
   .c-footer-link {
@@ -645,7 +686,8 @@ main > section {
     }
 
     .c-footer-grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.6rem 1.4rem;
     }
   }
 
@@ -653,6 +695,13 @@ main > section {
     .c-brand-logo {
       height: 50px;
       max-height: 52px;
+    }
+  }
+
+  @media (min-width: 72rem) {
+    .c-footer-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1.5rem;
     }
   }
 }
