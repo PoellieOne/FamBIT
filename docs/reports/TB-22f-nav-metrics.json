@@ -1,0 +1,134 @@
+[
+  {
+    "locale": "en",
+    "viewport": {
+      "key": "tablet-portrait",
+      "width": 768,
+      "height": 1024
+    },
+    "langVisibleTopState": true,
+    "langVisibleScrolledState": false,
+    "noNavLangOverlapTop": true,
+    "langTopTopState": 82,
+    "langTopScrolledState": 82,
+    "langTopDelta": 0,
+    "checks": {
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "edgeGapFloorPass": true,
+      "noClipping": true,
+      "centerDeltaPass": true,
+      "sideAirFloorPass": true
+    }
+  },
+  {
+    "locale": "en",
+    "viewport": {
+      "key": "tablet-landscape",
+      "width": 1024,
+      "height": 768
+    },
+    "langVisibleTopState": true,
+    "langVisibleScrolledState": false,
+    "noNavLangOverlapTop": true,
+    "langTopTopState": 82,
+    "langTopScrolledState": 82,
+    "langTopDelta": 0,
+    "checks": {
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "edgeGapFloorPass": true,
+      "noClipping": true,
+      "centerDeltaPass": true,
+      "sideAirFloorPass": true
+    }
+  },
+  {
+    "locale": "en",
+    "viewport": {
+      "key": "smallest",
+      "width": 320,
+      "height": 568
+    },
+    "langVisibleTopState": true,
+    "langVisibleScrolledState": false,
+    "noNavLangOverlapTop": true,
+    "langTopTopState": 82,
+    "langTopScrolledState": 82,
+    "langTopDelta": 0,
+    "checks": {
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "edgeGapFloorPass": true,
+      "noClipping": true,
+      "centerDeltaPass": true,
+      "sideAirFloorPass": true
+    }
+  },
+  {
+    "locale": "es",
+    "viewport": {
+      "key": "tablet-portrait",
+      "width": 768,
+      "height": 1024
+    },
+    "langVisibleTopState": true,
+    "langVisibleScrolledState": false,
+    "noNavLangOverlapTop": true,
+    "langTopTopState": 82,
+    "langTopScrolledState": 82,
+    "langTopDelta": 0,
+    "checks": {
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "edgeGapFloorPass": true,
+      "noClipping": true,
+      "centerDeltaPass": true,
+      "sideAirFloorPass": true
+    }
+  },
+  {
+    "locale": "es",
+    "viewport": {
+      "key": "tablet-landscape",
+      "width": 1024,
+      "height": 768
+    },
+    "langVisibleTopState": true,
+    "langVisibleScrolledState": false,
+    "noNavLangOverlapTop": true,
+    "langTopTopState": 82,
+    "langTopScrolledState": 82,
+    "langTopDelta": 0,
+    "checks": {
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "edgeGapFloorPass": true,
+      "noClipping": true,
+      "centerDeltaPass": true,
+      "sideAirFloorPass": true
+    }
+  },
+  {
+    "locale": "es",
+    "viewport": {
+      "key": "smallest",
+      "width": 320,
+      "height": 568
+    },
+    "langVisibleTopState": true,
+    "langVisibleScrolledState": false,
+    "noNavLangOverlapTop": true,
+    "langTopTopState": 82,
+    "langTopScrolledState": 82,
+    "langTopDelta": 0,
+    "checks": {
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "edgeGapFloorPass": true,
+      "noClipping": true,
+      "centerDeltaPass": true,
+      "sideAirFloorPass": true
+    }
+  }
+]

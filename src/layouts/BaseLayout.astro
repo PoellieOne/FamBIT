@@ -185,6 +185,11 @@ const [heroHeadlineMain, heroHeadlineSecondary] = String(heroTitle).split("\n");
 
           let rafId = 0;
 
+          const syncHeroTopState = () => {
+            const atTop = window.scrollY <= 8;
+            document.body.classList.toggle("c-hero-not-top", !atTop);
+          };
+
           const applyParallax = () => {
             if (!hero || !img) return;
             if (!desktopQuery.matches || motionQuery.matches) {
@@ -202,11 +207,13 @@ const [heroHeadlineMain, heroHeadlineSecondary] = String(heroTitle).split("\n");
             if (rafId) return;
             rafId = window.requestAnimationFrame(() => {
               applyParallax();
+              syncHeroTopState();
               rafId = 0;
             });
           };
 
           applyParallax();
+          syncHeroTopState();
           window.addEventListener("scroll", onScroll, { passive: true });
           window.addEventListener("resize", onScroll);
         </script>

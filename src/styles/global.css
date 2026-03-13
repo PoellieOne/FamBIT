@@ -41,10 +41,11 @@
   --nav-fixed-top: 0.9rem;
   --nav-mobile-row-min-height: 42px;
   --nav-mobile-pad-y: clamp(0.24rem, 0.6vw, 0.3rem);
-  --nav-mobile-lang-band-offset: clamp(4px, 1.4vw, 16px);
+  --nav-mobile-border-y: 2px;
   --nav-smallest-row-min-height: 40px;
   --nav-smallest-pad-y: clamp(0.26rem, 1.3vw, 0.32rem);
-  --nav-smallest-lang-band-offset: clamp(4px, 2.8vw, 24px);
+  --nav-smallest-border-y: 2px;
+  --nav-lang-fixed-gap: 10px;
 
   --section-pad-y: clamp(2.25rem, 5vw, 4.75rem);
   --section-gap: clamp(1rem, 2vw, 1.75rem);
@@ -384,9 +385,6 @@ main > section {
     --nav-link-letter-spacing: calc(var(--nav-link-track-base) * var(--nav-pressure));
     --nav-link-shell-border: max(1px, calc(var(--nav-link-shell-border-base) * var(--nav-pressure)));
     --nav-lang-menu-gap: 0.25rem;
-    --nav-lang-band-min: 4px;
-    --nav-lang-band-max: 24px;
-    --nav-lang-band-offset: 12px;
     position: sticky;
     top: 0.75rem;
     z-index: 20;
@@ -555,6 +553,16 @@ main > section {
     max-width: var(--lang-max-width);
     display: flex;
     justify-content: flex-end;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity 120ms ease;
+  }
+
+  body.c-hero-not-top .c-hero-lang {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
 
   .c-hero-lang .c-lang-menu {
@@ -789,8 +797,8 @@ main > section {
 
   .c-hero-lang {
     --lang-position: fixed;
-    --lang-top: calc(env(safe-area-inset-top, 0px) + var(--nav-fixed-top) + var(--nav-mobile-row-min-height) + (2 * var(--nav-mobile-pad-y)) + var(--nav-mobile-lang-band-offset));
-    --lang-right: max(0.9rem, calc(env(safe-area-inset-right, 0px) + 0.5rem));
+    --lang-top: calc(env(safe-area-inset-top, 0px) + 82px);
+    --lang-right: max(0.5rem, calc(env(safe-area-inset-right, 0px) + 0.5rem));
     --lang-z: 58;
     --lang-max-width: calc(100vw - max(1.5rem, env(safe-area-inset-left, 0px) + env(safe-area-inset-right, 0px) + 1rem));
   }
@@ -849,7 +857,7 @@ main > section {
   }
 
   .c-hero-lang {
-    --lang-top: calc(env(safe-area-inset-top, 0px) + var(--nav-fixed-top) + var(--nav-smallest-row-min-height) + (2 * var(--nav-smallest-pad-y)) + var(--nav-smallest-lang-band-offset));
+    --lang-top: calc(env(safe-area-inset-top, 0px) + 82px);
     --lang-right: max(0.5rem, calc(env(safe-area-inset-right, 0px) + 0.25rem));
     --lang-max-width: calc(100vw - max(1rem, env(safe-area-inset-left, 0px) + env(safe-area-inset-right, 0px) + 0.5rem));
   }
