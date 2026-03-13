@@ -1,0 +1,96 @@
+[
+  {
+    "locale": "en",
+    "viewport": {
+      "key": "compact-landscape",
+      "width": 915,
+      "height": 412
+    },
+    "top": {
+      "state": "top",
+      "heroTextFullyVisible": true,
+      "noTextClip": true,
+      "noNavHeroOverlap": true,
+      "copyTopToNavBottom": 129.125,
+      "hierarchy": {
+        "eyebrow": 13.12,
+        "headline": 34.4,
+        "subtext": 13.44
+      },
+      "navConstraints": {
+        "singleRow": true,
+        "buttonGapMin": 4,
+        "edgeLeft": 61.765625,
+        "edgeRight": 19.890625,
+        "noNavLangOverlap": true
+      }
+    },
+    "scrolled": {
+      "state": "scrolled",
+      "heroTextFullyVisible": false,
+      "noTextClip": true,
+      "noNavHeroOverlap": false,
+      "copyTopToNavBottom": -190.875,
+      "hierarchy": {
+        "eyebrow": 13.12,
+        "headline": 34.4,
+        "subtext": 13.44
+      },
+      "navConstraints": {
+        "singleRow": true,
+        "buttonGapMin": 4,
+        "edgeLeft": 61.765625,
+        "edgeRight": 19.890625,
+        "noNavLangOverlap": true
+      }
+    },
+    "pass": true
+  },
+  {
+    "locale": "es",
+    "viewport": {
+      "key": "compact-landscape",
+      "width": 915,
+      "height": 412
+    },
+    "top": {
+      "state": "top",
+      "heroTextFullyVisible": true,
+      "noTextClip": true,
+      "noNavHeroOverlap": true,
+      "copyTopToNavBottom": 129.125,
+      "hierarchy": {
+        "eyebrow": 13.12,
+        "headline": 34.4,
+        "subtext": 13.44
+      },
+      "navConstraints": {
+        "singleRow": true,
+        "buttonGapMin": 4,
+        "edgeLeft": 61.765625,
+        "edgeRight": 19.890625,
+        "noNavLangOverlap": true
+      }
+    },
+    "scrolled": {
+      "state": "scrolled",
+      "heroTextFullyVisible": false,
+      "noTextClip": true,
+      "noNavHeroOverlap": false,
+      "copyTopToNavBottom": -190.875,
+      "hierarchy": {
+        "eyebrow": 13.12,
+        "headline": 34.4,
+        "subtext": 13.44
+      },
+      "navConstraints": {
+        "singleRow": true,
+        "buttonGapMin": 4,
+        "edgeLeft": 61.765625,
+        "edgeRight": 19.890625,
+        "noNavLangOverlap": true
+      }
+    },
+    "pass": true
+  }
+]
