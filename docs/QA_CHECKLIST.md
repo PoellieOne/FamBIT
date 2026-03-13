@@ -72,3 +72,15 @@ Use this checklist after implementation delivery. Any unchecked hard item blocks
 - [ ] Cloudflare Pages build settings documented.
 - [ ] Custom domains configured: `fambit.xyz` and `www.fambit.xyz`.
 - [ ] HTTPS and canonical redirect policy confirmed.
+
+## I) Mobile Nav Real-Device Contract (blocking)
+
+- [ ] Real-device mobile check performed (not simulator-only).
+- [ ] `logo + menu` set is centered as one unit inside nav container.
+- [ ] Internal side air is visible on both sides (never 0).
+- [ ] Inter-button spacing floor is maintained (>= 4px).
+- [ ] First/last nav buttons stay fully inside container (no spill).
+- [ ] No logo/button overlap on EN and ES.
+- [ ] Language button does not overlap nav container.
+- [ ] Language button follows breakpoint profile (tablet/mobile) without drift on scroll.
+- [ ] Top-state and scrolled-state both pass on EN + ES.

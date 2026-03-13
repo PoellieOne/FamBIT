@@ -81,6 +81,22 @@ Must replicate:
 Non-compliant pattern:
 - Sparse, single-style sections that preserve prior custom layout assumptions.
 
+### 2.7 Mobile Nav Geometry and Language Layering (Binding)
+
+Must enforce:
+- `logo + menu buttons` behave as one centered set inside the nav container.
+- Internal side air remains positive on both sides and never collapses to zero.
+- Inter-button spacing floor is explicit and stable.
+
+Language control behavior:
+- Must follow explicit breakpoint profile.
+- Must not overlap nav container.
+- Layering and scroll behavior must be deterministic (no push/drift artifacts).
+
+Scaling rule:
+- Under container pressure, nav button text and button shell (padding/border profile) scale together as a set.
+- Isolated text-only scaling is non-compliant.
+
 ## 3) What Must Be Replicated Exactly
 
 - Hero-first opening architecture with integrated navigation.
@@ -130,3 +146,9 @@ Must use as primary home banner:
 ## 8) Gatekeeper Decision Rule
 
 If the resulting layout reads as "old site with template fragments", outcome is FAIL.
+
+## 9) Real-Device Truth Rule
+
+Primary acceptance source for mobile navigation is real-device behavior.
+
+If screenshot matrix passes but real-device test fails, outcome is FAIL until real-device issue is resolved.

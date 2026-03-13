@@ -1,0 +1,666 @@
+[
+  {
+    "locale": "en",
+    "viewport": {
+      "key": "desktop-compact",
+      "width": 1280,
+      "height": 720,
+      "mobileBand": false
+    },
+    "top": {
+      "state": "top",
+      "navRect": {
+        "top": 14.390625,
+        "bottom": 76.390625,
+        "left": 406.296875,
+        "right": 873.703125
+      },
+      "langRect": {
+        "top": 17,
+        "bottom": 46.1875,
+        "left": 1178.140625,
+        "right": 1216
+      },
+      "langToNavDelta": -59.390625,
+      "leftEdgeGap": 87.65625,
+      "rightEdgeGap": 25,
+      "buttonGapMin": 4,
+      "leftAir": 21,
+      "rightAir": 21,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "noClipping": true
+    },
+    "scrolled": {
+      "state": "scrolled",
+      "navRect": {
+        "top": 14.390625,
+        "bottom": 76.390625,
+        "left": 406.296875,
+        "right": 873.703125
+      },
+      "langRect": {
+        "top": -303,
+        "bottom": -273.8125,
+        "left": 1178.140625,
+        "right": 1216
+      },
+      "langToNavDelta": -379.390625,
+      "leftEdgeGap": 87.65625,
+      "rightEdgeGap": 25,
+      "buttonGapMin": 4,
+      "leftAir": 21,
+      "rightAir": 21,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "noClipping": true
+    },
+    "checks": {
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "sideAirFloorPass": true,
+      "edgeGapFloorPass": true,
+      "centerDeltaPass": true,
+      "noClipping": true,
+      "noNavLangOverlap": true,
+      "topBandTopPass": true,
+      "topBandScrolledPass": true,
+      "topBandPass": true,
+      "langToNavDeltaTop": -59.390625,
+      "langToNavDeltaScrolled": -379.390625,
+      "leftEdgeGapTop": 87.65625,
+      "rightEdgeGapTop": 25,
+      "leftEdgeGapScrolled": 87.65625,
+      "rightEdgeGapScrolled": 25,
+      "buttonGapMinTop": 4,
+      "buttonGapMinScrolled": 4,
+      "centerDeltaTop": 0,
+      "centerDeltaScrolled": 0,
+      "leftAirTop": 21,
+      "rightAirTop": 21,
+      "leftAirScrolled": 21,
+      "rightAirScrolled": 21
+    }
+  },
+  {
+    "locale": "en",
+    "viewport": {
+      "key": "tablet-portrait",
+      "width": 768,
+      "height": 1024,
+      "mobileBand": true
+    },
+    "top": {
+      "state": "top",
+      "navRect": {
+        "top": 14.390625,
+        "bottom": 67.578125,
+        "left": 202.53125,
+        "right": 565.46875
+      },
+      "langRect": {
+        "top": 76.359375,
+        "bottom": 105.546875,
+        "left": 715.75,
+        "right": 753.609375
+      },
+      "langToNavDelta": 8.78125,
+      "leftEdgeGap": 60.296875,
+      "rightEdgeGap": 18.421875,
+      "buttonGapMin": 4,
+      "leftAir": 14.421875,
+      "rightAir": 14.421875,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "noClipping": true
+    },
+    "scrolled": {
+      "state": "scrolled",
+      "navRect": {
+        "top": 14.390625,
+        "bottom": 67.578125,
+        "left": 202.53125,
+        "right": 565.46875
+      },
+      "langRect": {
+        "top": 76.359375,
+        "bottom": 105.546875,
+        "left": 715.75,
+        "right": 753.609375
+      },
+      "langToNavDelta": 8.78125,
+      "leftEdgeGap": 60.296875,
+      "rightEdgeGap": 18.421875,
+      "buttonGapMin": 4,
+      "leftAir": 14.421875,
+      "rightAir": 14.421875,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "noClipping": true
+    },
+    "checks": {
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "sideAirFloorPass": true,
+      "edgeGapFloorPass": true,
+      "centerDeltaPass": true,
+      "noClipping": true,
+      "noNavLangOverlap": true,
+      "topBandTopPass": true,
+      "topBandScrolledPass": true,
+      "topBandPass": true,
+      "langToNavDeltaTop": 8.78125,
+      "langToNavDeltaScrolled": 8.78125,
+      "leftEdgeGapTop": 60.296875,
+      "rightEdgeGapTop": 18.421875,
+      "leftEdgeGapScrolled": 60.296875,
+      "rightEdgeGapScrolled": 18.421875,
+      "buttonGapMinTop": 4,
+      "buttonGapMinScrolled": 4,
+      "centerDeltaTop": 0,
+      "centerDeltaScrolled": 0,
+      "leftAirTop": 14.421875,
+      "rightAirTop": 14.421875,
+      "leftAirScrolled": 14.421875,
+      "rightAirScrolled": 14.421875
+    }
+  },
+  {
+    "locale": "en",
+    "viewport": {
+      "key": "tablet-landscape",
+      "width": 1024,
+      "height": 768,
+      "mobileBand": true
+    },
+    "top": {
+      "state": "top",
+      "navRect": {
+        "top": 14.390625,
+        "bottom": 67.984375,
+        "left": 328.296875,
+        "right": 695.703125
+      },
+      "langRect": {
+        "top": 80.328125,
+        "bottom": 109.515625,
+        "left": 971.75,
+        "right": 1009.609375
+      },
+      "langToNavDelta": 12.34375,
+      "leftEdgeGap": 62.53125,
+      "rightEdgeGap": 20.65625,
+      "buttonGapMin": 4,
+      "leftAir": 16.65625,
+      "rightAir": 16.65625,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "noClipping": true
+    },
+    "scrolled": {
+      "state": "scrolled",
+      "navRect": {
+        "top": 14.390625,
+        "bottom": 67.984375,
+        "left": 328.296875,
+        "right": 695.703125
+      },
+      "langRect": {
+        "top": 80.328125,
+        "bottom": 109.515625,
+        "left": 971.75,
+        "right": 1009.609375
+      },
+      "langToNavDelta": 12.34375,
+      "leftEdgeGap": 62.53125,
+      "rightEdgeGap": 20.65625,
+      "buttonGapMin": 4,
+      "leftAir": 16.65625,
+      "rightAir": 16.65625,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "noClipping": true
+    },
+    "checks": {
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "sideAirFloorPass": true,
+      "edgeGapFloorPass": true,
+      "centerDeltaPass": true,
+      "noClipping": true,
+      "noNavLangOverlap": true,
+      "topBandTopPass": true,
+      "topBandScrolledPass": true,
+      "topBandPass": true,
+      "langToNavDeltaTop": 12.34375,
+      "langToNavDeltaScrolled": 12.34375,
+      "leftEdgeGapTop": 62.53125,
+      "rightEdgeGapTop": 20.65625,
+      "leftEdgeGapScrolled": 62.53125,
+      "rightEdgeGapScrolled": 20.65625,
+      "buttonGapMinTop": 4,
+      "buttonGapMinScrolled": 4,
+      "centerDeltaTop": 0,
+      "centerDeltaScrolled": 0,
+      "leftAirTop": 16.65625,
+      "rightAirTop": 16.65625,
+      "leftAirScrolled": 16.65625,
+      "rightAirScrolled": 16.65625
+    }
+  },
+  {
+    "locale": "en",
+    "viewport": {
+      "key": "smallest",
+      "width": 320,
+      "height": 568,
+      "mobileBand": true
+    },
+    "top": {
+      "state": "top",
+      "navRect": {
+        "top": 14.390625,
+        "bottom": 64.703125,
+        "left": 12.46875,
+        "right": 307.53125
+      },
+      "langRect": {
+        "top": 71.671875,
+        "bottom": 100.859375,
+        "left": 274.140625,
+        "right": 312
+      },
+      "langToNavDelta": 6.96875,
+      "leftEdgeGap": 54.140625,
+      "rightEdgeGap": 13.796875,
+      "buttonGapMin": 4,
+      "leftAir": 9.796875,
+      "rightAir": 9.796875,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "noClipping": true
+    },
+    "scrolled": {
+      "state": "scrolled",
+      "navRect": {
+        "top": 14.390625,
+        "bottom": 64.703125,
+        "left": 12.46875,
+        "right": 307.53125
+      },
+      "langRect": {
+        "top": 71.671875,
+        "bottom": 100.859375,
+        "left": 274.140625,
+        "right": 312
+      },
+      "langToNavDelta": 6.96875,
+      "leftEdgeGap": 54.140625,
+      "rightEdgeGap": 13.796875,
+      "buttonGapMin": 4,
+      "leftAir": 9.796875,
+      "rightAir": 9.796875,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "noClipping": true
+    },
+    "checks": {
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "sideAirFloorPass": true,
+      "edgeGapFloorPass": true,
+      "centerDeltaPass": true,
+      "noClipping": true,
+      "noNavLangOverlap": true,
+      "topBandTopPass": true,
+      "topBandScrolledPass": true,
+      "topBandPass": true,
+      "langToNavDeltaTop": 6.96875,
+      "langToNavDeltaScrolled": 6.96875,
+      "leftEdgeGapTop": 54.140625,
+      "rightEdgeGapTop": 13.796875,
+      "leftEdgeGapScrolled": 54.140625,
+      "rightEdgeGapScrolled": 13.796875,
+      "buttonGapMinTop": 4,
+      "buttonGapMinScrolled": 4,
+      "centerDeltaTop": 0,
+      "centerDeltaScrolled": 0,
+      "leftAirTop": 9.796875,
+      "rightAirTop": 9.796875,
+      "leftAirScrolled": 9.796875,
+      "rightAirScrolled": 9.796875
+    }
+  },
+  {
+    "locale": "es",
+    "viewport": {
+      "key": "desktop-compact",
+      "width": 1280,
+      "height": 720,
+      "mobileBand": false
+    },
+    "top": {
+      "state": "top",
+      "navRect": {
+        "top": 14.390625,
+        "bottom": 76.390625,
+        "left": 372.0859375,
+        "right": 907.9140625
+      },
+      "langRect": {
+        "top": 17,
+        "bottom": 46.1875,
+        "left": 1178.796875,
+        "right": 1216
+      },
+      "langToNavDelta": -59.390625,
+      "leftEdgeGap": 87.65625,
+      "rightEdgeGap": 25,
+      "buttonGapMin": 4,
+      "leftAir": 21,
+      "rightAir": 21,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "noClipping": true
+    },
+    "scrolled": {
+      "state": "scrolled",
+      "navRect": {
+        "top": 14.390625,
+        "bottom": 76.390625,
+        "left": 372.0859375,
+        "right": 907.9140625
+      },
+      "langRect": {
+        "top": -303,
+        "bottom": -273.8125,
+        "left": 1178.796875,
+        "right": 1216
+      },
+      "langToNavDelta": -379.390625,
+      "leftEdgeGap": 87.65625,
+      "rightEdgeGap": 25,
+      "buttonGapMin": 4,
+      "leftAir": 21,
+      "rightAir": 21,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "noClipping": true
+    },
+    "checks": {
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "sideAirFloorPass": true,
+      "edgeGapFloorPass": true,
+      "centerDeltaPass": true,
+      "noClipping": true,
+      "noNavLangOverlap": true,
+      "topBandTopPass": true,
+      "topBandScrolledPass": true,
+      "topBandPass": true,
+      "langToNavDeltaTop": -59.390625,
+      "langToNavDeltaScrolled": -379.390625,
+      "leftEdgeGapTop": 87.65625,
+      "rightEdgeGapTop": 25,
+      "leftEdgeGapScrolled": 87.65625,
+      "rightEdgeGapScrolled": 25,
+      "buttonGapMinTop": 4,
+      "buttonGapMinScrolled": 4,
+      "centerDeltaTop": 0,
+      "centerDeltaScrolled": 0,
+      "leftAirTop": 21,
+      "rightAirTop": 21,
+      "leftAirScrolled": 21,
+      "rightAirScrolled": 21
+    }
+  },
+  {
+    "locale": "es",
+    "viewport": {
+      "key": "tablet-portrait",
+      "width": 768,
+      "height": 1024,
+      "mobileBand": true
+    },
+    "top": {
+      "state": "top",
+      "navRect": {
+        "top": 14.390625,
+        "bottom": 67.578125,
+        "left": 173.0859375,
+        "right": 594.9140625
+      },
+      "langRect": {
+        "top": 76.359375,
+        "bottom": 105.546875,
+        "left": 716.40625,
+        "right": 753.609375
+      },
+      "langToNavDelta": 8.78125,
+      "leftEdgeGap": 60.296875,
+      "rightEdgeGap": 18.421875,
+      "buttonGapMin": 4,
+      "leftAir": 14.421875,
+      "rightAir": 14.421875,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "noClipping": true
+    },
+    "scrolled": {
+      "state": "scrolled",
+      "navRect": {
+        "top": 14.390625,
+        "bottom": 67.578125,
+        "left": 173.0859375,
+        "right": 594.9140625
+      },
+      "langRect": {
+        "top": 76.359375,
+        "bottom": 105.546875,
+        "left": 716.40625,
+        "right": 753.609375
+      },
+      "langToNavDelta": 8.78125,
+      "leftEdgeGap": 60.296875,
+      "rightEdgeGap": 18.421875,
+      "buttonGapMin": 4,
+      "leftAir": 14.421875,
+      "rightAir": 14.421875,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "noClipping": true
+    },
+    "checks": {
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "sideAirFloorPass": true,
+      "edgeGapFloorPass": true,
+      "centerDeltaPass": true,
+      "noClipping": true,
+      "noNavLangOverlap": true,
+      "topBandTopPass": true,
+      "topBandScrolledPass": true,
+      "topBandPass": true,
+      "langToNavDeltaTop": 8.78125,
+      "langToNavDeltaScrolled": 8.78125,
+      "leftEdgeGapTop": 60.296875,
+      "rightEdgeGapTop": 18.421875,
+      "leftEdgeGapScrolled": 60.296875,
+      "rightEdgeGapScrolled": 18.421875,
+      "buttonGapMinTop": 4,
+      "buttonGapMinScrolled": 4,
+      "centerDeltaTop": 0,
+      "centerDeltaScrolled": 0,
+      "leftAirTop": 14.421875,
+      "rightAirTop": 14.421875,
+      "leftAirScrolled": 14.421875,
+      "rightAirScrolled": 14.421875
+    }
+  },
+  {
+    "locale": "es",
+    "viewport": {
+      "key": "tablet-landscape",
+      "width": 1024,
+      "height": 768,
+      "mobileBand": true
+    },
+    "top": {
+      "state": "top",
+      "navRect": {
+        "top": 14.390625,
+        "bottom": 67.984375,
+        "left": 298.8515625,
+        "right": 725.1484375
+      },
+      "langRect": {
+        "top": 80.328125,
+        "bottom": 109.515625,
+        "left": 972.40625,
+        "right": 1009.609375
+      },
+      "langToNavDelta": 12.34375,
+      "leftEdgeGap": 62.53125,
+      "rightEdgeGap": 20.65625,
+      "buttonGapMin": 4,
+      "leftAir": 16.65625,
+      "rightAir": 16.65625,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "noClipping": true
+    },
+    "scrolled": {
+      "state": "scrolled",
+      "navRect": {
+        "top": 14.390625,
+        "bottom": 67.984375,
+        "left": 298.8515625,
+        "right": 725.1484375
+      },
+      "langRect": {
+        "top": 80.328125,
+        "bottom": 109.515625,
+        "left": 972.40625,
+        "right": 1009.609375
+      },
+      "langToNavDelta": 12.34375,
+      "leftEdgeGap": 62.53125,
+      "rightEdgeGap": 20.65625,
+      "buttonGapMin": 4,
+      "leftAir": 16.65625,
+      "rightAir": 16.65625,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "noClipping": true
+    },
+    "checks": {
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "sideAirFloorPass": true,
+      "edgeGapFloorPass": true,
+      "centerDeltaPass": true,
+      "noClipping": true,
+      "noNavLangOverlap": true,
+      "topBandTopPass": true,
+      "topBandScrolledPass": true,
+      "topBandPass": true,
+      "langToNavDeltaTop": 12.34375,
+      "langToNavDeltaScrolled": 12.34375,
+      "leftEdgeGapTop": 62.53125,
+      "rightEdgeGapTop": 20.65625,
+      "leftEdgeGapScrolled": 62.53125,
+      "rightEdgeGapScrolled": 20.65625,
+      "buttonGapMinTop": 4,
+      "buttonGapMinScrolled": 4,
+      "centerDeltaTop": 0,
+      "centerDeltaScrolled": 0,
+      "leftAirTop": 16.65625,
+      "rightAirTop": 16.65625,
+      "leftAirScrolled": 16.65625,
+      "rightAirScrolled": 16.65625
+    }
+  },
+  {
+    "locale": "es",
+    "viewport": {
+      "key": "smallest",
+      "width": 320,
+      "height": 568,
+      "mobileBand": true
+    },
+    "top": {
+      "state": "top",
+      "navRect": {
+        "top": 14.390625,
+        "bottom": 64.703125,
+        "left": 8,
+        "right": 312
+      },
+      "langRect": {
+        "top": 71.671875,
+        "bottom": 100.859375,
+        "left": 274.796875,
+        "right": 312
+      },
+      "langToNavDelta": 6.96875,
+      "leftEdgeGap": 50.890625,
+      "rightEdgeGap": 12.8125,
+      "buttonGapMin": 4,
+      "leftAir": 9.796875,
+      "rightAir": 8.8125,
+      "centerDelta": 0.984375,
+      "rowDeltaTop": 0,
+      "noClipping": true
+    },
+    "scrolled": {
+      "state": "scrolled",
+      "navRect": {
+        "top": 14.390625,
+        "bottom": 64.703125,
+        "left": 8,
+        "right": 312
+      },
+      "langRect": {
+        "top": 71.671875,
+        "bottom": 100.859375,
+        "left": 274.796875,
+        "right": 312
+      },
+      "langToNavDelta": 6.96875,
+      "leftEdgeGap": 50.890625,
+      "rightEdgeGap": 12.8125,
+      "buttonGapMin": 4,
+      "leftAir": 9.796875,
+      "rightAir": 8.8125,
+      "centerDelta": 0.984375,
+      "rowDeltaTop": 0,
+      "noClipping": true
+    },
+    "checks": {
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "sideAirFloorPass": true,
+      "edgeGapFloorPass": true,
+      "centerDeltaPass": true,
+      "noClipping": true,
+      "noNavLangOverlap": true,
+      "topBandTopPass": true,
+      "topBandScrolledPass": true,
+      "topBandPass": true,
+      "langToNavDeltaTop": 6.96875,
+      "langToNavDeltaScrolled": 6.96875,
+      "leftEdgeGapTop": 50.890625,
+      "rightEdgeGapTop": 12.8125,
+      "leftEdgeGapScrolled": 50.890625,
+      "rightEdgeGapScrolled": 12.8125,
+      "buttonGapMinTop": 4,
+      "buttonGapMinScrolled": 4,
+      "centerDeltaTop": 0.984375,
+      "centerDeltaScrolled": 0.984375,
+      "leftAirTop": 9.796875,
+      "rightAirTop": 8.8125,
+      "leftAirScrolled": 9.796875,
+      "rightAirScrolled": 8.8125
+    }
+  }
+]

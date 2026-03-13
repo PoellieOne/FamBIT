@@ -1,0 +1,954 @@
+[
+  {
+    "locale": "en",
+    "viewport": {
+      "key": "desktop-compact",
+      "width": 1280,
+      "height": 720
+    },
+    "top": {
+      "state": "top",
+      "container": {
+        "left": 410.296875,
+        "right": 869.703125,
+        "top": 14.390625,
+        "bottom": 76.390625
+      },
+      "lang": {
+        "x": 1178.140625,
+        "y": 17,
+        "width": 37.859375,
+        "height": 29.1875,
+        "top": 17,
+        "right": 1216,
+        "bottom": 46.1875,
+        "left": 1178.140625
+      },
+      "leftAir": 21,
+      "rightAir": 21,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "buttonGapMin": 4,
+      "buttonGapValues": [
+        4,
+        4,
+        4
+      ],
+      "noClipping": true,
+      "sampleLink": {
+        "text": "Missions",
+        "left": 493.953125,
+        "right": 591.046875,
+        "top": 28.046875,
+        "scrollWidth": 95,
+        "clientWidth": 95,
+        "fontSize": "13.44px",
+        "letterSpacing": "0.672px",
+        "paddingInlineStart": "12px",
+        "paddingInlineEnd": "12px",
+        "borderLeftWidth": "1px",
+        "borderRightWidth": "1px"
+      },
+      "navGapComputed": "4px",
+      "rowGapComputed": "4.48px"
+    },
+    "scrolled": {
+      "state": "scrolled",
+      "container": {
+        "left": 410.296875,
+        "right": 869.703125,
+        "top": 14.390625,
+        "bottom": 76.390625
+      },
+      "lang": {
+        "x": 1178.140625,
+        "y": -303,
+        "width": 37.859375,
+        "height": 29.1875,
+        "top": -303,
+        "right": 1216,
+        "bottom": -273.8125,
+        "left": 1178.140625
+      },
+      "leftAir": 21,
+      "rightAir": 21,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "buttonGapMin": 4,
+      "buttonGapValues": [
+        4,
+        4,
+        4
+      ],
+      "noClipping": true,
+      "sampleLink": {
+        "text": "Missions",
+        "left": 493.953125,
+        "right": 591.046875,
+        "top": 28.046875,
+        "scrollWidth": 95,
+        "clientWidth": 95,
+        "fontSize": "13.44px",
+        "letterSpacing": "0.672px",
+        "paddingInlineStart": "12px",
+        "paddingInlineEnd": "12px",
+        "borderLeftWidth": "1px",
+        "borderRightWidth": "1px"
+      },
+      "navGapComputed": "4px",
+      "rowGapComputed": "4.48px"
+    },
+    "checks": {
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "sideAirFloorPass": true,
+      "centerDeltaPass": true,
+      "noClipping": true,
+      "noNavLangOverlap": true,
+      "languageOffsetDelta": 320,
+      "relationTop": -59.390625,
+      "relationScrolled": -379.390625,
+      "buttonGapMinTop": 4,
+      "buttonGapMinScrolled": 4,
+      "leftAirTop": 21,
+      "rightAirTop": 21,
+      "leftAirScrolled": 21,
+      "rightAirScrolled": 21,
+      "centerDeltaTop": 0,
+      "centerDeltaScrolled": 0
+    }
+  },
+  {
+    "locale": "en",
+    "viewport": {
+      "key": "tablet-portrait",
+      "width": 768,
+      "height": 1024
+    },
+    "top": {
+      "state": "top",
+      "container": {
+        "left": 206.53125,
+        "right": 561.46875,
+        "top": 14.390625,
+        "bottom": 67.578125
+      },
+      "lang": {
+        "x": 715.75,
+        "y": 955.8125,
+        "width": 37.859375,
+        "height": 29.1875,
+        "top": 955.8125,
+        "right": 753.609375,
+        "bottom": 985,
+        "left": 715.75
+      },
+      "leftAir": 14.421875,
+      "rightAir": 14.421875,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "buttonGapMin": 4,
+      "buttonGapValues": [
+        4,
+        4,
+        4
+      ],
+      "noClipping": true,
+      "sampleLink": {
+        "text": "Missions",
+        "left": 262.828125,
+        "right": 340.671875,
+        "top": 27.109375,
+        "scrollWidth": 76,
+        "clientWidth": 76,
+        "fontSize": "11.6736px",
+        "letterSpacing": "0.515506px",
+        "paddingInlineStart": "7.3728px",
+        "paddingInlineEnd": "7.3728px",
+        "borderLeftWidth": "1px",
+        "borderRightWidth": "1px"
+      },
+      "navGapComputed": "4px",
+      "rowGapComputed": "3.2px"
+    },
+    "scrolled": {
+      "state": "scrolled",
+      "container": {
+        "left": 206.53125,
+        "right": 561.46875,
+        "top": 14.390625,
+        "bottom": 67.578125
+      },
+      "lang": {
+        "x": 715.75,
+        "y": 635.8125,
+        "width": 37.859375,
+        "height": 29.1875,
+        "top": 635.8125,
+        "right": 753.609375,
+        "bottom": 665,
+        "left": 715.75
+      },
+      "leftAir": 14.421875,
+      "rightAir": 14.421875,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "buttonGapMin": 4,
+      "buttonGapValues": [
+        4,
+        4,
+        4
+      ],
+      "noClipping": true,
+      "sampleLink": {
+        "text": "Missions",
+        "left": 262.828125,
+        "right": 340.671875,
+        "top": 27.109375,
+        "scrollWidth": 76,
+        "clientWidth": 76,
+        "fontSize": "11.6736px",
+        "letterSpacing": "0.515506px",
+        "paddingInlineStart": "7.3728px",
+        "paddingInlineEnd": "7.3728px",
+        "borderLeftWidth": "1px",
+        "borderRightWidth": "1px"
+      },
+      "navGapComputed": "4px",
+      "rowGapComputed": "3.2px"
+    },
+    "checks": {
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "sideAirFloorPass": true,
+      "centerDeltaPass": true,
+      "noClipping": true,
+      "noNavLangOverlap": true,
+      "languageOffsetDelta": 320,
+      "relationTop": 888.234375,
+      "relationScrolled": 568.234375,
+      "buttonGapMinTop": 4,
+      "buttonGapMinScrolled": 4,
+      "leftAirTop": 14.421875,
+      "rightAirTop": 14.421875,
+      "leftAirScrolled": 14.421875,
+      "rightAirScrolled": 14.421875,
+      "centerDeltaTop": 0,
+      "centerDeltaScrolled": 0
+    }
+  },
+  {
+    "locale": "en",
+    "viewport": {
+      "key": "tablet-landscape",
+      "width": 1024,
+      "height": 768
+    },
+    "top": {
+      "state": "top",
+      "container": {
+        "left": 332.296875,
+        "right": 691.703125,
+        "top": 14.390625,
+        "bottom": 67.984375
+      },
+      "lang": {
+        "x": 971.75,
+        "y": 699.8125,
+        "width": 37.859375,
+        "height": 29.1875,
+        "top": 699.8125,
+        "right": 1009.609375,
+        "bottom": 729,
+        "left": 971.75
+      },
+      "leftAir": 16.65625,
+      "rightAir": 16.65625,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "buttonGapMin": 4,
+      "buttonGapValues": [
+        4,
+        4,
+        4
+      ],
+      "noClipping": true,
+      "sampleLink": {
+        "text": "Missions",
+        "left": 390.828125,
+        "right": 468.671875,
+        "top": 27.3125,
+        "scrollWidth": 76,
+        "clientWidth": 76,
+        "fontSize": "11.6736px",
+        "letterSpacing": "0.515506px",
+        "paddingInlineStart": "7.3728px",
+        "paddingInlineEnd": "7.3728px",
+        "borderLeftWidth": "1px",
+        "borderRightWidth": "1px"
+      },
+      "navGapComputed": "4px",
+      "rowGapComputed": "3.2px"
+    },
+    "scrolled": {
+      "state": "scrolled",
+      "container": {
+        "left": 332.296875,
+        "right": 691.703125,
+        "top": 14.390625,
+        "bottom": 67.984375
+      },
+      "lang": {
+        "x": 971.75,
+        "y": 379.8125,
+        "width": 37.859375,
+        "height": 29.1875,
+        "top": 379.8125,
+        "right": 1009.609375,
+        "bottom": 409,
+        "left": 971.75
+      },
+      "leftAir": 16.65625,
+      "rightAir": 16.65625,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "buttonGapMin": 4,
+      "buttonGapValues": [
+        4,
+        4,
+        4
+      ],
+      "noClipping": true,
+      "sampleLink": {
+        "text": "Missions",
+        "left": 390.828125,
+        "right": 468.671875,
+        "top": 27.3125,
+        "scrollWidth": 76,
+        "clientWidth": 76,
+        "fontSize": "11.6736px",
+        "letterSpacing": "0.515506px",
+        "paddingInlineStart": "7.3728px",
+        "paddingInlineEnd": "7.3728px",
+        "borderLeftWidth": "1px",
+        "borderRightWidth": "1px"
+      },
+      "navGapComputed": "4px",
+      "rowGapComputed": "3.2px"
+    },
+    "checks": {
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "sideAirFloorPass": true,
+      "centerDeltaPass": true,
+      "noClipping": true,
+      "noNavLangOverlap": true,
+      "languageOffsetDelta": 320,
+      "relationTop": 631.828125,
+      "relationScrolled": 311.828125,
+      "buttonGapMinTop": 4,
+      "buttonGapMinScrolled": 4,
+      "leftAirTop": 16.65625,
+      "rightAirTop": 16.65625,
+      "leftAirScrolled": 16.65625,
+      "rightAirScrolled": 16.65625,
+      "centerDeltaTop": 0,
+      "centerDeltaScrolled": 0
+    }
+  },
+  {
+    "locale": "en",
+    "viewport": {
+      "key": "smallest",
+      "width": 320,
+      "height": 568
+    },
+    "top": {
+      "state": "top",
+      "container": {
+        "left": 8,
+        "right": 312,
+        "top": 14.390625,
+        "bottom": 64.703125
+      },
+      "lang": {
+        "x": 274.140625,
+        "y": 527.8125,
+        "width": 37.859375,
+        "height": 29.1875,
+        "top": 527.8125,
+        "right": 312,
+        "bottom": 557,
+        "left": 274.140625
+      },
+      "leftAir": 9.796875,
+      "rightAir": 9.375,
+      "centerDelta": 0.421875,
+      "rowDeltaTop": 0,
+      "buttonGapMin": 4,
+      "buttonGapValues": [
+        4,
+        4,
+        4
+      ],
+      "noClipping": true,
+      "sampleLink": {
+        "text": "Missions",
+        "left": 58.140625,
+        "right": 124.890625,
+        "top": 26.796875,
+        "scrollWidth": 65,
+        "clientWidth": 65,
+        "fontSize": "10.3776px",
+        "letterSpacing": "0.409708px",
+        "paddingInlineStart": "5.4144px",
+        "paddingInlineEnd": "5.4144px",
+        "borderLeftWidth": "1px",
+        "borderRightWidth": "1px"
+      },
+      "navGapComputed": "4px",
+      "rowGapComputed": "3.84px"
+    },
+    "scrolled": {
+      "state": "scrolled",
+      "container": {
+        "left": 8,
+        "right": 312,
+        "top": 14.390625,
+        "bottom": 64.703125
+      },
+      "lang": {
+        "x": 274.140625,
+        "y": 207.8125,
+        "width": 37.859375,
+        "height": 29.1875,
+        "top": 207.8125,
+        "right": 312,
+        "bottom": 237,
+        "left": 274.140625
+      },
+      "leftAir": 9.796875,
+      "rightAir": 9.375,
+      "centerDelta": 0.421875,
+      "rowDeltaTop": 0,
+      "buttonGapMin": 4,
+      "buttonGapValues": [
+        4,
+        4,
+        4
+      ],
+      "noClipping": true,
+      "sampleLink": {
+        "text": "Missions",
+        "left": 58.140625,
+        "right": 124.890625,
+        "top": 26.796875,
+        "scrollWidth": 65,
+        "clientWidth": 65,
+        "fontSize": "10.3776px",
+        "letterSpacing": "0.409708px",
+        "paddingInlineStart": "5.4144px",
+        "paddingInlineEnd": "5.4144px",
+        "borderLeftWidth": "1px",
+        "borderRightWidth": "1px"
+      },
+      "navGapComputed": "4px",
+      "rowGapComputed": "3.84px"
+    },
+    "checks": {
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "sideAirFloorPass": true,
+      "centerDeltaPass": true,
+      "noClipping": true,
+      "noNavLangOverlap": true,
+      "languageOffsetDelta": 320,
+      "relationTop": 463.109375,
+      "relationScrolled": 143.109375,
+      "buttonGapMinTop": 4,
+      "buttonGapMinScrolled": 4,
+      "leftAirTop": 9.796875,
+      "rightAirTop": 9.375,
+      "leftAirScrolled": 9.796875,
+      "rightAirScrolled": 9.375,
+      "centerDeltaTop": 0.421875,
+      "centerDeltaScrolled": 0.421875
+    }
+  },
+  {
+    "locale": "es",
+    "viewport": {
+      "key": "desktop-compact",
+      "width": 1280,
+      "height": 720
+    },
+    "top": {
+      "state": "top",
+      "container": {
+        "left": 376.0859375,
+        "right": 903.9140625,
+        "top": 14.390625,
+        "bottom": 76.390625
+      },
+      "lang": {
+        "x": 1178.796875,
+        "y": 17,
+        "width": 37.203125,
+        "height": 29.1875,
+        "top": 17,
+        "right": 1216,
+        "bottom": 46.1875,
+        "left": 1178.796875
+      },
+      "leftAir": 21,
+      "rightAir": 21,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "buttonGapMin": 4,
+      "buttonGapValues": [
+        4,
+        4,
+        4
+      ],
+      "noClipping": true,
+      "sampleLink": {
+        "text": "Misiones",
+        "left": 459.7421875,
+        "right": 556.8359375,
+        "top": 28.046875,
+        "scrollWidth": 95,
+        "clientWidth": 95,
+        "fontSize": "13.44px",
+        "letterSpacing": "0.672px",
+        "paddingInlineStart": "12px",
+        "paddingInlineEnd": "12px",
+        "borderLeftWidth": "1px",
+        "borderRightWidth": "1px"
+      },
+      "navGapComputed": "4px",
+      "rowGapComputed": "4.48px"
+    },
+    "scrolled": {
+      "state": "scrolled",
+      "container": {
+        "left": 376.0859375,
+        "right": 903.9140625,
+        "top": 14.390625,
+        "bottom": 76.390625
+      },
+      "lang": {
+        "x": 1178.796875,
+        "y": -303,
+        "width": 37.203125,
+        "height": 29.1875,
+        "top": -303,
+        "right": 1216,
+        "bottom": -273.8125,
+        "left": 1178.796875
+      },
+      "leftAir": 21,
+      "rightAir": 21,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "buttonGapMin": 4,
+      "buttonGapValues": [
+        4,
+        4,
+        4
+      ],
+      "noClipping": true,
+      "sampleLink": {
+        "text": "Misiones",
+        "left": 459.7421875,
+        "right": 556.8359375,
+        "top": 28.046875,
+        "scrollWidth": 95,
+        "clientWidth": 95,
+        "fontSize": "13.44px",
+        "letterSpacing": "0.672px",
+        "paddingInlineStart": "12px",
+        "paddingInlineEnd": "12px",
+        "borderLeftWidth": "1px",
+        "borderRightWidth": "1px"
+      },
+      "navGapComputed": "4px",
+      "rowGapComputed": "4.48px"
+    },
+    "checks": {
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "sideAirFloorPass": true,
+      "centerDeltaPass": true,
+      "noClipping": true,
+      "noNavLangOverlap": true,
+      "languageOffsetDelta": 320,
+      "relationTop": -59.390625,
+      "relationScrolled": -379.390625,
+      "buttonGapMinTop": 4,
+      "buttonGapMinScrolled": 4,
+      "leftAirTop": 21,
+      "rightAirTop": 21,
+      "leftAirScrolled": 21,
+      "rightAirScrolled": 21,
+      "centerDeltaTop": 0,
+      "centerDeltaScrolled": 0
+    }
+  },
+  {
+    "locale": "es",
+    "viewport": {
+      "key": "tablet-portrait",
+      "width": 768,
+      "height": 1024
+    },
+    "top": {
+      "state": "top",
+      "container": {
+        "left": 177.0859375,
+        "right": 590.9140625,
+        "top": 14.390625,
+        "bottom": 67.578125
+      },
+      "lang": {
+        "x": 716.40625,
+        "y": 955.8125,
+        "width": 37.203125,
+        "height": 29.1875,
+        "top": 955.8125,
+        "right": 753.609375,
+        "bottom": 985,
+        "left": 716.40625
+      },
+      "leftAir": 14.421875,
+      "rightAir": 14.421875,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "buttonGapMin": 4,
+      "buttonGapValues": [
+        4,
+        4,
+        4
+      ],
+      "noClipping": true,
+      "sampleLink": {
+        "text": "Misiones",
+        "left": 233.3828125,
+        "right": 311.2265625,
+        "top": 27.109375,
+        "scrollWidth": 76,
+        "clientWidth": 76,
+        "fontSize": "11.6736px",
+        "letterSpacing": "0.515506px",
+        "paddingInlineStart": "7.3728px",
+        "paddingInlineEnd": "7.3728px",
+        "borderLeftWidth": "1px",
+        "borderRightWidth": "1px"
+      },
+      "navGapComputed": "4px",
+      "rowGapComputed": "3.2px"
+    },
+    "scrolled": {
+      "state": "scrolled",
+      "container": {
+        "left": 177.0859375,
+        "right": 590.9140625,
+        "top": 14.390625,
+        "bottom": 67.578125
+      },
+      "lang": {
+        "x": 716.40625,
+        "y": 635.8125,
+        "width": 37.203125,
+        "height": 29.1875,
+        "top": 635.8125,
+        "right": 753.609375,
+        "bottom": 665,
+        "left": 716.40625
+      },
+      "leftAir": 14.421875,
+      "rightAir": 14.421875,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "buttonGapMin": 4,
+      "buttonGapValues": [
+        4,
+        4,
+        4
+      ],
+      "noClipping": true,
+      "sampleLink": {
+        "text": "Misiones",
+        "left": 233.3828125,
+        "right": 311.2265625,
+        "top": 27.109375,
+        "scrollWidth": 76,
+        "clientWidth": 76,
+        "fontSize": "11.6736px",
+        "letterSpacing": "0.515506px",
+        "paddingInlineStart": "7.3728px",
+        "paddingInlineEnd": "7.3728px",
+        "borderLeftWidth": "1px",
+        "borderRightWidth": "1px"
+      },
+      "navGapComputed": "4px",
+      "rowGapComputed": "3.2px"
+    },
+    "checks": {
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "sideAirFloorPass": true,
+      "centerDeltaPass": true,
+      "noClipping": true,
+      "noNavLangOverlap": true,
+      "languageOffsetDelta": 320,
+      "relationTop": 888.234375,
+      "relationScrolled": 568.234375,
+      "buttonGapMinTop": 4,
+      "buttonGapMinScrolled": 4,
+      "leftAirTop": 14.421875,
+      "rightAirTop": 14.421875,
+      "leftAirScrolled": 14.421875,
+      "rightAirScrolled": 14.421875,
+      "centerDeltaTop": 0,
+      "centerDeltaScrolled": 0
+    }
+  },
+  {
+    "locale": "es",
+    "viewport": {
+      "key": "tablet-landscape",
+      "width": 1024,
+      "height": 768
+    },
+    "top": {
+      "state": "top",
+      "container": {
+        "left": 302.8515625,
+        "right": 721.1484375,
+        "top": 14.390625,
+        "bottom": 67.984375
+      },
+      "lang": {
+        "x": 972.40625,
+        "y": 699.8125,
+        "width": 37.203125,
+        "height": 29.1875,
+        "top": 699.8125,
+        "right": 1009.609375,
+        "bottom": 729,
+        "left": 972.40625
+      },
+      "leftAir": 16.65625,
+      "rightAir": 16.65625,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "buttonGapMin": 4,
+      "buttonGapValues": [
+        4,
+        4,
+        4
+      ],
+      "noClipping": true,
+      "sampleLink": {
+        "text": "Misiones",
+        "left": 361.3828125,
+        "right": 439.2265625,
+        "top": 27.3125,
+        "scrollWidth": 76,
+        "clientWidth": 76,
+        "fontSize": "11.6736px",
+        "letterSpacing": "0.515506px",
+        "paddingInlineStart": "7.3728px",
+        "paddingInlineEnd": "7.3728px",
+        "borderLeftWidth": "1px",
+        "borderRightWidth": "1px"
+      },
+      "navGapComputed": "4px",
+      "rowGapComputed": "3.2px"
+    },
+    "scrolled": {
+      "state": "scrolled",
+      "container": {
+        "left": 302.8515625,
+        "right": 721.1484375,
+        "top": 14.390625,
+        "bottom": 67.984375
+      },
+      "lang": {
+        "x": 972.40625,
+        "y": 379.8125,
+        "width": 37.203125,
+        "height": 29.1875,
+        "top": 379.8125,
+        "right": 1009.609375,
+        "bottom": 409,
+        "left": 972.40625
+      },
+      "leftAir": 16.65625,
+      "rightAir": 16.65625,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "buttonGapMin": 4,
+      "buttonGapValues": [
+        4,
+        4,
+        4
+      ],
+      "noClipping": true,
+      "sampleLink": {
+        "text": "Misiones",
+        "left": 361.3828125,
+        "right": 439.2265625,
+        "top": 27.3125,
+        "scrollWidth": 76,
+        "clientWidth": 76,
+        "fontSize": "11.6736px",
+        "letterSpacing": "0.515506px",
+        "paddingInlineStart": "7.3728px",
+        "paddingInlineEnd": "7.3728px",
+        "borderLeftWidth": "1px",
+        "borderRightWidth": "1px"
+      },
+      "navGapComputed": "4px",
+      "rowGapComputed": "3.2px"
+    },
+    "checks": {
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "sideAirFloorPass": true,
+      "centerDeltaPass": true,
+      "noClipping": true,
+      "noNavLangOverlap": true,
+      "languageOffsetDelta": 320,
+      "relationTop": 631.828125,
+      "relationScrolled": 311.828125,
+      "buttonGapMinTop": 4,
+      "buttonGapMinScrolled": 4,
+      "leftAirTop": 16.65625,
+      "rightAirTop": 16.65625,
+      "leftAirScrolled": 16.65625,
+      "rightAirScrolled": 16.65625,
+      "centerDeltaTop": 0,
+      "centerDeltaScrolled": 0
+    }
+  },
+  {
+    "locale": "es",
+    "viewport": {
+      "key": "smallest",
+      "width": 320,
+      "height": 568
+    },
+    "top": {
+      "state": "top",
+      "container": {
+        "left": 11.5078125,
+        "right": 308.4921875,
+        "top": 14.390625,
+        "bottom": 64.703125
+      },
+      "lang": {
+        "x": 274.796875,
+        "y": 527.8125,
+        "width": 37.203125,
+        "height": 29.1875,
+        "top": 527.8125,
+        "right": 312,
+        "bottom": 557,
+        "left": 274.796875
+      },
+      "leftAir": 9.796875,
+      "rightAir": 9.796875,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "buttonGapMin": 4,
+      "buttonGapValues": [
+        4,
+        4,
+        4
+      ],
+      "noClipping": true,
+      "sampleLink": {
+        "text": "Misiones",
+        "left": 58.3984375,
+        "right": 111.7578125,
+        "top": 28.5,
+        "scrollWidth": 51,
+        "clientWidth": 51,
+        "fontSize": "8.8704px",
+        "letterSpacing": "0.265402px",
+        "paddingInlineStart": "2.9568px",
+        "paddingInlineEnd": "2.9568px",
+        "borderLeftWidth": "1px",
+        "borderRightWidth": "1px"
+      },
+      "navGapComputed": "4px",
+      "rowGapComputed": "3.84px"
+    },
+    "scrolled": {
+      "state": "scrolled",
+      "container": {
+        "left": 11.5078125,
+        "right": 308.4921875,
+        "top": 14.390625,
+        "bottom": 64.703125
+      },
+      "lang": {
+        "x": 274.796875,
+        "y": 207.8125,
+        "width": 37.203125,
+        "height": 29.1875,
+        "top": 207.8125,
+        "right": 312,
+        "bottom": 237,
+        "left": 274.796875
+      },
+      "leftAir": 9.796875,
+      "rightAir": 9.796875,
+      "centerDelta": 0,
+      "rowDeltaTop": 0,
+      "buttonGapMin": 4,
+      "buttonGapValues": [
+        4,
+        4,
+        4
+      ],
+      "noClipping": true,
+      "sampleLink": {
+        "text": "Misiones",
+        "left": 58.3984375,
+        "right": 111.7578125,
+        "top": 28.5,
+        "scrollWidth": 51,
+        "clientWidth": 51,
+        "fontSize": "8.8704px",
+        "letterSpacing": "0.265402px",
+        "paddingInlineStart": "2.9568px",
+        "paddingInlineEnd": "2.9568px",
+        "borderLeftWidth": "1px",
+        "borderRightWidth": "1px"
+      },
+      "navGapComputed": "4px",
+      "rowGapComputed": "3.84px"
+    },
+    "checks": {
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "sideAirFloorPass": true,
+      "centerDeltaPass": true,
+      "noClipping": true,
+      "noNavLangOverlap": true,
+      "languageOffsetDelta": 320,
+      "relationTop": 463.109375,
+      "relationScrolled": 143.109375,
+      "buttonGapMinTop": 4,
+      "buttonGapMinScrolled": 4,
+      "leftAirTop": 9.796875,
+      "rightAirTop": 9.796875,
+      "leftAirScrolled": 9.796875,
+      "rightAirScrolled": 9.796875,
+      "centerDeltaTop": 0,
+      "centerDeltaScrolled": 0
+    }
+  }
+]
