@@ -196,6 +196,15 @@ main > section {
     min-height: 100svh;
   }
 
+  .c-hero-top-sentinel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    pointer-events: none;
+  }
+
   .c-home-hero-image {
     --hero-parallax-y: 0px;
     transform: translate3d(0, var(--hero-parallax-y), 0) scale(1.04);
@@ -833,6 +842,13 @@ main > section {
 
   .c-home-nav-fixed {
     max-width: calc(100vw - var(--nav-outer-offset));
+  }
+
+  html[lang="es"] .c-header {
+    --nav-pressure: 0.9;
+    --nav-link-font-base: 0.72rem;
+    --nav-link-pad-x-base: 0.34rem;
+    --nav-link-track-base: 0.04em;
   }
 }
 

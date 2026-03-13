@@ -1,0 +1,322 @@
+[
+  {
+    "locale": "en",
+    "viewport": {
+      "key": "android-portrait",
+      "width": 412,
+      "height": 915
+    },
+    "top": {
+      "state": "top",
+      "scrollY": 0,
+      "navRect": {
+        "top": 14.390625,
+        "bottom": 66.046875,
+        "left": 26.921875,
+        "right": 385.078125
+      },
+      "langRect": {
+        "top": 82,
+        "bottom": 111.1875,
+        "left": 366.140625,
+        "right": 404
+      },
+      "langVisible": true,
+      "leftEdgeGap": 57.90625,
+      "rightEdgeGap": 16.03125,
+      "leftAir": 12.03125,
+      "rightAir": 12.03125,
+      "centerDelta": 0,
+      "buttonGapMin": 4,
+      "rowDeltaTop": 0,
+      "noClipping": true,
+      "heroNotTopClass": false
+    },
+    "scrolled": {
+      "state": "scrolled",
+      "scrollY": 320,
+      "navRect": {
+        "top": 14.390625,
+        "bottom": 66.046875,
+        "left": 26.921875,
+        "right": 385.078125
+      },
+      "langRect": {
+        "top": 82,
+        "bottom": 111.1875,
+        "left": 366.140625,
+        "right": 404
+      },
+      "langVisible": false,
+      "leftEdgeGap": 57.90625,
+      "rightEdgeGap": 16.03125,
+      "leftAir": 12.03125,
+      "rightAir": 12.03125,
+      "centerDelta": 0,
+      "buttonGapMin": 4,
+      "rowDeltaTop": 0,
+      "noClipping": true,
+      "heroNotTopClass": true
+    },
+    "checks": {
+      "langVisibleTopState": true,
+      "langVisibleScrolledState": false,
+      "noNavLangOverlapTop": true,
+      "noNavLangOverlapScrolled": true,
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "edgeGapFloorPass": true,
+      "noClipping": true,
+      "sideAirFloorPass": true,
+      "centerDeltaPass": true,
+      "naturalTopReachabilityPass": true,
+      "noForcedScrollResetOnResize": false
+    },
+    "reachability": {
+      "scrollY": 0,
+      "heroNotTopClass": false,
+      "langVisible": true
+    },
+    "afterResizeY": 0
+  },
+  {
+    "locale": "en",
+    "viewport": {
+      "key": "android-landscape",
+      "width": 915,
+      "height": 412
+    },
+    "top": {
+      "state": "top",
+      "scrollY": 0,
+      "navRect": {
+        "top": 14.390625,
+        "bottom": 67.984375,
+        "left": 274.5625,
+        "right": 640.4375
+      },
+      "langRect": {
+        "top": 82,
+        "bottom": 111.1875,
+        "left": 869.140625,
+        "right": 907
+      },
+      "langVisible": true,
+      "leftEdgeGap": 61.765625,
+      "rightEdgeGap": 19.890625,
+      "leftAir": 15.890625,
+      "rightAir": 15.890625,
+      "centerDelta": 0,
+      "buttonGapMin": 4,
+      "rowDeltaTop": 0,
+      "noClipping": true,
+      "heroNotTopClass": false
+    },
+    "scrolled": {
+      "state": "scrolled",
+      "scrollY": 320,
+      "navRect": {
+        "top": 14.390625,
+        "bottom": 67.984375,
+        "left": 274.5625,
+        "right": 640.4375
+      },
+      "langRect": {
+        "top": 82,
+        "bottom": 111.1875,
+        "left": 869.140625,
+        "right": 907
+      },
+      "langVisible": false,
+      "leftEdgeGap": 61.765625,
+      "rightEdgeGap": 19.890625,
+      "leftAir": 15.890625,
+      "rightAir": 15.890625,
+      "centerDelta": 0,
+      "buttonGapMin": 4,
+      "rowDeltaTop": 0,
+      "noClipping": true,
+      "heroNotTopClass": true
+    },
+    "checks": {
+      "langVisibleTopState": true,
+      "langVisibleScrolledState": false,
+      "noNavLangOverlapTop": true,
+      "noNavLangOverlapScrolled": true,
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "edgeGapFloorPass": true,
+      "noClipping": true,
+      "sideAirFloorPass": true,
+      "centerDeltaPass": true,
+      "naturalTopReachabilityPass": true,
+      "noForcedScrollResetOnResize": false
+    },
+    "reachability": {
+      "scrollY": 0,
+      "heroNotTopClass": false,
+      "langVisible": true
+    },
+    "afterResizeY": 0
+  },
+  {
+    "locale": "es",
+    "viewport": {
+      "key": "android-portrait",
+      "width": 412,
+      "height": 915
+    },
+    "top": {
+      "state": "top",
+      "scrollY": 0,
+      "navRect": {
+        "top": 14.390625,
+        "bottom": 66.046875,
+        "left": 23.4609375,
+        "right": 388.5390625
+      },
+      "langRect": {
+        "top": 82,
+        "bottom": 111.1875,
+        "left": 366.796875,
+        "right": 404
+      },
+      "langVisible": true,
+      "leftEdgeGap": 57.90625,
+      "rightEdgeGap": 16.03125,
+      "leftAir": 12.03125,
+      "rightAir": 12.03125,
+      "centerDelta": 0,
+      "buttonGapMin": 4,
+      "rowDeltaTop": 0,
+      "noClipping": true,
+      "heroNotTopClass": false
+    },
+    "scrolled": {
+      "state": "scrolled",
+      "scrollY": 320,
+      "navRect": {
+        "top": 14.390625,
+        "bottom": 66.046875,
+        "left": 23.4609375,
+        "right": 388.5390625
+      },
+      "langRect": {
+        "top": 82,
+        "bottom": 111.1875,
+        "left": 366.796875,
+        "right": 404
+      },
+      "langVisible": false,
+      "leftEdgeGap": 57.90625,
+      "rightEdgeGap": 16.03125,
+      "leftAir": 12.03125,
+      "rightAir": 12.03125,
+      "centerDelta": 0,
+      "buttonGapMin": 4,
+      "rowDeltaTop": 0,
+      "noClipping": true,
+      "heroNotTopClass": true
+    },
+    "checks": {
+      "langVisibleTopState": true,
+      "langVisibleScrolledState": false,
+      "noNavLangOverlapTop": true,
+      "noNavLangOverlapScrolled": true,
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "edgeGapFloorPass": true,
+      "noClipping": true,
+      "sideAirFloorPass": true,
+      "centerDeltaPass": true,
+      "naturalTopReachabilityPass": true,
+      "noForcedScrollResetOnResize": false
+    },
+    "reachability": {
+      "scrollY": 0,
+      "heroNotTopClass": false,
+      "langVisible": true
+    },
+    "afterResizeY": 0
+  },
+  {
+    "locale": "es",
+    "viewport": {
+      "key": "android-landscape",
+      "width": 915,
+      "height": 412
+    },
+    "top": {
+      "state": "top",
+      "scrollY": 0,
+      "navRect": {
+        "top": 14.390625,
+        "bottom": 67.984375,
+        "left": 271.1015625,
+        "right": 643.8984375
+      },
+      "langRect": {
+        "top": 82,
+        "bottom": 111.1875,
+        "left": 869.796875,
+        "right": 907
+      },
+      "langVisible": true,
+      "leftEdgeGap": 61.765625,
+      "rightEdgeGap": 19.890625,
+      "leftAir": 15.890625,
+      "rightAir": 15.890625,
+      "centerDelta": 0,
+      "buttonGapMin": 4,
+      "rowDeltaTop": 0,
+      "noClipping": true,
+      "heroNotTopClass": false
+    },
+    "scrolled": {
+      "state": "scrolled",
+      "scrollY": 320,
+      "navRect": {
+        "top": 14.390625,
+        "bottom": 67.984375,
+        "left": 271.1015625,
+        "right": 643.8984375
+      },
+      "langRect": {
+        "top": 82,
+        "bottom": 111.1875,
+        "left": 869.796875,
+        "right": 907
+      },
+      "langVisible": false,
+      "leftEdgeGap": 61.765625,
+      "rightEdgeGap": 19.890625,
+      "leftAir": 15.890625,
+      "rightAir": 15.890625,
+      "centerDelta": 0,
+      "buttonGapMin": 4,
+      "rowDeltaTop": 0,
+      "noClipping": true,
+      "heroNotTopClass": true
+    },
+    "checks": {
+      "langVisibleTopState": true,
+      "langVisibleScrolledState": false,
+      "noNavLangOverlapTop": true,
+      "noNavLangOverlapScrolled": true,
+      "singleRow": true,
+      "buttonGapFloorPass": true,
+      "edgeGapFloorPass": true,
+      "noClipping": true,
+      "sideAirFloorPass": true,
+      "centerDeltaPass": true,
+      "naturalTopReachabilityPass": true,
+      "noForcedScrollResetOnResize": false
+    },
+    "reachability": {
+      "scrollY": 0,
+      "heroNotTopClass": false,
+      "langVisible": true
+    },
+    "afterResizeY": 0
+  }
+]

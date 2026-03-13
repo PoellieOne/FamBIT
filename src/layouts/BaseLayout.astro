@@ -80,6 +80,7 @@ const [heroHeadlineMain, heroHeadlineSecondary] = String(heroTitle).split("\n");
           homeHero && "c-home-hero c-home-bleed c-home-hero-stage"
         ]}
       >
+        {homeHero && <div id="HOME-HERO-TOP-SENTINEL" class="c-hero-top-sentinel" aria-hidden="true"></div>}
         {
           heroImage ? (
             <img
@@ -180,14 +181,21 @@ const [heroHeadlineMain, heroHeadlineSecondary] = String(heroTitle).split("\n");
         <script>
           const hero = document.getElementById("HOME-HERO");
           const img = hero?.querySelector(".c-home-hero-image");
+          const topSentinel = document.getElementById("HOME-HERO-TOP-SENTINEL");
           const desktopQuery = window.matchMedia("(min-width: 64rem)");
           const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 
           let rafId = 0;
+          let topObserver;
 
-          const syncHeroTopState = () => {
-            const atTop = window.scrollY <= 8;
+          const setHeroTopState = (atTop) => {
             document.body.classList.toggle("c-hero-not-top", !atTop);
+          };
+
+          const readTopState = () => {
+            if (!topSentinel) return window.scrollY <= 8;
+            const rect = topSentinel.getBoundingClientRect();
+            return rect.bottom > 0 && rect.top < window.innerHeight;
           };
 
           const applyParallax = () => {
@@ -207,15 +215,29 @@ const [heroHeadlineMain, heroHeadlineSecondary] = String(heroTitle).split("\n");
             if (rafId) return;
             rafId = window.requestAnimationFrame(() => {
               applyParallax();
-              syncHeroTopState();
               rafId = 0;
             });
           };
 
           applyParallax();
-          syncHeroTopState();
+          setHeroTopState(readTopState());
+
+          if (topSentinel && "IntersectionObserver" in window) {
+            topObserver = new IntersectionObserver(
+              (entries) => {
+                const [entry] = entries;
+                setHeroTopState(Boolean(entry?.isIntersecting));
+              },
+              { threshold: [0, 0.01] }
+            );
+            topObserver.observe(topSentinel);
+          }
+
           window.addEventListener("scroll", onScroll, { passive: true });
-          window.addEventListener("resize", onScroll);
+          window.addEventListener("resize", () => {
+            onScroll();
+            if (!topObserver) setHeroTopState(readTopState());
+          });
         </script>
       )
     }
